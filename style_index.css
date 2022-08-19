@@ -69,9 +69,15 @@ h3, a{font-weight: bold;}
 p,.onebody_text{font-weight: 500;}
 a{text-decoration: none;}
 
+
+
 .h1-title-paragraph-text{ padding: 30px 0px 0px 0px; display: block;}
-.paragraph-text{line-height: 1.6; font-size: 16px; margin: 30px 0px; display: block}
-.breakline-text{content: "" !important; display: block !important; margin-bottom: 30px !important;}
+.paragraph-text{line-height: 1.6; font-size: 16px; margin: 20px 0px; display: block}
+
+.breakline-text{content: "" !important; display: block !important; margin-bottom: 20px !important;}
+.fake-textspace{visibility: hidden;}
+
+
 
 .onebody_text{white-space: nowrap; word-break: keep-all}
 
@@ -150,7 +156,7 @@ li{padding-bottom: 5px;}
 
 @media screen and (min-width: 425px){
 
-    h1{font-size: 30px;}
+    h1,.h1-title-paragraph-text{font-size: 30px;}
     h3{font-size: 17.5px;}
 
     .info_message{hyphens: auto;}
@@ -158,8 +164,8 @@ li{padding-bottom: 5px;}
 @media screen and (min-width: 795px) and (min-height: 635px){.main_container{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);} body{background-color: #fcfcfc;}}
 @media screen and (min-width: 768px) and (min-height: 768px){.main_container{margin-top: 75px;}}
 
-@media screen and (max-width: 268px){h1{font-size: 20px;}}
-@media screen and (max-height: 475px){.hero_section{margin: 0;}header{display: none;}}
+@media screen and (max-width: 330px){ h1,.h1-title-paragraph-text{font-size: 20px;}}
+@media screen and (max-height: 475px){ .hero_section{margin: 0;}header{display: none;}}
 
 
 
