@@ -69,7 +69,8 @@ h3, a{font-weight: bold;}
 p,.onebody_text{font-weight: 500;}
 a{text-decoration: none;}
 
-.paragraph-text{line-height: 1.6;}
+.h1-title-paragraph-text{ padding: 30px 0px 0px 0px; display: block;}
+.paragraph-text{line-height: 1.6; font-size: 16px; margin: 30px 0px; display: block}
 .breakline-text{content: "" !important; display: block !important; margin-bottom: 30px !important;}
 
 .onebody_text{white-space: nowrap; word-break: keep-all}
@@ -118,8 +119,19 @@ ul, li{
     width: 100%;
     color: #808080;
 }
-li{margin-bottom: 5px;}
+li{padding-bottom: 5px;}
 .credits_details{display: inline-block;}
+
+
+.h1-title-paragraph-text, .paragraph-text, .list-text, .list-item{ color: #000000; }
+
+
+.list-text{ padding: 0; margin: 0; padding-left: 30px; width: fit-content;}
+.list-text, .list-item{ list-style: outside;  font-size: 16px; }
+.list-item{ padding-bottom: 10px; }
+
+.listed-paragraph-text .list-item{ line-height: 1.6; padding-bottom: 30px;}
+.highlighted-text{background-color: #ebebeb; color: #000000; font-weight: bold; font-size: 17px;}
 
 
 
@@ -157,6 +169,9 @@ li{margin-bottom: 5px;}
     body, .main_container{background-color: #1e1e1e;}
 
     h1, h3, p, ul, li{color: #cccccc;}
+    .h1-title-paragraph-text, .paragraph-text, .list-text, .list-item{ color: #cccccc; }
+    .highlighted-text{background-color: #000000; color: #ffffff;}
+
     .nav_item_hitbox{background-color: #333333;}
 
     .social_icon_bg{display: none;}
