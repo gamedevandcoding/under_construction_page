@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <div class="main_container">
+        <div class="main_container"> <!-- style="margin-bottom: 60px;" -->
             <div class="box_container">
                 
 
@@ -174,8 +174,11 @@
         </div>
 
         <!--
-        <div id="myBtn" style="display: none; background-color: #008CFF; color: white; width: 100%; position: fixed; bottom: 0; left: 0; z-index: 9999; text-align: center; border-top: 10px solid #ffffff;">
-            <h3 style="padding: 20px 0px; font-size: 20px;">SUPPORT NOW</h3>
+        <div id="myBtn" style="display: none; width: 100%; position: fixed; bottom: 0; left: 0; z-index: 9999; text-align: center; background-color: transparent;">
+            <div style="background-color: white; max-width: 710px; margin: 0 auto; height: 7px;"></div>
+            <div style="background-color: #008CFF; color: white; max-width: 720px; margin: 0 auto;">
+                <h3 style="padding: 20px 0px; font-size: 20px;">SUPPORT NOW</h3>
+            </div>
         </div>-->
 
         <script type="text/javascript">
@@ -206,7 +209,7 @@
             var mybutton = document.getElementById("myBtn");
             window.onscroll = function() {scrollFunction()};
             function scrollFunction() {
-                if (document.body.scrollTop > 202 || document.documentElement.scrollTop > 202) {
+                if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
                     mybutton.style.display = "block";
                 } 
                 else {
