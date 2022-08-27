@@ -260,6 +260,7 @@
             });
             */
 
+            window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('resize', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('scroll', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             
