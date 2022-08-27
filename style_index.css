@@ -221,7 +221,7 @@ li{padding-bottom: 5px;}
 .popup-panel{ background-color: #ffffff; }
 .popup-panel-title{ padding: 20px 0px; font-size: 20px; font-weight: bold; text-align: center; background-color: #008CFF; color: #ffffff; }
 .filter_blur{ filter: blur(4px); -moz-filter: blur(4px); -o-filter: blur(4px); -ms-filter: blur(4px); -webkit-filter: blur(4px); }
-#filter-layer{ position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; margin: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 9999; display: none; }
+#filter-layer{ position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; margin: 0; background-color: rgba(0, 0, 0, 0.25); z-index: 9999; display: none; }
 
 
 
@@ -280,7 +280,7 @@ li{padding-bottom: 5px;}
     #loading-circle-quarter, .nav_item_svg-LH, #patreon_color, #buymecoffee_color{fill: #cccccc;}
 
     .popup-panel-title{ background-color: #cccccc; color: #333333;}
-    #filter-layer{ background-color: rgba(0, 0, 0, 0.75); }
+    #filter-layer{ background-color: rgba(0, 0, 0, 0.5); }
 
 
 }
