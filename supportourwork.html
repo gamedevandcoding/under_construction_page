@@ -262,7 +262,12 @@
 
             window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('resize', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
-            window.addEventListener('scroll', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
+            window.addEventListener('scroll', (event) => {  
+                
+                if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }
+                else { popup_panel.style.transform = "translate(0px, 0px)"; };
+
+            });
             
             popup_btn.addEventListener("click", (event) => { 
                 
