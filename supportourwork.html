@@ -247,9 +247,10 @@
 
             var popup_boolean = 0;
 
+            /*
             window.addEventListener('resize', (event) => {  if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }  });
             window.addEventListener('scroll', (event) => {
-
+                
                 if(popup_boolean < 1){
 
                     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) { popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; } 
@@ -257,6 +258,10 @@
                 }
                 
             });
+            */
+
+            window.addEventListener('resize', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
+            window.addEventListener('scroll', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             
             popup_btn.addEventListener("click", (event) => { 
                 
