@@ -217,7 +217,7 @@ li{padding-bottom: 5px;}
 
 
 
-.popup-panel-wrapper{ width: 100%; position: fixed; bottom: 0; left: 0; transform: translate(1000px, 500px); background-color: transparent; margin: 0; z-index: 99999; }
+.popup-panel-wrapper, #popup-panel{ width: 100%; position: fixed; bottom: 0; left: 0; transform: translate(1000px, 500px); background-color: transparent; margin: 0; z-index: 99999; }
 .popup-panel{ background-color: #ffffff; }
 .popup-panel-title{ padding: 20px 0px; font-size: 20px; font-weight: bold; text-align: center; background-color: #008CFF; color: #ffffff; }
 .filter_blur{ filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); -webkit-filter: blur(2px); }
