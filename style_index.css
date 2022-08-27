@@ -280,7 +280,7 @@ li{padding-bottom: 5px;}
     #loading-circle-quarter, .nav_item_svg-LH, #patreon_color, #buymecoffee_color{fill: #cccccc;}
 
     .popup-panel-title{ background-color: #cccccc; color: #333333;}
-    /*#filter-layer{ background-color: rgba(0, 0, 0, 0.25); }*/
+    #filter-layer{ background-color: rgba(0, 0, 0, 0.75); }
 
 
 }
