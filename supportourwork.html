@@ -25,8 +25,12 @@
         <!--------------- POPUP PANEL --------------->
         <div class="popup-panel-wrapper" id="popup-panel">
             <div class="popup-panel">
-                
-                <h3 class="popup-panel-title" id="popup_button">SUPPORT<span class="fake-textspace">.</span>NOW</h3>
+
+                <div class="popup-flexbox" id="popup_button">
+                    <h3 class="popup-panel-title">SUPPORT<span class="fake-textspace">.</span>NOW</h3>
+                    <svg class="dropdown-icon" id="popup-close-icon" viewBox="0 0 297.3 168.6"><path d="M148.7 168.6 297.3 0H0l148.7 168.6z"/></svg>
+                </div>
+
                 <div style="max-width: 720px; display: block; margin: 0 auto;">
                     <div class="box_container clearfix" id="box_buttons">
 
@@ -242,25 +246,16 @@
 
             }
 
-            const popup_btn = document.getElementById("popup_button");
+
             const popup_panel = document.getElementById("popup-panel");
+            const popup_btn = document.getElementById("popup_button");
+            const dropdown_icon = document.getElementById("popup-close-icon");
+
             const dark_filter = document.getElementById("filter-layer");
             const content_div = document.getElementById("content_main-container");
 
             var popup_boolean = 0;
 
-            /*
-            window.addEventListener('resize', (event) => {  if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }  });
-            window.addEventListener('scroll', (event) => {
-                
-                if(popup_boolean < 1){
-
-                    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) { popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; } 
-                    else { popup_panel.style.transform = "translate(1000px, 500px)"; };
-                }
-                
-            });
-            */
 
             window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('resize', (event) => {  
@@ -276,6 +271,8 @@
 
                     popup_boolean = 1;
                     popup_panel.style.transform = "translate(0px, 0px)";
+                    dropdown_icon.style.display = "block";
+
                     dark_filter.style.display = "block";
                     content_div.classList.add("filter_blur");
                     document.body.style.overflow = "hidden";
@@ -284,6 +281,8 @@
 
                     popup_boolean = 0;
                     popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
+                    dropdown_icon.style.display = "none";
+
                     dark_filter.style.display = "none";
                     content_div.classList.remove("filter_blur");
                     document.body.style.overflowY = "scroll";
