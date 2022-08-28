@@ -278,6 +278,8 @@
                     dark_filter.style.display = "block";
                     content_div.classList.add("filter_blur");
                     document.body.style.overflow = "hidden";
+
+                    window.history.pushState( {id:1}, null, null);
                 }
                 else{
 
@@ -293,11 +295,8 @@
             });
 
 
-
             window.addEventListener('popstate', (event) => {  
-                
-                console.log(popup_boolean);
-                
+
                 if(popup_boolean > 0){
 
                     popup_boolean = 0;
@@ -311,9 +310,8 @@
                 }
                 
             });
-            window.history.pushState( {id:1}, null, null);
 
-
+            
         </script>
 
 
