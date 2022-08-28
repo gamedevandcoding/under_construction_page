@@ -223,7 +223,7 @@
 
 
         <script type="text/javascript">
-
+            
             try{
 
                 var loading_01 = document.getElementById('loading-circle-iframe-01');
@@ -257,6 +257,8 @@
             var popup_boolean = 0;
 
 
+            content_div.style.marginBottom = "60px";
+
             window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('resize', (event) => {  
                 
@@ -288,9 +290,29 @@
                     document.body.style.overflowY = "scroll";
                     
                 }
-             });
+            });
 
-             content_div.style.marginBottom = "60px";
+
+
+            window.addEventListener('popstate', (event) => {  
+                
+                console.log(popup_boolean);
+                
+                if(popup_boolean > 0){
+
+                    popup_boolean = 0;
+                    popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
+                    dropdown_icon.style.display = "none";
+
+                    dark_filter.style.display = "none";
+                    content_div.classList.remove("filter_blur");
+                    document.body.style.overflowY = "scroll";
+
+                }
+                
+            });
+            window.history.pushState( {id:1}, null, null);
+
 
         </script>
 
