@@ -259,7 +259,7 @@
 
             content_div.style.marginBottom = "60px";
 
-            window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
+            window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";   window.history.pushState( {id:1}, null, null);  });
             window.addEventListener('resize', (event) => {  
                 
                 if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }
@@ -296,8 +296,6 @@
 
             /*--------------- Bind Back Btn ---------------*/
             window.addEventListener('popstate', (event) => {  
-
-                window.history.pushState( {id:1}, null, null);
 
                 if(popup_boolean > 0){
 
