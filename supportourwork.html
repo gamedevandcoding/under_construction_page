@@ -279,7 +279,7 @@
                     content_div.classList.add("filter_blur");
                     document.body.style.overflow = "hidden";
 
-                    window.history.pushState( {id:1}, null, null);
+                    /*window.history.pushState( {id:1}, null, null);*/
                 }
                 else{
 
@@ -297,6 +297,8 @@
             /*--------------- Bind Back Btn ---------------*/
             window.addEventListener('popstate', (event) => {  
 
+                window.history.pushState( {id:1}, null, null);
+
                 if(popup_boolean > 0){
 
                     popup_boolean = 0;
@@ -308,7 +310,7 @@
                     document.body.style.overflowY = "scroll";
 
                 }
-                else{ window.location.href = "https://www.gamedevandcoding.com"; }
+                else{ window.location.href = "index.html"; }
             });
             /*--------------- Bind Back Btn ---------------*/
 
