@@ -290,11 +290,13 @@
                     dark_filter.style.display = "none";
                     content_div.classList.remove("filter_blur");
                     document.body.style.overflowY = "scroll";
+
+                    window.history.replaceState( null, null, null);
                     
                 }
             });
 
-
+            /*--------------- Bind Back Btn ---------------*/
             window.addEventListener('popstate', (event) => {  
 
                 if(popup_boolean > 0){
@@ -307,11 +309,14 @@
                     content_div.classList.remove("filter_blur");
                     document.body.style.overflowY = "scroll";
 
+                    window.history.replaceState( null, null, null);
+
                 }
                 
             });
+            /*--------------- Bind Back Btn ---------------*/
 
-            
+
         </script>
 
 
