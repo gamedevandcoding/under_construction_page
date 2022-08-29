@@ -259,7 +259,7 @@
 
             content_div.style.marginBottom = "60px";
 
-            window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";   window.history.pushState( {id:1}, null, null);  });
+            window.addEventListener('load', (event) => {  popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";  });
             window.addEventListener('resize', (event) => {  
                 
                 if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }
@@ -279,7 +279,7 @@
                     content_div.classList.add("filter_blur");
                     document.body.style.overflow = "hidden";
 
-                    /*window.history.pushState( {id:1}, null, null);*/
+                    window.history.pushState( {id:1}, null, null);
                 }
                 else{
 
