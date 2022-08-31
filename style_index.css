@@ -49,6 +49,7 @@ body{background-color: #ffffff;}
 
 .main_container{max-width: 720px; display: block; margin: 0 auto; background-color: #ffffff; margin-bottom: 120px;}
 .box_container{width: 90%; display: block; margin: 0 auto; padding-top: 5%; padding-bottom: 5%; overflow: hidden;}
+#main_box_container{ padding-bottom: calc(25px + 5%); }
 
 #header__light_logo{display: block;}
 #header__dark_logo{display: none;}
