@@ -230,10 +230,10 @@ li{padding-bottom: 5px;}
 
 
 
-.homepage_wrapper{ display: block; width: 100%; margin: 0; background-color: red; cursor: default;}
+.homepage_wrapper{ display: block; width: 100%; margin: 0; background-color: #fcfcfc; cursor: default;}
 .homepage_content{ max-width: 720px; margin: 0 auto; }
 .homepage_btn{ display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; float: left; cursor: pointer; padding: 10px 10px 10px 5%; text-decoration: none; color: #bbbbbb;}
-.homepage_svg{ max-width: 15px; min-width: 15px; margin-right: 10px; fill: #bbbbbb;}/*#fcfcfc*/
+.homepage_svg{ max-width: 15px; min-width: 15px; margin-right: 10px; fill: #bbbbbb;}
 .homepage_span{ font-size: 15px; color: #bbbbbb;}
 
 
@@ -303,7 +303,7 @@ li{padding-bottom: 5px;}
     #loading-circle-full{fill: #1e1e1e;}
     #loading-circle-quarter, .nav_item_svg-LH, #patreon_color, #buymecoffee_color{fill: #cccccc;}
 
-    .homepage_wrapper{ background-color: #181818; }
+    .homepage_wrapper{ background-color: #000000; }
     .homepage_svg{ fill: #bbbbbb; }
     .homepage_span{ color: #bbbbbb;}
 
