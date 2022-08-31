@@ -58,6 +58,17 @@
 
 
 
+        <a class="homepage_wrapper clearfix" id="bth_container" href="index.html">
+            <div class="homepage_content clearfix">
+                <div class="homepage_btn">
+                    <svg class="homepage_svg" viewBox="0 0 515.616 491.916"><path d="M276.542 30.583 245.958 0 0 245.958l245.958 245.958 30.584-30.583-193.749-193.75h432.823v-43.25l-432.824-.001 193.75-193.749z"/></svg>
+                    <span class="homepage_span">BACK TO HOMEPAGE</span>
+                </div>
+            </div>
+        </a>
+
+
+
         <div class="main_container" id="content_main-container">
             <div class="box_container">
                 
@@ -198,7 +209,7 @@
 
                     
                     <h3 class="hero_text">Follow GameDev&Coding</h3>
-                    <p class="paragraph-text">Enjoy free tutorials, watch devlogs, play games, download apps, learn about game-development, web-development, design, editing, and much more all for free, by following GameDev&Coding on its official social media accounts.</p>
+                    <p class="paragraph-text">Enjoy free tutorials, watch devlogs, play games, download apps, learn about game-development, web-development, design, editing, and much more all for free, by following GameDev&Coding on its official social media accounts, and official <a class="paragraph-hyperlinks" style="font-size: 16px;" href="https://www.patreon.com/gamedevandcoding">website</a>.</p>
 
                     <nav class="clearfix" id="nav_container">
                         <a class="nav_item_hitbox" href="https://www.youtube.com/channel/UCXFqluzwxMQV1rMKqJIMnaw"><svg class="nav_item_svg" viewBox="0 0 546.137 384.003"><path class="social_icon_bg" d="M83.468 55.889h379.2v273h-379.2z"/><path id="youtube_svg" d="M534.725 60.083a68.623 68.623 0 0 0-48.284-48.597C443.851 0 273.069 0 273.069 0S102.288 0 59.696 11.486a68.624 68.624 0 0 0-48.284 48.597C0 102.951 0 192.39 0 192.39s0 89.439 11.412 132.306c6.281 23.65 24.787 41.5 48.284 47.821 42.592 11.486 213.373 11.486 213.373 11.486s170.78 0 213.372-11.486c23.497-6.32 42.003-24.17 48.284-47.821 11.412-42.867 11.412-132.306 11.412-132.306s0-89.438-11.412-132.306zm-317.512 213.51V111.186l142.74 81.205-142.74 81.202z"/></svg></a>
@@ -255,6 +266,7 @@
 
             const dark_filter = document.getElementById("filter-layer");
             const content_div = document.getElementById("content_main-container");
+            const back_btn = document.getElementById("bth_container");
 
             var popup_boolean = 0;
 
@@ -279,6 +291,8 @@
 
                     dark_filter.style.display = "block";
                     content_div.classList.add("filter_blur");
+                    back_btn.classList.add("filter_blur");
+
                     document.body.style.overflow = "hidden";
 
                     window.history.pushState( {id:1}, null, null);
@@ -291,6 +305,8 @@
 
                     dark_filter.style.display = "none";
                     content_div.classList.remove("filter_blur");
+                    back_btn.classList.remove("filter_blur");
+
                     document.body.style.overflowY = "scroll";
                     
                 }
