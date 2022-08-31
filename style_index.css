@@ -230,7 +230,7 @@ li{padding-bottom: 5px;}
 
 
 
-.homepage_wrapper{ display: block; width: 100%; margin: 0; background-color: transparent; cursor: default;}
+.homepage_wrapper{ display: block; width: 100%; margin: 0; background-color: transparent; cursor: default; border-bottom: 1px solid #bbbbbb; }
 .homepage_content{ max-width: 720px; margin: 0 auto; }
 .homepage_btn{ display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; float: left; cursor: pointer; padding: 10px 10px 10px 5%; text-decoration: none; color: #bbbbbb;}
 .homepage_svg{ max-width: 15px; min-width: 15px; margin-right: 10px; fill: #bbbbbb;}
@@ -269,7 +269,7 @@ li{padding-bottom: 5px;}
     .main_container{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);}
     body{background-color: #fcfcfc;}
     
-    .homepage_wrapper{ padding-top: 20px; padding-bottom: 20px; background-color: transparent;}
+    .homepage_wrapper{ padding-top: 20px; padding-bottom: 20px; border: none; background-color: transparent;}
     .homepage_btn{ padding-left: 0px; }
     
     .popup-panel{ max-width: 720px; margin: 0 auto;}
@@ -303,7 +303,7 @@ li{padding-bottom: 5px;}
     #loading-circle-full{fill: #1e1e1e;}
     #loading-circle-quarter, .nav_item_svg-LH, #patreon_color, #buymecoffee_color{fill: #cccccc;}
 
-    .homepage_wrapper{ background-color: #000000; }
+    .homepage_wrapper{ border: none; background-color: #000000; }
     .homepage_svg{ fill: #bbbbbb; }
     .homepage_span{ color: #bbbbbb;}
 
@@ -314,3 +314,5 @@ li{padding-bottom: 5px;}
     #filter-layer{ background-color: rgba(0, 0, 0, 0.5); }
 
 }
+
+@media screen and (min-width: 795px) and (min-height: 635px){ .homepage_wrapper{ background-color: transparent;} }
