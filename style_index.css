@@ -234,7 +234,7 @@ li{padding-bottom: 5px;}
 .homepage_content{ max-width: 720px; margin: 0 auto; }
 .homepage_btn{ display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; float: left; cursor: pointer; padding: 10px 10px 10px 5%; text-decoration: none; color: #bbbbbb;}
 .homepage_svg{ max-width: 15px; min-width: 15px; margin-right: 10px; fill: #bbbbbb;}
-.homepage_span{ font-size: 15px; color: #bbbbbb;}
+.homepage_span{ font-size: 15px; font-weight: 500; color: #bbbbbb;}
 
 
 
