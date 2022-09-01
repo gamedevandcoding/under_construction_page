@@ -259,7 +259,7 @@
                 document.getElementById('iframe-wrapper-01').style.display = "none";
 
             }
-            const max_height = window.matchMedia('(max-height: 475px)');
+            /*const max_height = window.matchMedia('(max-height: 475px)');*/
 
             const popup_panel = document.getElementById("popup-panel");
             const popup_btn = document.getElementById("popup_button");
@@ -279,8 +279,6 @@
                 
                 if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }
                 else { popup_panel.style.transform = "translate(0px, 0px)"; };
-
-                if(max_height.matches != true){ console.log("texst") }
             
             });
             
@@ -288,7 +286,7 @@
                 
                 if(popup_boolean < 1){
 
-                    if(max_height.matches){ popup_btn.style.padding = "15px 0px"; }
+                    /*if(max_height.matches){ popup_btn.style.padding = "15px 0px"; }*/
 
                     popup_boolean = 1;
                     popup_panel.style.transform = "translate(0px, 0px)";
@@ -303,7 +301,7 @@
                 }
                 else{
 
-                    if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }
+                    /*if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }*/
 
                     popup_boolean = 0;
                     popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
@@ -323,7 +321,7 @@
 
                 if(popup_boolean > 0){
 
-                    if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }
+                    /*if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }*/
 
                     popup_boolean = 0;
                     popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
