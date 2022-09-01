@@ -259,7 +259,7 @@
                 document.getElementById('iframe-wrapper-01').style.display = "none";
 
             }
-
+            const max_height = window.matchMedia('(max-height: 475px)');
 
             const popup_panel = document.getElementById("popup-panel");
             const popup_btn = document.getElementById("popup_button");
@@ -279,12 +279,16 @@
                 
                 if(popup_boolean < 1){ popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)"; }
                 else { popup_panel.style.transform = "translate(0px, 0px)"; };
+
+                if(max_height.matches != true){ console.log("texst") }
             
             });
             
             popup_btn.addEventListener("click", (event) => { 
                 
                 if(popup_boolean < 1){
+
+                    if(max_height.matches){ popup_btn.style.padding = "15px 0px"; }
 
                     popup_boolean = 1;
                     popup_panel.style.transform = "translate(0px, 0px)";
@@ -295,10 +299,11 @@
                     back_btn.classList.add("filter_blur");
 
                     document.body.style.overflow = "hidden";
-
                     window.history.pushState( {id:1}, null, null);
                 }
                 else{
+
+                    if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }
 
                     popup_boolean = 0;
                     popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
@@ -318,12 +323,16 @@
 
                 if(popup_boolean > 0){
 
+                    if(parseInt(popup_btn.style.paddingTop) < 20){ popup_btn.style.padding = "20px 0px"; }
+
                     popup_boolean = 0;
                     popup_panel.style.transform = "translate(0px, " + (popup_panel.offsetHeight - 60) + "px)";
                     dropdown_icon.style.display = "none";
 
                     dark_filter.style.display = "none";
                     content_div.classList.remove("filter_blur");
+                    back_btn.classList.remove("filter_blur");
+
                     document.body.style.overflowY = "scroll";
 
                 }

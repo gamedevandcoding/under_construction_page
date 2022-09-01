@@ -291,7 +291,7 @@ li{padding-bottom: 5px;}
     .nav_item_span-LH{font-size: 20px;}}
     #box_buttons{ padding-top: 20px; padding-bottom: 20px;
 } 
-@media screen and (max-height: 310px){ /*#popup_button{padding: 15px 0px;}*/ #popup_text{ display: none; }}
+@media screen and (max-height: 310px){ #popup_text{ display: none; }}
 
 
 
