@@ -279,8 +279,21 @@ li{padding-bottom: 5px;}
 
 
 @media screen and (max-width: 330px){ h1,.h1-title-paragraph-text{font-size: 20px;}}
-@media screen and (max-height: 475px){ .hero_section{margin: 0;} header{display: none;} .hero_text{ margin-top: 0px;}}
-@media screen and (max-height: 310px){ #popup_button{padding: 10px 0px;} #box_buttons{ padding-top: 20px; padding-bottom: 20px;} #popup_text{ display: none; }}
+@media screen and (max-height: 475px){ 
+
+    header{display: none;} 
+    .hero_section{margin: 0;} 
+    .homepage_svg{ max-width: 15px; min-width: 15px;} 
+    .homepage_span{ font-size: 15px;} 
+    .hero_text{ margin-top: 0px; font-size: 20px; } 
+    .nav_item_hitbox-LH{height:60px} 
+    .nav_item_svg-LH{min-width: 25px; max-width: 25px;} 
+    .nav_item_span-LH{font-size: 20px;}}
+    #box_buttons{ padding-top: 20px; padding-bottom: 20px;
+} 
+@media screen and (max-height: 310px){ /*#popup_button{padding: 15px 0px;}*/ #popup_text{ display: none; }}
+
+
 
 @media screen and (prefers-color-scheme: dark){
 
@@ -317,10 +330,3 @@ li{padding-bottom: 5px;}
 }
 
 @media screen and (min-width: 795px) and (min-height: 635px){ .homepage_wrapper{ background-color: transparent;} }
-
-
-
-
-
-
-@media screen and (max-height: 475px){ .popup_hitbox{height:60px} .popup_svg{min-width: 25px; max-width: 25px;} .popup_span{font-size: 20px;}}
