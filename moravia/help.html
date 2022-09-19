@@ -24,7 +24,7 @@
                 
                 <nav class="header__nav" id="dropdown_nav">
                     <ul class="header__nav__ul">
-                        <li><a href="help.html" id="header_li01">AIUTO</a></li>
+                        <li><a href="index.html">MATERIE</a></li>
                         <li><a id="header_li02">CONTATTI</a></li>
                     </ul>
                 </nav>
@@ -39,22 +39,44 @@
 
 
         <div class="main_container">
-
-            <div class="iframe_wrapper">
-                <div class="loading-circle-wrapper"><svg class="loading-circle" id="loading-circle-iframe" viewBox="0 0 346 346"><path id="loading-circle-full" d="M173 0v39A134 134 0 1 1 39 173H0c0 95.5 77.5 173 173 173s173-77.5 173-173S268.5 0 173 0z"/><path id="loading-circle-quarter" d="M173 0v39A134.008 134.008 0 0 0 39 173H0C0 77.5 77.5 0 173 0z"/></svg></div>
-                <iframe class="iframe" id="iframe_video" src="https://www.youtube-nocookie.com/embed/IEAWMAgFtik?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             
-            <section class="section">
-                <div class="title_wrapper"><h3>Seleziona Materia:</h3><h5>A-Z</h5></div>
-                <nav class="boxes_wrapper clearfix">
-                    <a href="files.html">ECONOMIA</a>
-                    <a href="files.html">INFORMATICA</a>
-                    <a href="files.html">INGLESE</a>
-                    <a href="files.html">ITALIANO</a>
-                    <a href="files.html">MATEMATICA</a>
-                    <a href="files.html">STORIA</a>
-                </nav>
+            <section class="section-text">
+                <h3>Guida all'uso</h3>
+
+                <h5>Come accedere all'Archivio Didattico ?</h5>
+                <p>Al momento dell'iscrizione al nostro istituto, riceverai un codice Univoco con il quale potrai accedere completamente al nostro Archivio Didattico, e leggere o scaricare tutti i contenuti come: "approfondimenti, riassunti, schemi, appunti", e molto altro ancora per rendere il tuo percorso di studio con noi agile, flessibile, e soprattutto di successo.</p>
+                
+                <h5>Come selezionare la materia ?</h5>
+                <p>Una volta effettuato l’accesso all'Archivio Didattico del nostro istituto, verrai reindirizzato su una nuova pagina web, dalla quale potrai selezionare la materia da studiare, con un semplice click sul bottone ( a forma di quadrato) relativo alla materia.</p>
+
+                <h5>Come leggere il documento ?</h5>
+                <p>Dopo aver selezionato la materia da studiare, verrai reindirizzato nuovamente su un’altra pagina web, la quale ti presenterà una lista di documenti già disponibili alla lettura. Dunque per iniziare la lettura, dovrai semplicemente fare click sul nome del documento interessato, oppure premere il tasto “APRI” posto lateralmente a destra.</p>
+
+                <h5>Come scaricare il documento ?</h5>
+                <p>
+                    Una volta aver aperto il documento da studiare, potrai scaricarlo gratuitamente ed in totale sicurezza sul tuo dispositivo ( computer / smartphone ) cliccando sull’icona relativa al download in alto a destra.
+                    <br class="breakline-text">
+                    Se l’icona relativa al download non dovesse comparire, effettua uno scroll della pagina, oppure fai click sul testo del documento. Successivamente premi sull’icona relativa al download appena comparsa in alto a destra per scaricare il documento.
+                </p>
+
+                <h5>Il documento da leggere non viene visualizzato / aperto, cosa fare ?</h5>
+                <p>
+                    Se dopo aver cliccato sul nome del documento interessato, oppure dopo aver premuto il tasto “APRI” per la lettura, e successivamente vieni reindirizzato su una nuova pagina web, e il documento da te selezionato non viene visualizzato / aperto, in questo caso dovrai procedere direttamente a scaricare il documento attraverso il bottone apposito.
+                    <br class="breakline-text">
+                    Inoltre, se la nuova pagina web sulla quale sei stato reindirizzato presenta un messaggio come ad esempio: <span class="quote_style_italic">“Impossibile visualizzare l’anteprima del file, Si è verificato un problema con l’anteprima”</span>, significa che il file documento è troppo grande, dunque non è stato possibile leggerlo online. Per questo motivo è necessario scaricare il file all'interno del proprio dispositivo, e solo successivamente procedere con la lettura.
+                    <br class="breakline-text">
+                    Per scaricare il documento, sarà necessario premere sul tasto “SCARICA” in blu.
+                </p>
+
+                <h5>Come aprire il documento scaricato ?</h5>
+                <p>
+                    Dopo aver scaricato correttamente il documento, esso verrà memorizzato all’interno del tuo dispositivo ( computer / smartphone ).
+                    <br class="breakline-text">
+                    Se hai effettuato il download attraverso smartphone, potrai trovare il documento appena scaricato nella seguente cartella: “download” oppure “documenti”.
+                    <br class="breakline-text">
+                    Se hai effettuato il download attraverso computer, potrai trovare il documento appena scaricato nella  cartella: “download” , oppure “documenti” , altrimenti è possibile che il file sia stato scaricato direttamente sul “desktop”. Per trovare velocemente il tuo documento, puoi recarti nella sezione “download” del tuo browser, oppure accedere alla sezione “Accesso Rapido” sul tuo sistema operativo Windows.
+                </p>
+            
             </section>
 
             <footer class="footer">
@@ -93,28 +115,6 @@
                 menu_icon.classList.toggle("active"); 
                 close_icon.classList.toggle("active"); 
             });
-
-            
-            try{
-
-                const loading = document.getElementById('loading-circle-iframe');
-                const iframe = document.getElementById('iframe_video');
-
-                iframe.onload = function(){
-                    
-                    console.log("iframe = loaded");
-                    iframe.style.display = "block";
-                    loading.style.animationPlayState = "paused";
-                    loading.style.display = "none";
-                };
-            }
-            catch(error){
-
-                console.log("iframe = error");
-                loading.style.animationPlayState = "paused";
-                document.getElementById('iframe_wrapper').style.display = "none";
-            }
-
         </script>
     </body>
 
