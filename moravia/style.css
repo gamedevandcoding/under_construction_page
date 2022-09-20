@@ -39,6 +39,7 @@ ul{list-style-type: none; padding: 0; margin: 0}
 .info_container{ padding: 0 20px;}
 #login_section{ background-color: #e5e5e5;}
 #info_section{ background-color: #ffffff;}
+#info_section a { text-decoration: none; color: #000000;}
 #info_section ul{ font-family: 'Roboto', sans-serif; }
 #info__logo{ justify-content: left; padding-top: 0; padding-bottom: 20px;}
 #info_title{ font-family: 'Playfair Display', serif; font-weight: 400; font-size: 26px;}
@@ -252,9 +253,11 @@ ul{list-style-type: none; padding: 0; margin: 0}
 .nav_item_hitbox{ /*background-color: #00ff22;*/ height: fit-content; display: inline-block; margin: 0; padding: 0;}
 .nav_item_svg{ width: 40px; }
 
-#facebook_svg{ fill: #00b1ff; margin-right: 10px;}
-#instagram_svg{ fill: #ec00ff;}
 
+.footer__social .nav_item_hitbox{ margin-right: 10px; }
+#facebook_svg{ fill: #00b1ff; }
+#instagram_svg{ fill: #ec00ff; }
+#whatsapp_svg{ fill: #2fb844; }
 
 
 
