@@ -24,9 +24,8 @@
                 
                 <nav class="header__nav" id="dropdown_nav">
                     <ul class="header__nav__ul">
-                        <li><a href="main_menu.html">MATERIE</a></li>
-                        <li><a href="help.html" id="header_li01">AIUTO</a></li>
-                        <li><a href="contact.html" id="header_li02">CONTATTI</a></li>
+                        <li><a href="main_menu.html" id="header_li01">MATERIE</a></li>
+                        <li><a href="help.html" id="header_li02">AIUTO</a></li>
                     </ul>
                 </nav>
 
@@ -41,27 +40,25 @@
 
         <div class="main_container">
             
-            <section class="section" id="download_files_section">
-                <div class="title_wrapper"><h3>Seleziona Documento:</h3><h5 style="display: none;">A-Z</h5></div>
-                <nav class="btns_wrapper clearfix">
+            <section class="section">
+                <div class="contact_wrapper">
+                    <p class="contact_wrapper_paragraph">
+                        <span id="contact_title">Come Raggiungerci ?</span>
+                        <br class="breakline-text">
+                        Raggiungere l'Istituto A.Moravia è semplicissimo e siamo nel centro della città raggiunti da tutti i mezzi di trasporto urbani:
+                        <br class="breakline-text">
+                        <span class="bold_text">STAZIONE FERROVIARIA:</span> Usciti dalla Stazione proseguire a destra su Corso Matteo Renato Imbriani, proseguire fino al semaforo e svoltare a destra su Corso Italia, fino a Piazza Dante Alighieri.
+                        <br class="breakline-text">
+                        <span class="bold_text">SS16BIS:</span> Uscita Trani Centro.
+                        <br class="breakline-text">
+                        <span class="bold_text">AUTOSTRADA:</span> Uscita per Trani, proseguire in direzione Trani Centro. 
+                    </p>
 
-                    <a href="https://drive.google.com/file/d/1VRpe1ThLGD0YXP1346ewGPYBKEjIXfFr/view?usp=sharing"><span class="file_name">Benvenuto</span><span class="download_btn">APRI</span></a>
-
-                    <a><span class="file_name">Sistema Binario</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Architettura Computer</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Sistemi Operativi</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Sviluppo Web</span><span class="download_btn">APRI</span></a>
-
-                    <a href="https://drive.google.com/file/d/1eEdOu6Vtojem2WJPmYMEbPfaNkfcde-h/view?usp=sharing"><span class="file_name">Cookies & GDPR</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">HTML - CSS - JavaScript</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Linguaggio PHP</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Database Relazionali / Non-Relazionali</span><span class="download_btn">APRI</span></a>
-
-                    <a><span class="file_name">Linguaggio SQL</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Protocolli di Rete</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Sistemi di Sicurezza e Reti</span><span class="download_btn">APRI</span></a>
-                    <a><span class="file_name">Linguaggio C#/C++</span><span class="download_btn">APRI</span></a>
-                </nav>
+                    <div class="iframe_wrapper" id="iframe_maps_wrapper">
+                        <div class="loading-circle-wrapper"><svg class="loading-circle" id="loading-circle-iframe" viewBox="0 0 346 346"><path id="loading-circle-full" d="M173 0v39A134 134 0 1 1 39 173H0c0 95.5 77.5 173 173 173s173-77.5 173-173S268.5 0 173 0z"/><path id="loading-circle-quarter" d="M173 0v39A134.008 134.008 0 0 0 39 173H0C0 77.5 77.5 0 173 0z"/></svg></div>
+                        <iframe id="iframe_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.7007923558517!2d16.42277605146062!3d41.27185021100992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13380412fa3c49e5%3A0x6eb616253b1278ed!2sIstituto%20A.%20Moravia!5e0!3m2!1sit!2sit!4v1663687074532!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </section>
 
             <footer class="footer">
@@ -101,6 +98,28 @@
                 menu_icon.classList.toggle("active"); 
                 close_icon.classList.toggle("active"); 
             });
+
+            
+            try{
+
+                const loading = document.getElementById('loading-circle-iframe');
+                const iframe = document.getElementById('iframe_maps');
+
+                iframe.onload = function(){
+                    
+                    console.log("iframe = loaded");
+                    iframe.style.display = "block";
+                    loading.style.animationPlayState = "paused";
+                    loading.style.display = "none";
+                };
+            }
+            catch(error){
+
+                console.log("iframe = error");
+                loading.style.animationPlayState = "paused";
+                document.getElementById('iframe_wrapper').style.display = "none";
+            }
+
         </script>
     </body>
 

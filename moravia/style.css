@@ -132,7 +132,7 @@ ul{list-style-type: none; padding: 0; margin: 0}
     /*display: none;*/
     display: none;
 }
-
+#iframe_maps_wrapper{ padding: 0; margin: 0; margin-top: 40px; width: 100%; height: 500px;}
 
 
 @keyframes loading-circle-animation{
@@ -164,6 +164,11 @@ ul{list-style-type: none; padding: 0; margin: 0}
 .title_wrapper h3{ font-weight: 400; font-size: 35px; padding: 0; margin: 0;}
 .title_wrapper h5{ font-weight: 100; font-size: 25px; padding: 0; margin: 0;}
 
+
+.contact_wrapper{ width: 98%; margin: 0 1%; padding: 0; }
+.contact_wrapper, #contact_title, .contact_wrapper_paragraph, .bold_text{ font-family: 'Roboto', sans-serif;  color: #000000;}
+#contact_title{ line-height: 0; font-weight: 400; font-size: 30px; padding: 0; margin: 0; }
+.bold_text{ font-weight: bold; }
 
 /*.boxes_wrapper { background-color: blue; }*/
 .boxes_wrapper a{
@@ -225,9 +230,10 @@ ul{list-style-type: none; padding: 0; margin: 0}
 .section-text{ width: 98%; margin-left: 1%; margin-right: 1%; font-family: 'Roboto', sans-serif; color: #000000;}
 .section-text h3{ font-weight: 400; font-size: 35px; padding: 0; margin: 0; margin-top: 40px;}
 .section-text h5{ font-size: 24px; font-weight: 400; margin-bottom: 10px; margin-top: 40px; padding: 0;}
-.section-text p{ line-height: 1.6; font-size: 16px; font-weight: normal; margin: 0; padding: 0;}
+.section-text p, .contact_wrapper_paragraph{ line-height: 1.6; font-size: 16px; font-weight: normal; margin: 0; padding: 0;}
 .breakline-text{content: "" !important; display: block !important; margin-bottom: 16px !important;}
 
+.contact_wrapper_paragraph{ margin-top: 40px; }
 
 .footer{ 
     width: 98%;
@@ -294,7 +300,7 @@ ul{list-style-type: none; padding: 0; margin: 0}
 
     .boxes_wrapper a{ width:calc(94% / 2); margin: 1.5%; height: 250px;}
     .file_name{ width: calc(100% - 110px);}
-    .iframe_wrapper, .title_wrapper, .section-text, .footer, .footer__copyright{ width: 97%; margin-left: 1.5%; margin-right: 1.5%;}
+    .iframe_wrapper, .title_wrapper, .contact_wrapper, .section-text, .footer, .footer__copyright{ width: 97%; margin-left: 1.5%; margin-right: 1.5%;}
 }
 @media screen and (max-width: 680px){
 
@@ -304,7 +310,7 @@ ul{list-style-type: none; padding: 0; margin: 0}
     .btns_wrapper a{ margin-top: 6px; margin-bottom: 6px; }
 
     .boxes_wrapper a{ width: 98%; margin: 1%; height: 200px;}
-    .iframe_wrapper, .title_wrapper, .section-text, .footer, .footer__copyright{ width: 98%; margin-left: 1%; margin-right: 1%;}
+    .iframe_wrapper, .title_wrapper, .contact_wrapper .section-text, .footer, .footer__copyright{ width: 98%; margin-left: 1%; margin-right: 1%;}
 
 }
 @media screen and (max-width: 480px){
@@ -317,12 +323,14 @@ ul{list-style-type: none; padding: 0; margin: 0}
 
     .header__nav{transform: translateY(78px); padding-top: 4px;}
     
-    .iframe_wrapper{ margin-top: 30px; }
+    .iframe_wrapper,.contact_wrapper_paragraph,#iframe_maps_wrapper{ margin-top: 30px; }
 
     /*#download_files_section{ margin-top: 15px; }*/
     .title_wrapper{ margin-top: 15px; margin-bottom: 15px; }
     .title_wrapper h3{ font-size: 25px; }
     .title_wrapper h5{ font-size: 20px; }
+
+    .contact_title{ font-size: 30px; }
 
     .btns_wrapper .download_btn{ padding: 16px; }
     .file_name{ padding-left: 16px; width: calc(100% - 100px);}
