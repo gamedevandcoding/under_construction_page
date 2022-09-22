@@ -121,6 +121,8 @@ ul{list-style-type: none; padding: 0; margin: 0}
     position: relative;
     margin: 0% 1%;
     margin-top: 40px;
+
+    cursor: pointer;
 }
 .iframe_wrapper .iframe{
     position: absolute;
