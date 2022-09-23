@@ -42,25 +42,26 @@
 
             <div class="iframe_wrapper">
                 <div class="loading-circle-wrapper"><svg class="loading-circle" id="loading-circle-iframe" viewBox="0 0 346 346"><path id="loading-circle-full" d="M173 0v39A134 134 0 1 1 39 173H0c0 95.5 77.5 173 173 173s173-77.5 173-173S268.5 0 173 0z"/><path id="loading-circle-quarter" d="M173 0v39A134.008 134.008 0 0 0 39 173H0C0 77.5 77.5 0 173 0z"/></svg></div>
+                <!--<iframe class="iframe" id="iframe_video" src="https://www.youtube-nocookie.com/embed/IEAWMAgFtik?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 <div class="iframe" id="player_container"><div id="player"></div></div>
-                <button class="iframe" id="iframe_btn_thumbnail" onclick="playVideo()"><img class="button_img" src="CoverVideo04.png"></button>
+                <button class="iframe" id="iframe_btn_thumbnail" onclick="playVideo()"><img class="button_img" id="welcome_thumbnail"></button>
             </div>
             
             <section class="section">
                 <div class="title_wrapper"><h3>Seleziona Materia:</h3><h5>A-Z</h5></div>
                 <nav class="boxes_wrapper clearfix">
-                    <a href="files.html">DIRITTO</a>
-                    <a href="files.html">ECONOMIA</a>
-                    <a href="files.html">ECONOMIA POLITICA</a>
-                    <a href="files.html">FILOSOFIA</a>
-                    <a href="files.html">INFORMATICA</a>
-                    <a href="files.html">INGLESE</a>
-                    <a href="files.html">ITALIANO</a>
-                    <a href="files.html">LATINO</a>
-                    <a href="files.html">MATEMATICA</a>
-                    <a href="files.html">SPAGNOLO</a>
-                    <a href="files.html">STORIA</a>
-                    <a href="files.html">STORIA DELL'ARTE</a>
+                    <a href="files.html"><span>DIRITTO</span></a>
+                    <a href="files.html"><span>ECONOMIA</span></a>
+                    <a href="files.html"><span>ECONOMIA POLITICA</span></a>
+                    <a href="files.html"><span>FILOSOFIA</span></a>
+                    <a href="files.html"><span>INFORMATICA</span></a>
+                    <a href="files.html"><span>INGLESE</span></a>
+                    <a href="files.html"><span>ITALIANO</span></a>
+                    <a href="files.html"><span>LATINO</span></a>
+                    <a href="files.html"><span>MATEMATICA</span></a>
+                    <a href="files.html"><span>SPAGNOLO</span></a>
+                    <a href="files.html"><span>STORIA</span></a>
+                    <a href="files.html"><span>STORIA DELL'ARTE</span></a>
                 </nav>
             </section>
 
@@ -109,8 +110,13 @@
             try{
 
                 const loading = document.getElementById('loading-circle-iframe');
-                const thumbnail = document.getElementById('iframe_btn_thumbnail');
+                const thumbnail_img = document.getElementById('welcome_thumbnail');
+                const thumbnail_btn = document.getElementById('iframe_btn_thumbnail');
                 const iframe = document.getElementById('player_container');
+
+                var thumbnail_boolean = 1;
+                thumbnail_img.src = "CoverVideo04.png";
+                thumbnail_img.onerror = function (){ thumbnail_btn.style.display = "none"; thumbnail_boolean = 0; };
 
 
                 //This code loads the IFrame Player API code asynchronously.
@@ -123,18 +129,20 @@
                 //This function creates an <iframe> (and YouTube player) after the API code downloads.
                 var player;
                 function onYouTubeIframeAPIReady() {
-                    player = new YT.Player('player', { videoId: 'IEAWMAgFtik', events: {'onReady': onPlayerReady} });
+                    player = new YT.Player('player', { videoId: 'IEAWMAgFtik', events: {'onReady': onPlayerReady}, playerVars: {rel: 0, showinfo: 0, ecver: 2} });
                 }
 
                 function onPlayerReady(event) {
-                    thumbnail.style.display = "block";
+                    if (thumbnail_boolean > 0) { thumbnail_btn.style.display = "block"; }
                     iframe.style.display = "block";
                     loading.style.animationPlayState = "paused";
                     loading.style.display = "none";
+
+                    console.log(thumbnail_boolean);
                 }
 
                 function playVideo(){
-                    thumbnail.style.display = "none";
+                    thumbnail_btn.style.display = "none";
                     player.playVideo();
                 }
                 
