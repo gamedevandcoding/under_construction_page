@@ -105,7 +105,7 @@ ul{list-style-type: none; padding: 0; margin: 0}
 #header_li02{ padding-right: 0px; /*background-color: #00b1ff;*/}
 
 
-#header__hamburger{ display: none; }
+#header__hamburger, #hamburger_toggle{ display: none; }
 .hamburger{ padding: 20px 0px 20px 20px; }
 .hamburger_svg{ width: 25px; fill: #cec13f; }
 #hamburger_close_icon{ display: none; }
@@ -412,7 +412,3 @@ ul{list-style-type: none; padding: 0; margin: 0}
     .login_element, #title_login, #unicode_field, #enter_btn{ font-size: 20px;}
 
 }
-
-.header__nav.active{ display: block; }
-#hamburger_menu_icon.active{ display: none; }
-#hamburger_close_icon.active{ display: block; }
