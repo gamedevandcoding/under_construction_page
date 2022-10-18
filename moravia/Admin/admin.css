@@ -48,8 +48,8 @@ html, body, .main_container{-ms-overflow-style: none; scrollbar-width: none; pos
 .section{ width: 100%; overflow: hidden; height: calc(100% - 198px); /*background-color: #00a832;*/ }
 .section__scrollable_content{ /*position:fixed;*/ position: relative; top: 0; bottom:0;  overflow-y:scroll; overflow-x:hidden; width: 100%; height: 100%; width: 100%; padding: 0; }
 
-.section__scrollable_content{ padding-right: 14px; /*margin: 28px 0px;*/ }
-.section__scrollable_content::-webkit-scrollbar { width: 14px; }/* width */
+.section__scrollable_content{ padding-right: 10px; /*margin: 28px 0px;*/ }
+.section__scrollable_content::-webkit-scrollbar { width: 10px; }/* width */
 .section__scrollable_content::-webkit-scrollbar-track { background: #cccccc; }/* Track */
 .section__scrollable_content::-webkit-scrollbar-thumb { background: #7f7f7f; }/* Handle */
 .section__scrollable_content::-webkit-scrollbar-thumb:hover { background: #707070; }/* Handle on hover */
@@ -70,7 +70,7 @@ html, body, .main_container{-ms-overflow-style: none; scrollbar-width: none; pos
 #student_unicode_label{ padding: 0px; margin-bottom: 0px; margin-top: 30px;}
 #student_unicode{ background-color: #000000; color: #cec13f; word-wrap: break-word; }
 
-select {color: #757575;}
+select {color: #757575; appearance: none; }
 option:not(:first-of-type) { color: #000000; }
 /*Added for browser compatibility*/
 [hidden] {display: none;}
@@ -184,5 +184,21 @@ div[class*="sidebar__dropdown_container"]:last-of-type { margin-bottom: 40px; }
 
 
 
-@media screen and (max-width: 765px){ .sidebar_container, .sidebar__scrollable_content, .sidebar__main_content{ width: 100%; } }
-@media screen and (max-width: 565px){ .logo_textbox{ display: none; } }
+@media screen and (max-width: 865px){
+
+    .sidebar_container, .sidebar__scrollable_content, .sidebar__main_content{ width: 100%; }
+    .top_navbar { background-color: #4b1b31; }
+    .navbar__span{ color: #cec13f; }
+    .navbar_hamburger{ padding-right: 0px; }
+    .section_content { margin: 0px; padding: 0px; }
+}
+@media screen and (max-width: 665px){ 
+    
+    .navbar__span, .sidebar__username, .sidebar__dropdown_toggle span{ font-size: 24px; }
+    .database_row__input, .database_row__span , .sidebar__close{ font-size: 18px; }
+    .top_navbar { margin-bottom: 24px; }
+    .navbar_hamburger{ padding: 16px; }
+    .navbar__svg{ width: 20px; }
+    .logo_textbox{ display: none; }
+
+}
