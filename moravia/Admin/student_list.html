@@ -24,23 +24,23 @@
                         </div>
                         <span class="sidebar__username">Amministratore</span>
                         <div class="sidebar__dropdown_container">
-                            <label class="sidebar__dropdown_toggle" for="toggle_student">
-                                <input type="checkbox" id="toggle_student">
+                            <label class="sidebar__dropdown_toggle" for="toggle_students" id="toggle_students_container">
+                                <input type="checkbox" id="toggle_students">
                                 <span>Studenti</span>
-                                <svg viewBox="0 0 297.3 168.6"><path d="M148.7 168.6 297.3 0H0l148.7 168.6z"/></svg>
+                                <svg id="students_arrow" viewBox="0 0 297.3 168.6"><path d="M148.7 168.6 297.3 0H0l148.7 168.6z"/></svg>
                             </label>
-                            <ul class="dropdown_content">
+                            <ul class="dropdown_content" id="dropdown_students">
                                 <li><a>Lista</a></li>
                                 <li><a href="student_form.html">Nuovo</a></li>
                             </ul>
                         </div>
                         <div class="sidebar__dropdown_container">
-                            <label class="sidebar__dropdown_toggle" for="toggle_subjects">
+                            <label class="sidebar__dropdown_toggle" for="toggle_subjects" id="toggle_subjects_container">
                                 <input type="checkbox" id="toggle_subjects">
                                 <span>Materie</span>
-                                <svg viewBox="0 0 297.3 168.6"><path d="M148.7 168.6 297.3 0H0l148.7 168.6z"/></svg>
+                                <svg id="subjects_arrow" viewBox="0 0 297.3 168.6"><path d="M148.7 168.6 297.3 0H0l148.7 168.6z"/></svg>
                             </label>
-                            <ul class="dropdown_content">
+                            <ul class="dropdown_content" id="dropdown_subjects">
                                 <li><a>Diritto</a></li>
                                 <li><a>Econimia</a></li>
                                 <li><a>Economia Politica</a></li>
@@ -56,8 +56,7 @@
                             </ul>
                         </div>
                     </div>
-
-                    <span class="sidebar__close">CHIUDI</span>
+                    <button class="sidebar__close" onclick="close_sidebar()">CHIUDI</button>
 
                 </div>
             </div>
@@ -65,180 +64,184 @@
 
             <div class="section_container" id="section_display">
 
-
-
-                <div class="top_navbar">
-                    <span class="navbar__span">LISTA</span>
-                    <label class="navbar_hamburger" id="navbar_toggle__container" for="navbar_toggle">
-                        <input type="checkbox" id="navbar_toggle">
-                        <svg class="navbar__svg" id="navbar__open" viewBox="0 0 55.5 55.5"><path d="M0 47.5h55.5v8H0zM0 0h55.5v8H0zM0 23.75h55.5v8H0z"/></svg>
-                        <svg class="navbar__svg" id="navbar__close" viewBox="0 0 55.5 55.5"><path d="M55.251 5.657 49.594 0 27.625 21.968 5.657 0 0 5.657l21.968 21.968L0 49.594l5.657 5.657 21.968-21.969 21.969 21.969 5.657-5.657-21.969-21.969L55.251 5.657z"/></svg>
-                    </label>
-                </div>
-
-
-
-                <section class="section">
-                    <div class="section__scrollable_content">
-
-                        <div class="database_row clearfix">
-                            <input type="text" class="database_row__input" placeholder="Titolo" disabled>
-                            <input type="text" class="database_row__input" placeholder="Link" disabled>
-                            <div class="btns_container">
-                                <button class="database_row__btn modify_row__btn"><svg class="database_row__svg" viewBox="0 0 48.445 48.445"><path d="M47.733 7.056 41.388.712 35.864 0 29.26 6.623l12.562 12.561 6.623-6.603-.712-5.525zM3.896 31.988 0 47.062l1.383 1.383 15.074-3.896 23.181-23.181L27.077 8.807 3.896 31.988z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <!------------------------------------------------------------------>
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-                        
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-
-                        <div class="database_row clearfix">
-                            <span class="database_row__span">Nome</span>
-                            <span class="database_row__span">Cognome</span>
-                            <div class="btns_container">
-                                <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
-                                <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
-                            </div>
-                        </div>
-                        <!------------------------------------------------------------------>
-
+                <div class="section_content">
+                    <!---------------------- NAVBAR ---------------------->
+                    <div class="top_navbar" id="navbar_container">
+                        <span class="navbar__span">LISTA</span>
+                        <label class="navbar_hamburger" id="navbar_toggle__container" for="navbar_toggle">
+                            <input type="checkbox" id="navbar_toggle">
+                            <svg class="navbar__svg" id="navbar__open" viewBox="0 0 55.5 55.5"><path d="M0 47.5h55.5v8H0zM0 0h55.5v8H0zM0 23.75h55.5v8H0z"/></svg>
+                            <svg class="navbar__svg" id="navbar__close" viewBox="0 0 55.5 55.5"><path d="M55.251 5.657 49.594 0 27.625 21.968 5.657 0 0 5.657l21.968 21.968L0 49.594l5.657 5.657 21.968-21.969 21.969 21.969 5.657-5.657-21.969-21.969L55.251 5.657z"/></svg>
+                        </label>
                     </div>
-                </section>
+                    <!---------------------- NAVBAR ---------------------->
 
+
+                    <section class="section">
+                        <div class="section__scrollable_content">
+                            
+                            <div class="database_row clearfix">
+                                <input type="text" class="database_row__input" placeholder="Titolo" disabled>
+                                <input type="text" class="database_row__input" placeholder="Link" disabled>
+                                <div class="btns_container">
+                                    <button class="database_row__btn modify_row__btn"><svg class="database_row__svg" viewBox="0 0 48.445 48.445"><path d="M47.733 7.056 41.388.712 35.864 0 29.26 6.623l12.562 12.561 6.623-6.603-.712-5.525zM3.896 31.988 0 47.062l1.383 1.383 15.074-3.896 23.181-23.181L27.077 8.807 3.896 31.988z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <!------------------------------------------------------------------>
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+                            
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+
+                            <div class="database_row clearfix">
+                                <span class="database_row__span">Nome</span>
+                                <span class="database_row__span">Cognome</span>
+                                <div class="btns_container">
+                                    <button class="database_row__btn show_row__btn"><svg class="database_row__svg show_svg" viewBox="0 0 41.679 24.405"><path d="M20.84 0C7.815 0 0 12.202 0 12.202s7.815 12.203 20.84 12.203 20.84-12.203 20.84-12.203S33.864 0 20.84 0zm0 18.715a6.512 6.512 0 1 1 6.512-6.513 6.512 6.512 0 0 1-6.512 6.513z"/></svg></button>
+                                    <button class="database_row__btn delete_row__btn"><svg class="database_row__svg" viewBox="0 0 41.679 48.445"><path d="M5.225 48.445h31.23l2.247-35.716H2.977l2.248 35.716zM29.771 3.8 28.665 0h-15.65l-1.107 3.8H0v5.952h41.679V3.8H29.771z"/></svg></button>
+                                </div>
+                            </div>
+                            <!------------------------------------------------------------------>
+
+                        </div>
+                    </section>
+
+                    <!---------------------- FOOTER ---------------------->
+                    <span class="footer_span">CENTRO STUDI DI LOTITO GIOVANNI © TUTTI DIRITTI RISERVATI</span>
+                    <!---------------------- FOOTER ---------------------->
+                </div>
             </div>
         </div>
 
@@ -246,22 +249,25 @@
 
             const sidebar = document.getElementById("sidebar_display");
             const section = document.getElementById("section_display");
+            const navbar = document.getElementById("navbar_container");
             const open_icon = document.getElementById("navbar__open");
             const close_icon = document.getElementById("navbar__close");
             const navbar_toggle = document.getElementById("navbar_toggle__container");
 
+            var mobileMediaQuery = window.matchMedia("(max-width: 765px)");
             var navbar_checkbox = document.getElementById("navbar_toggle");
-            navbar_checkbox.checked = true;
+            navbar_checkbox.checked = false;
 
             navbar_toggle.addEventListener("click", () =>{ 
 
-                console.log(navbar_checkbox.checked);
                 if(navbar_checkbox.checked == true){
 
                     sidebar.style.display = "block";
                     section.style.width = "calc(100% - 301px)";
                     open_icon.style.display = "none";
                     close_icon.style.display = "inline-block";
+
+                    if(mobileMediaQuery.matches != false){ section.style.display = "none"; navbar.style.display = "none"; }
                 }
                 else{
 
@@ -269,7 +275,55 @@
                     section.style.width = "100%";
                     open_icon.style.display = "inline-block";
                     close_icon.style.display = "none";
+
+                    if(mobileMediaQuery.matches != false){ section.style.display = "block"; navbar.style.display = "flex"; }
                 }
+            });
+            function close_sidebar(){
+                
+                navbar_checkbox.checked = false;
+                sidebar.style.display = "none";
+                section.style.width = "100%";
+                open_icon.style.display = "inline-block";
+                close_icon.style.display = "none";
+
+                if(mobileMediaQuery.matches != false){ section.style.display = "block"; navbar.style.display = "flex"; }
+            }
+            window.addEventListener("resize",() =>{
+
+                if(mobileMediaQuery.matches != false){
+
+                    if(navbar_checkbox.checked == true){
+                        section.style.display = "none";
+                    }
+                }
+                else{
+
+                    if(navbar_checkbox.checked == true){
+                        section.style.display = "block";
+                    }
+                }
+            });
+
+            const toggle_students = document.getElementById("toggle_students_container");
+            const toggle_subjects = document.getElementById("toggle_subjects_container");
+            const students_arrow = document.getElementById("students_arrow");
+            const subjects_arrow = document.getElementById("subjects_arrow");
+            const students_dropdown = document.getElementById("dropdown_students");
+            const subjects_dropdown = document.getElementById("dropdown_subjects");
+
+            var students_checkbox = document.getElementById("toggle_students");
+            var subjects_checkbox = document.getElementById("toggle_subjects");
+            students_checkbox.checked = false;
+            subjects_checkbox.checked = false;
+
+            toggle_students.addEventListener("click", () =>{ 
+                if(students_checkbox.checked == true){ students_dropdown.style.display = "block"; }
+                else{ students_dropdown.style.display = "none"; }
+            });
+            toggle_subjects.addEventListener("click", () =>{ 
+                if(subjects_checkbox.checked == true){ subjects_dropdown.style.display = "block"; }
+                else{ subjects_dropdown.style.display = "none"; }
             });
 
         </script>
