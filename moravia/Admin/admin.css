@@ -70,7 +70,9 @@ html, body, .main_container{-ms-overflow-style: none; scrollbar-width: none; pos
 #student_unicode_label{ padding: 0px; margin-bottom: 0px; margin-top: 30px;}
 #student_unicode{ background-color: #000000; color: #cec13f; word-wrap: break-word; }
 
-select {color: #757575; appearance: none; }
+.student_name, .student_surname, .student_age, select, .student_clean, .button_copy{ background-color: #ffffff; }
+
+select {color: #757575; }
 option:not(:first-of-type) { color: #000000; }
 /*Added for browser compatibility*/
 [hidden] {display: none;}
