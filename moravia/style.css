@@ -116,11 +116,13 @@ ul{list-style-type: none; padding: 0; margin: 0}
 
 .iframe_wrapper{
     background-color: #e7e7e7;
-    padding-top: 56.25%;
+    /*padding-top: 56.25%;*/ /*standard*/
+    padding-top: 55.1%; /*modified for margin 1%*/
     overflow: hidden;
     position: relative;
     margin: 0% 1%;
     margin-top: 40px;
+    display: block;
 }
 .iframe_wrapper .iframe{
     position: absolute;
@@ -412,3 +414,10 @@ ul{list-style-type: none; padding: 0; margin: 0}
     .login_element, #title_login, #unicode_field, #enter_btn{ font-size: 20px;}
 
 }
+
+
+
+
+
+
+.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen { background-color: white; }

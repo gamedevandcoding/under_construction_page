@@ -139,7 +139,7 @@
                 //This function creates an <iframe> (and YouTube player) after the API code downloads.
                 var player;
                 function onYouTubeIframeAPIReady() {
-                    player = new YT.Player('player', { videoId: 'IEAWMAgFtik', events: {'onReady': onPlayerReady}, playerVars: {rel: 0, showinfo: 0, ecver: 2} });
+                    player = new YT.Player('player', { videoId: '6ZONxT0bhW8', events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange }, playerVars: {rel: 0, showinfo: 0, ecver: 2} });
                 }
 
                 function onPlayerReady(event) {
@@ -156,14 +156,26 @@
                     player.playVideo();
                 }
                 
+                function onPlayerStateChange(event) {        
+                    if(event.data === 0) {          
+                        thumbnail_btn.style.display = "block";
+                    }
+                }
+
+                function playVideo(){
+                    thumbnail_btn.style.display = "none";
+                    player.playVideo();
+                }
+
 
             }
             catch(error){
 
-                loading.style.animationPlayState = "paused";
-                document.getElementById('iframe_wrapper').style.display = "none";
+                //document.getElementById('loading-circle-iframe').style.animationPlayState = "paused";
+                //document.getElementsByClassName('iframe_wrapper')[0].style.display = "none";
             }
-    
+            
+
         </script>
 
     </body>
