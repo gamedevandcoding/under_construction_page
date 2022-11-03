@@ -226,7 +226,7 @@ html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; 
     float: left;
 
     background-color: #e2e2e2;
-    background: url("image.jpg");
+    /*background: url("image.jpg");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
