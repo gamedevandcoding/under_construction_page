@@ -621,6 +621,8 @@ html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; 
     .ourServices__list{ width: fit-content; min-width: fit-content; float: none;}
 
     .loading-circle{ width: 20%; }
+    .aboutUs__img{ height: 300px; }
+    .map__iframe{ height: 500px; }
 
 }
 @media screen and (max-width: 435px){ .cta__title{font-size: 45px;} #logo_textbox_white{display: none;} }
