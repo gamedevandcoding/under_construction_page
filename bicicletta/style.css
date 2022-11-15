@@ -34,7 +34,7 @@ html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; 
 
 
 /*--------------------------------------- popup ---------------------------------------*/
-.popup-div{ position: fixed; top: 0; left: 0; margin: 0; padding: 0; min-width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 99999; display: none; }
+.popup-div{ position: fixed; top: 0; left: 0; margin: 0; padding: 0; min-width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 99999; display: none; overflow: hidden; }
 
 .popup-content{ background-color: #ffffff; width: 512px; height: fit-content; margin: 0 auto; padding: 20px; }
 .popup-top{ display: flex; flex-direction: row; align-items: center; justify-content: center; }
