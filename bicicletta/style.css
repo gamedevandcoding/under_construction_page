@@ -27,6 +27,39 @@
 
 html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow: auto; }
 
+
+
+.noscroll{ overflow-y: hidden; }
+
+
+
+/*--------------------------------------- popup ---------------------------------------*/
+.popup-div{ position: fixed; top: 0; left: 0; margin: 0; padding: 0; min-width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 99999; display: none; }
+
+.popup-content{ background-color: #ffffff; width: 512px; height: fit-content; margin: 0 auto; padding: 20px; }
+.popup-top{ display: flex; flex-direction: row; align-items: center; justify-content: center; }
+.popup-top svg{ width: 40px; }
+.popup-top h1{ font-size: 40px; font-weight: 700; margin: 0; margin-left: 20px;  padding: 0; }
+
+.popup-content p{ width: 100%; margin: 20px 0px; padding: 0; line-height: 1.6; }
+.popup-div .breakline-text{ content: "" !important; display: block !important; margin-bottom: 16px !important; }
+
+.popup-btn-container{ display: flex; justify-content: space-between; }
+.popup-btn{ display: block; width: fit-content; padding: 10px; overflow: hidden; /*background-color: #0047ba;*/ }
+.popup-btn svg{ width: 40px; height: 40px; }
+
+.popup-close{ font-size: 20px; width: 100%; margin: 0; margin-top: 20px; padding: 12px 0px; border: 0; font-weight: 700; }
+
+#phone_svg{ fill: #446f81; }
+#mail_svg{ fill: #a0a0a0; }
+/*--------------------------------------- popup ---------------------------------------*/
+
+
+
+
+
+
+
 .whatsapp_shortcut{ position: fixed; bottom: 0; right: 0; margin: 0; padding: 20px; z-index: 9999;}
 .whatsapp_shortcut svg{ width: 60px; }
 
@@ -256,9 +289,10 @@ html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; 
 
 
 
-
-#iframe-maps{ height: 625px; margin: 60px auto; }
+/*--------------------------------------- iframe ---------------------------------------*/
+#iframe-maps{ height: 625px; margin: 0px auto; margin-top: 60px; }
 .loaded-content{ display: block; width: 100%; height: 100%; margin: 0; padding: 0; position: absolute; top: 0; left: 0; }
+/*--------------------------------------- iframe ---------------------------------------*/
 
 
 
@@ -375,6 +409,7 @@ html, body{-ms-overflow-style: none; scrollbar-width: none; position: absolute; 
 }
 @media screen and (max-width: 625px){
     
+    .popup-content{ width: 100%; }
     .brand-logo{ width: 180px; }
 
     .above-fold-img{ display: none; }
