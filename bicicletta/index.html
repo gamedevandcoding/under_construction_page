@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href='style.css' rel='stylesheet' media="screen">
+        <link href='index-style.css' rel='stylesheet' media="screen">
         <title>TITOLO</title>
         <meta name="description" content="descrizione"/>
     </head>
@@ -15,22 +15,15 @@
 
         <div class="popup-div" id="popup_container">
             <div class="popup-content">
-                <div class="popup-top">
-                    <svg viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+                <button class="popup-top" onclick="hide_popup()">
+                    <svg viewBox="0 0 980 979.99976"><polygon points="508.734 274.625 478.15 244.042 232.192 490 478.15 735.958 508.734 705.375 314.985 511.625 747.808 511.625 747.808 468.375 314.984 468.374 508.734 274.625"/><path d="M-937.99951-2459.6665h-.001c-270.61938,0-489.99951,219.38012-489.99951,489.99926v.001c0,270.61938,219.38013,489.99951,489.99951,489.99951h.001C-667.38037-1479.66675-448-1699.04688-448-1969.66626v-.001C-448-2240.28638-667.38037-2459.6665-937.99951-2459.6665Zm446.74829,490.00024c0,246.73242-200.01611,446.74829-446.74854,446.74829h-.00073c-246.73242,0-446.74853-200.01587-446.74853-446.74829v-.001c0-246.73217,200.01611-446.74829,446.74853-446.74829h.00073c246.73243,0,446.74854,200.01612,446.74854,446.74829Z" transform="translate(1428 2459.6665)"/></svg>
                     <h1>MESSAGGIO</h1>
-                </div>
+                </button>
                 <p>
                     Si avvisa la gentile clientela, che il sito è attualmente in costruzione, dunque non disponibile al momento per l'utilizzo.
-                    <br class="breakline-text">Per maggiori informazioni vi invitiamo contattarci in una delle seguienti modalità: telefono, email, whatsapp, instagram, facebook.
+                    <br class="breakline-text">Per maggiori informazioni vi invitiamo contattarci in una delle seguienti modalità: <a class="highlight-text" href="tel:390883489759">telefono</a>, <a class="highlight-text" href="mailto: commercialelafenicetrani@gmail.com">email</a>, <a class="highlight-text" href="https://wa.me/390883489759">whatsapp</a>, <a class="highlight-text" href="https://www.instagram.com/ilfitnesslabicicletta">instagram</a>, <a class="highlight-text" href="https://www.facebook.com/ilfitness.labicicletta">facebook</a>.
                     <br class="breakline-text">Ci scusiamo per il disagio, e vi ringraziamo per la vostra pazienza.
                 </p>
-                <div class="popup-btn-container">
-                    <a class="popup-btn" href="tel:390883489759"><svg id="phone_svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
-                    <a class="popup-btn" href="mailto: commercialelafenicetrani@gmail.com"><svg id="mail_svg" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg></a>
-                    <a class="popup-btn" href="https://wa.me/390883489759"><svg id="whatsapp_svg" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
-                    <a class="popup-btn" href="https://www.instagram.com/ilfitnesslabicicletta"><svg id="instagram_svg" viewBox="0 0 546 546"><path d="M273.127 133.015a139.99 139.99 0 1 0 139.99 139.99 139.769 139.769 0 0 0-139.547-139.99h-.443zm0 231.002a91.012 91.012 0 1 1 91.012-91.012 91.177 91.177 0 0 1-91.012 91.012zm178.37-236.728a32.794 32.794 0 1 1 0-.152v.152zm92.717 33.14c-2.07-43.74-12.062-82.484-44.105-114.405-31.92-31.92-70.665-41.912-114.405-44.105-45.08-2.559-180.196-2.559-225.276 0C116.811 3.99 78.068 13.98 46.024 45.902S4.112 116.567 1.92 160.307c-2.559 45.08-2.559 180.196 0 225.276 2.071 43.74 12.062 82.483 44.105 114.404s70.665 41.912 114.404 44.105c45.08 2.56 180.197 2.56 225.276 0 43.74-2.07 82.484-12.062 114.405-44.105 31.921-31.92 41.912-70.665 44.105-114.404 2.558-45.08 2.558-180.075 0-225.155zm-58.238 273.523a92.142 92.142 0 0 1-51.902 51.902c-35.942 14.255-121.228 10.965-160.947 10.965s-125.126 3.168-160.946-10.965a92.142 92.142 0 0 1-51.902-51.902C46.024 398.01 49.313 312.724 49.313 273.005S46.146 147.88 60.28 112.06a92.142 92.142 0 0 1 51.902-51.902c35.942-14.255 121.228-10.965 160.946-10.965s125.127-3.168 160.947 10.965a92.142 92.142 0 0 1 51.902 51.902c14.255 35.942 10.965 121.228 10.965 160.946s3.29 125.127-10.965 160.947z"/></svg></a>
-                    <a class="popup-btn" href="https://www.facebook.com/ilfitness.labicicletta"><svg id="facebook_svg" viewBox="0 0 546 546"><path d="M487.5 0h-429C26.2 0 0 26.2 0 58.5v429C0 519.8 26.2 546 58.5 546h167.3V360.4H149V273h76.8v-66.6c0-75.7 45.1-117.6 114.2-117.6 33.1 0 67.7 5.9 67.7 5.9V169h-38.1c-37.5 0-49.3 23.3-49.3 47.2V273H404l-13.4 87.4h-70.4V546h167.3c32.3 0 58.5-26.2 58.5-58.5v-429C546 26.2 519.8 0 487.5 0z"/></svg></a>
-                </div>
                 <button class="popup-close" onclick="hide_popup()">CHIUDI</button>
             </div>
         </div>
@@ -67,8 +60,8 @@
 
                     <div class="above-fold-left">
                         <div id="above-fold-texts">
-                            <h3 class="h3-text" id="h3-subtitle">SCOPRI IL CATALOGO DEI MIGLIORI PRODOTTI SPORTIVI</h3>
-                            <h1 class="h1-text">TUTTO PER CICLISMO <span class="united_span">& RIPARAZIONI</span></h1>
+                            <h3 class="h3-text" id="h3-subtitle">TUTTO PER CICLISMO & <span style="display: inline-block;">ATTREZZI SPORT IN CASA</span></h3>
+                            <h1 class="h1-text">OLTRE 100 MODELLI DI <span class="h1-text__variation-short">E-BIKE</span><span class="h1-text__variation-long">BICI ELETTRICHE</span> & <span class="united_span">RIPARAZIONI</span></h1>
                         </div>
                         <div id="above-fold-btns">
                             <a class="red-btn btn-disabled">CATALOGO</a>
@@ -104,19 +97,20 @@
                         <ul class="customList__ul" id="ul-short">
                             <li>BICI BAMBINO/A</li>
                             <li>BICI ADULTO/A</li>
-                            <li>BICI ELETTRICHE</li>
                             <li>BICI DA CORSA</li>
+                            <li>CASCHI & SCARPE</li>
                         </ul>
                         <ul class="customList__ul">
+                            <li>BICI ELETTRICHE</li>
                             <li>MONOPATTINI ELETTRICI</li>
-                            <li>SCHOOTERS ELETTRICI</li>
-                            <li>TAPIS ROULANT</li>
-                            <li>CYCLETTE</li>
+                            <li>SCOOTER ELETTRICI</li>
+                            <li>RIGENERAZIONE BATTERIE</li>
                         </ul>
 
                         <ul class="customList__ul">
                             <li>ATTREZZI FITNESS</li>
-                            <li>CASCHI & SCARPE</li>
+                            <li>TAPIS ROULANT</li>
+                            <li>CYCLETTE & ELLITTICHE</li>
                             <li>INTEGRATORI ALIMENTARI</li>
                             <li>TAVOLI DA GIOCO</li>
                         </ul>
@@ -128,53 +122,53 @@
 
             <section class="section_container" id="bestBuy-section">
                 <div class="section_content clearfix">
-                    <span class="customList_title" id="bestBuy_title">CATEGORIE PRODOTTI</span>
+                    <span class="customList_title" id="bestBuy_title">PRODOTTI PIÙ VENDUTI</span>
                     <div class="bestBuy-cards_container">
 
-                        <a class="bestBuy-card">
+                        <a class="bestBuy-card btn-disabled">
                             <div class="bestBuy-card-top">
-                                <h1>MOUNTAIN BIKE</h1>
-                                <h3>Ottimo per sferrato</h3>
+                                <h1>BICI ELETTRICA</h1>
+                                <h3>Ottima per la Città</h3>
                                 <div class="card_stars_container">
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
                                 </div>
                             </div>
                             <img class="bestBuy-card-img" src="img/BikeSample.png">
-                            <button class="bestBuy-card-btn btn-disabled">GUARDA</button>
+                            <span class="bestBuy-card-btn">GUARDA</span>
                         </a>
-                        <a class="bestBuy-card middle-card">
+                        <a class="bestBuy-card middle-card btn-disabled">
                             <div class="bestBuy-card-top">
-                                <h1>MOUNTAIN BIKE</h1>
-                                <h3>Ottimo per sferrato</h3>
+                                <h1>TAPIS ROULANT</h1>
+                                <h3>L'ideale per Dimagrire</h3>
                                 <div class="card_stars_container">
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
                                 </div>
                             </div>
-                            <img class="bestBuy-card-img" src="img/BikeSample.png">
-                            <button class="bestBuy-card-btn btn-disabled">GUARDA</button>
+                            <img class="bestBuy-card-img" src="img/TapisSample.png">
+                            <span class="bestBuy-card-btn">GUARDA</span>
                         </a>
-                        <a class="bestBuy-card">
+                        <a class="bestBuy-card btn-disabled">
                             <div class="bestBuy-card-top">
-                                <h1>MOUNTAIN BIKE</h1>
-                                <h3>Ottimo per sferrato</h3>
+                                <h1>BICI BAMBINO/A</h1>
+                                <h3>Divertimento & Sicurezza</h3>
                                 <div class="card_stars_container">
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                                    <svg class="card_star_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                                    <svg class="card_star_svg" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
                                 </div>
                             </div>
-                            <img class="bestBuy-card-img" src="img/BikeSample.png">
-                            <button class="bestBuy-card-btn btn-disabled">GUARDA</button>
+                            <img class="bestBuy-card-img" src="img/BabySample.png">
+                            <span class="bestBuy-card-btn">GUARDA</span>
                         </a>
 
                     </div>
@@ -187,7 +181,7 @@
                 <div class="section_content">
 
                     <div class="section_description">
-                        <svg class="special_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.434 125.332"><path d="M-4221.3-223.383c-7.324 8.479-5.52 20.825 1.995 26.088 6.056 4.242 15.31 3.526 21.697-2.397l37.823-44.345-17.516-17.631-43.998 38.285zM-4150.282-255.178l7.004-8.212c17.3 3.958 33.557-3.082 39.383-15.411 4.479-9.478 1.437-19.21.343-22.26l-15.158 15.157a8.049 8.049 0 0 1-11.534-.156l-5.388-5.687a8.049 8.049 0 0 1 .151-11.227l15.553-15.553c-2.561-.75-13.883-3.76-24.378 2.397-11.646 6.832-17.52 22.164-13.698 37.671l-8.32 7.24z" transform="translate(4225.958 319.924)"/><path d="M-4132.6-246.12a2.524 2.524 0 0 1-.455-.621l-2.76-5.321a2.517 2.517 0 0 0-4.016-.62l-5.959 5.958-49.2-49.2-1.484-8.676-23.174-15.324-6.31 5.506 15.557 22.945 9.214 1.713 49.119 49.315-5.919 5.59a2.518 2.518 0 0 0 .334 3.926l4.915 3.27a2.515 2.515 0 0 1 .393.324l29.272 29.527a14.2 14.2 0 0 0 17.58-2.226 14.192 14.192 0 0 0 1.812-17.166z" transform="translate(4225.958 319.924)"/></svg>
+                        <svg class="special_svg" viewBox="0 0 124.434 125.332"><path d="M-4221.3-223.383c-7.324 8.479-5.52 20.825 1.995 26.088 6.056 4.242 15.31 3.526 21.697-2.397l37.823-44.345-17.516-17.631-43.998 38.285zM-4150.282-255.178l7.004-8.212c17.3 3.958 33.557-3.082 39.383-15.411 4.479-9.478 1.437-19.21.343-22.26l-15.158 15.157a8.049 8.049 0 0 1-11.534-.156l-5.388-5.687a8.049 8.049 0 0 1 .151-11.227l15.553-15.553c-2.561-.75-13.883-3.76-24.378 2.397-11.646 6.832-17.52 22.164-13.698 37.671l-8.32 7.24z" transform="translate(4225.958 319.924)"/><path d="M-4132.6-246.12a2.524 2.524 0 0 1-.455-.621l-2.76-5.321a2.517 2.517 0 0 0-4.016-.62l-5.959 5.958-49.2-49.2-1.484-8.676-23.174-15.324-6.31 5.506 15.557 22.945 9.214 1.713 49.119 49.315-5.919 5.59a2.518 2.518 0 0 0 .334 3.926l4.915 3.27a2.515 2.515 0 0 1 .393.324l29.272 29.527a14.2 14.2 0 0 0 17.58-2.226 14.192 14.192 0 0 0 1.812-17.166z" transform="translate(4225.958 319.924)"/></svg>
                         <div class="special_textbox">
                             <h1>RIPARAZIONE <span style="display: inline-block;">& ASSISTENZA</span></h1>
                             <h3>3 MESI GRATIS POST VENDITA</h3>
@@ -195,7 +189,7 @@
                     </div>
 
                     <a class="fullbar_btn" id="special_cta" href="tel:390883489759">
-                        <svg class="fullbar_svg" id="call_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        <svg class="fullbar_svg" id="call_svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         <span class="fullbar_span">CHIAMA ORA</span>
                     </a>
                 </div>
@@ -208,8 +202,8 @@
                     <div class="loading-circle-wrapper"><svg class="loading-circle" id="carousel-loading" viewBox="0 0 346 346"><path class="loading-circle-full" d="M173 0v39A134 134 0 1 1 39 173H0c0 95.5 77.5 173 173 173s173-77.5 173-173S268.5 0 173 0z"/><path class="loading-circle-quarter" d="M173 0v39A134.008 134.008 0 0 0 39 173H0C0 77.5 77.5 0 173 0z"/></svg></div>
                     <div class="loaded-content">
                         <div class="carousel_images_switch_container">
-                            <button class="carousel_btn" id="prev" onclick="changeSlide(this)"><svg class="carousel_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 13.965"><path d="m0 6.982 8.021 6.983V0L0 6.982z"/></svg></button>
-                            <button class="carousel_btn" id="next" onclick="changeSlide(this)"><svg class="carousel_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.021 13.965"><path d="M8.021 6.982 0 0v13.965l8.021-6.983z"/></svg></button>
+                            <button class="carousel_btn" id="prev" onclick="changeSlide(this)"><svg class="carousel_svg" viewBox="0 0 8.021 13.965"><path d="m0 6.982 8.021 6.983V0L0 6.982z"/></svg></button>
+                            <button class="carousel_btn" id="next" onclick="changeSlide(this)"><svg class="carousel_svg" viewBox="0 0 8.021 13.965"><path d="M8.021 6.982 0 0v13.965l8.021-6.983z"/></svg></button>
                         </div>
                         <ul class="carousel_images_list">
                             <li class="carousel-slide active-slide"><img src="img/img01.jpg"></li>
@@ -220,7 +214,7 @@
                         </ul>
                     </div>
                 </div>
-                <script type="text/javascript" src="carousel.js"></script>
+                <script type="text/javascript" src="script/carousel.js"></script>
             </section>
 
 
@@ -242,11 +236,14 @@
             <section class="centered_container" id="description-section">
                 <div class="description-content">
                     <h1>IL NOSTRO NEGOZIO</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                    <p>
+                        Dal 1920 e da tre generazioni ci occupiamo di vendita e riparazione di biciclette, e da oltre 20 anni anche bici elettriche, articoli sportivi, tapis roulant, cyclette, ellittiche fornendo sempre <span class="highlight-text">la migliore assistenza tecnica</span> per i nostri prodotti, e anche riparazione di tutti gli altri marchi di costruttori, grazie ai nostri tecnici altamente specializzati e con esperienze decennali nel settore delle riparazioni di articoli sportivi, biciclette, bici elettriche, e attrezzi per il fitness.
+                        <br class="breakline-text">Aiutiamo con cura il cliente a scegliere il prodotto migliore per le proprie esigenze e preferenze, garantendo <span class="highlight-text">sei mesi di manutenzione ordinaria totalmente gratuita</span>, senza costi nascosti ! Tutta la merce disponibile nel nostro negozio, e nel nostro e-commerce viene sempre controllata accuratamente, ed inoltre viene effettuato un'ulteriore controllo prima della messa su strada per garantire ai nostri clienti la massima sicurezza. 
+                    </p>
                 </div>
                 <div class="description-content">
                     <h1>ASSISTENZA POST VENDITA GRATUITA</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                    <p>Teniamo molto che i nostri prodotti funzionino alla <span class="highlight-text">perfezione</span>, infatti forniamo al cliente assistenza tecnica e riparazione totalmente gratuita (solo per manutenzione ordinaria, o malfunzionanti di fabbrica) per ben sei mesi dopo aver acquistato da noi. Manutenzione totale anche di tapis roulant, cyclette, ellittica, e attrezzi sportivi di qualsiasi marca.</p>
                 </div>
             </section>
 
@@ -254,17 +251,17 @@
 
             <section class="centered_container" id="feature-section">
                 <div class="feature-card" id="card-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 17.125"><path d="M12.5 16.125a4 4 0 0 0 4-4 4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4zm5-4a5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5z"/><path d="M12.703 10.163a1.568 1.568 0 0 0-.932.268 1.534 1.534 0 0 0-.407.45 1.435 1.435 0 0 0-.218.57H13.4l-.089.444h-2.218q-.003.07-.003.132 0 .255.003.304h2.129l-.093.443h-1.966a1.485 1.485 0 0 0 .668 1.074 1.571 1.571 0 0 0 .823.228 1.36 1.36 0 0 0 .964-.324v.681a2.14 2.14 0 0 1-.912.192 1.99 1.99 0 0 1-2.02-1.243 3.417 3.417 0 0 1-.18-.608h-.507l.093-.443h.347q-.01-.139-.01-.3 0-.067.003-.136H10l.093-.443h.383a2.1 2.1 0 0 1 1.068-1.547 2.406 2.406 0 0 1 1.173-.29 1.886 1.886 0 0 1 1.035.267l-.133.615a1.397 1.397 0 0 0-.915-.334zM2.188 8.75A1.094 1.094 0 0 1 3.28 7.656h1.094A1.094 1.094 0 0 1 5.469 8.75v1.094a1.094 1.094 0 0 1-1.094 1.094H3.281a1.094 1.094 0 0 1-1.094-1.094z"/><path d="M6.635 12.12c0-.03.004-.059.005-.089H2.188a1.094 1.094 0 0 1-1.094-1.094V5.47h15.312v2.285A5.882 5.882 0 0 1 17.5 9.066V2.187A2.187 2.187 0 0 0 15.312 0H2.188A2.187 2.187 0 0 0 0 2.188v8.75a2.187 2.187 0 0 0 2.188 2.187h4.54a5.88 5.88 0 0 1-.093-1.005zM1.094 2.188a1.094 1.094 0 0 1 1.093-1.094h13.125a1.094 1.094 0 0 1 1.094 1.093v1.094H1.094z"/></svg>
+                    <svg viewBox="0 0 17.5 17.125"><path d="M12.5 16.125a4 4 0 0 0 4-4 4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4zm5-4a5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5z"/><path d="M12.703 10.163a1.568 1.568 0 0 0-.932.268 1.534 1.534 0 0 0-.407.45 1.435 1.435 0 0 0-.218.57H13.4l-.089.444h-2.218q-.003.07-.003.132 0 .255.003.304h2.129l-.093.443h-1.966a1.485 1.485 0 0 0 .668 1.074 1.571 1.571 0 0 0 .823.228 1.36 1.36 0 0 0 .964-.324v.681a2.14 2.14 0 0 1-.912.192 1.99 1.99 0 0 1-2.02-1.243 3.417 3.417 0 0 1-.18-.608h-.507l.093-.443h.347q-.01-.139-.01-.3 0-.067.003-.136H10l.093-.443h.383a2.1 2.1 0 0 1 1.068-1.547 2.406 2.406 0 0 1 1.173-.29 1.886 1.886 0 0 1 1.035.267l-.133.615a1.397 1.397 0 0 0-.915-.334zM2.188 8.75A1.094 1.094 0 0 1 3.28 7.656h1.094A1.094 1.094 0 0 1 5.469 8.75v1.094a1.094 1.094 0 0 1-1.094 1.094H3.281a1.094 1.094 0 0 1-1.094-1.094z"/><path d="M6.635 12.12c0-.03.004-.059.005-.089H2.188a1.094 1.094 0 0 1-1.094-1.094V5.47h15.312v2.285A5.882 5.882 0 0 1 17.5 9.066V2.187A2.187 2.187 0 0 0 15.312 0H2.188A2.187 2.187 0 0 0 0 2.188v8.75a2.187 2.187 0 0 0 2.188 2.187h4.54a5.88 5.88 0 0 1-.093-1.005zM1.094 2.188a1.094 1.094 0 0 1 1.093-1.094h13.125a1.094 1.094 0 0 1 1.094 1.093v1.094H1.094z"/></svg>
                     <div class="card-textbox">
                         <h1>TASSO ZERO</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae earum, accusantium facilis iure repellat rerum aut aperiam, iusto animi assumenda dolor. Iusto assumenda dicta quas aperiam aspernatur commodi laborum architecto?</p>
+                        <p>Finanziamenti a tasso zero anche senza busta paga a partire da 30€ al mese senza costi nascosti, al fine di venire incontro alle necessità del cliente, e garantire a tutti il possesso di un mezzo non inquinate, ed ottimo per benessere personale.</p>
                     </div>
                 </div>
                 <div class="feature-card" id="card-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 13.13"><path d="M0 1.64A1.64 1.64 0 0 1 1.64 0h9.844a1.64 1.64 0 0 1 1.641 1.64v1.641h1.116a1.64 1.64 0 0 1 1.28.616l1.62 2.023a1.64 1.64 0 0 1 .359 1.026v2.35a1.64 1.64 0 0 1-1.64 1.642h-.547a2.188 2.188 0 0 1-2.188 2.187 2.188 2.188 0 0 1-2.188-2.187H5.47a2.188 2.188 0 0 1-2.183 2.192 2.188 2.188 0 0 1-2.192-2.183l.002-.102A1.64 1.64 0 0 1 0 9.297zm1.415 8.156a2.186 2.186 0 0 1 3.006-.727 2.186 2.186 0 0 1 .755.775h6.055a2.199 2.199 0 0 1 .8-.8V1.64a.547.547 0 0 0-.547-.547H1.641a.547.547 0 0 0-.547.547v7.656a3.582 3.582 0 0 0 .321.499zm11.71-1.046a2.188 2.188 0 0 1 1.894 1.094h.84a.547.547 0 0 0 .547-.547V6.945a.547.547 0 0 0-.12-.34L14.667 4.58a.547.547 0 0 0-.426-.206h-1.116zM3.281 9.844a1.094 1.094 0 0 0-1.094 1.094 1.094 1.094 0 0 0 1.094 1.093 1.094 1.094 0 0 0 1.094-1.093 1.73 1.73 0 0 0-1.094-1.094zm9.844 0a1.094 1.094 0 0 0-1.094 1.094 1.094 1.094 0 0 0 1.094 1.093 1.094 1.094 0 0 0 1.094-1.093 1.094 1.094 0 0 0-1.094-1.094z"/></svg>
+                    <svg viewBox="0 0 17.5 13.13"><path d="M0 1.64A1.64 1.64 0 0 1 1.64 0h9.844a1.64 1.64 0 0 1 1.641 1.64v1.641h1.116a1.64 1.64 0 0 1 1.28.616l1.62 2.023a1.64 1.64 0 0 1 .359 1.026v2.35a1.64 1.64 0 0 1-1.64 1.642h-.547a2.188 2.188 0 0 1-2.188 2.187 2.188 2.188 0 0 1-2.188-2.187H5.47a2.188 2.188 0 0 1-2.183 2.192 2.188 2.188 0 0 1-2.192-2.183l.002-.102A1.64 1.64 0 0 1 0 9.297zm1.415 8.156a2.186 2.186 0 0 1 3.006-.727 2.186 2.186 0 0 1 .755.775h6.055a2.199 2.199 0 0 1 .8-.8V1.64a.547.547 0 0 0-.547-.547H1.641a.547.547 0 0 0-.547.547v7.656a3.582 3.582 0 0 0 .321.499zm11.71-1.046a2.188 2.188 0 0 1 1.894 1.094h.84a.547.547 0 0 0 .547-.547V6.945a.547.547 0 0 0-.12-.34L14.667 4.58a.547.547 0 0 0-.426-.206h-1.116zM3.281 9.844a1.094 1.094 0 0 0-1.094 1.094 1.094 1.094 0 0 0 1.094 1.093 1.094 1.094 0 0 0 1.094-1.093 1.73 1.73 0 0 0-1.094-1.094zm9.844 0a1.094 1.094 0 0 0-1.094 1.094 1.094 1.094 0 0 0 1.094 1.093 1.094 1.094 0 0 0 1.094-1.093 1.094 1.094 0 0 0-1.094-1.094z"/></svg>
                     <div class="card-textbox">
                         <h1>CONSEGNA DOMICILIO</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae earum, accusantium facilis iure repellat rerum aut aperiam, iusto animi assumenda dolor. Iusto assumenda dicta quas aperiam aspernatur commodi laborum architecto?</p>
+                        <p>Consegnammo e montiamo velocemente tutti i nostri prodotti a domicilio su tutto il territorio nazionale, curando il trasporto nei minimi dettagli per garantire la massima qualità, e concordando con il cliente la data, e l'orario di consegna più comodo.</p>
                     </div>
                 </div>
             </section>
@@ -273,12 +270,30 @@
 
             <section class="centered_container" id="description-section">
                 <div class="description-content">
-                    <h1>IL NOSTRO NEGOZIO</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                    <h1>NOLEGGIO BICICLETTE</h1>
+                    <p>
+                        Forniamo anche il servizio di noleggio biciclette, per tutti coloro che vorrebbero usufruire del nostro parco biciclette muscolari ed elettriche per periodi limitati, senza dover effettuare nessun acquisto, dunque risultando la scelta più economica. In aggiunta con la biciletta sarà fornito in via opzionale anche l'abbigliamento tecnico d'avanguardia come caschi, scarpe, guanti, ginocchiere professionali, per una guida in totale sicurezza, e senza rischi.
+                        <br class="breakline-text">*Si informa la gentile clientela che per usufruire del servizio noleggio biciclette, è necessario contattarci (<a class="highlight-text" href="tel:390883489759">telefono</a>, <a class="highlight-text" href="tel:393929331128">cellulare</a>, <a class="highlight-text" href="mailto: commercialelafenicetrani@gmail.com">email</a>, <a class="highlight-text" href="https://wa.me/390883489759">whatsapp</a>, <a class="highlight-text" href="https://www.instagram.com/ilfitnesslabicicletta">instagram</a>, <a class="highlight-text" href="https://www.facebook.com/ilfitness.labicicletta">facebook</a>) per pronatore la vostra bici preferita, grazie ad una vasta scelta di oltre 100 prodotti già disponibili.
+                    </p>
+                </div>
+                <div class="cta-text">
+                    <a class="cta-btn cta-whatsapp cta-text__left" href="https://wa.me/390883489759"><svg class="cta-text__svg" viewBox="0 0 546 546"><path d="M462.3 79.101A267.37 267.37 0 0 0 271.7.001c-148.4 0-269.4 120.9-269.5 269.4a270.62 270.62 0 0 0 35.9 134.8L0 543.801l142.9-37.5a269.497 269.497 0 0 0 128.8 32.8h.1c148.5 0 269.4-120.9 269.5-269.5a268.459 268.459 0 0 0-79-190.5zm-190.6 414.4a223.826 223.826 0 0 1-114.1-31.3l-8.2-4.9-84.8 22.2 22.7-82.6-5.3-8.5a223.181 223.181 0 0 1-34.2-119.1c0-123.2 100.5-223.8 224-223.8a223.802 223.802 0 0 1 223.9 224c-.1 123.7-100.6 224-224 224zm122.9-167.7c-6.7-3.4-39.8-19.6-46-22-6.2-2.2-10.7-3.4-15.1 3.4-4.5 6.7-17.4 22-21.3 26.3-3.9 4.5-7.9 5-14.6 1.7-6.7-3.4-28.4-10.5-54.1-33.5-20.1-17.8-33.5-39.9-37.5-46.6-3.9-6.7-.4-10.3 3-13.7 3-3 6.7-7.9 10.1-11.8s4.5-6.7 6.7-11.2c2.2-4.6 1.2-8.4-.5-11.8s-15.1-36.6-20.8-50c-5.4-13.2-11-11.4-15.1-11.6-3.9-.2-8.4-.2-12.9-.2a24.93 24.93 0 0 0-18 8.4c-6.2 6.7-23.5 23-23.5 56.2s24.1 65.1 27.5 69.6c3.3 4.5 47.4 72.5 115 101.7a356.513 356.513 0 0 0 38.4 14.2c16.1 5.2 30.7 4.4 42.3 2.7 12.9-2 39.8-16.3 45.5-32.1 5.6-15.8 5.6-29.2 3.9-32.1-1.8-2.5-6.3-4.2-13-7.6z"/></svg>WHATSAPP</a>
+                    <a class="cta-btn cta-call cta-text__right" id="cta-call-white" href="tel:390883489759"><svg class="cta-text__svg" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-.95-.119.678.678 0 0 0-.065.056L1.605 2.3a1.716 1.716 0 0 0-.45 1.77 17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168 1.716 1.716 0 0 0 1.77-.45l1.034-1.034a.678.678 0 0 0 .001-.959.678.678 0 0 0-.064-.056l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.468 0 1.742 1.742 0 0 1 .144.163L6.29 2.98a1.744 1.744 0 0 1 .315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.19-.547a1.745 1.745 0 0 1 1.493.315l2.306 1.794a1.745 1.745 0 0 1 .163 2.611l-1.034 1.034a2.777 2.777 0 0 1-2.877.702 18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009 2.78 2.78 0 0 1 .703-2.877L1.885.511z"/></svg>CHIAMA ORA</a>
                 </div>
                 <div class="description-content">
-                    <h1>ASSISTENZA POST VENDITA GRATUITA</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                    <h1>LA NOSTRA PROFESSIONALITÀ</h1>
+                    <p>
+                        Fin dalla nostra prima apertura nel lontano 1920, il nostro punto vendita e riparazioni si è sempre distinto su tutto il territorio per l'alta professionalità, e la serietà dei nostri tecnici rigorosamente scelti per la loro competenza, ed esperienza nell'assistere il cliente. IL FITNESS LA BICICLETTA <span class="highlight-text">è un'eccellenza nel mondo del ciclismo e dello sport</span>, diventando un punto di riferimento rinomato in particolare sul territorio del nord barese, ma anche su tutto il territorio nazionale grazie ad un'estrema velocità, resilienza, e gentilezza, qualità che hanno reso il nostro servizio clienti superiore in confronto a vari superstore.
+                        <br class="breakline-text">IL FITNESS LA BICICLETTA è nato come piccolo negozio nel lontano 1920 per poi ingrandirsi fino ai giorni nostri, ma sempre conservando <span class="highlight-text">l'anima da negozio di fiducia sotto casa</span>, punto di ritrovo per gli appassionati dello sport, e consigliando con la massima cura i prodotti migliori per le esigenze, e preferenze del nostro cliente grazie a tecnici che prima di tutto sono degli appassionati sportivi, ed innamorati del loro lavoro.
+                    </p>
+                </div>
+                <div class="cta-text">
+                    <a class="cta-btn cta-map cta-text__left" href="https://www.google.com/maps/place/LA+BICICLETTA+TRANI+IL+FITNESS+30+anni+di+storia/@41.2718462,16.4249701,17z/data=!4m5!3m4!1s0x133804221f25569b:0xc82b9bdc8b4974db!8m2!3d41.2653!4d16.4314162"><svg class="cta-text__svg map-pointer" viewBox="0 0 12 16"><path d="M10.166 8.94a19.226 19.226 0 0 1-1.96 3.07A31.492 31.492 0 0 1 6 14.58a31.48 31.48 0 0 1-2.206-2.57 19.226 19.226 0 0 1-1.96-3.07A6.919 6.919 0 0 1 1 6a5 5 0 0 1 5-5 5 5 0 0 1 5 5 6.933 6.933 0 0 1-.834 2.94zM6 16s6-5.686 6-10a6 6 0 0 0-6-6 6 6 0 0 0-6 6c0 4.314 6 10 6 10z"/><path d="M6 8a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2zm0 1a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3z"/></svg>AGGIUNGI POSIZIONE</a>
+                    <a class="cta-btn cta-call cta-text__right" href="tel:390883489759"><svg class="cta-text__svg" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-.95-.119.678.678 0 0 0-.065.056L1.605 2.3a1.716 1.716 0 0 0-.45 1.77 17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168 1.716 1.716 0 0 0 1.77-.45l1.034-1.034a.678.678 0 0 0 .001-.959.678.678 0 0 0-.064-.056l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.468 0 1.742 1.742 0 0 1 .144.163L6.29 2.98a1.744 1.744 0 0 1 .315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.19-.547a1.745 1.745 0 0 1 1.493.315l2.306 1.794a1.745 1.745 0 0 1 .163 2.611l-1.034 1.034a2.777 2.777 0 0 1-2.877.702 18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009 2.78 2.78 0 0 1 .703-2.877L1.885.511z"/></svg>CHIAMA ORA</a>
+                </div>
+                <div class="description-content">
+                    <h1>CIÒ IN CUI CREDIAMO</h1>
+                    <p>Da ben tre generazioni la nostra passione, e la nostra dedizione per lo sport ci ha sempre guidato ad effetuare un <span class="highlight-text">lavoro magistrale</span>, promuovendo inoltre a livello locale e nazionale l'importanza del <span class="highlight-text">benessere fisico</span> e della salute come base fondante della nostra vita, instillando grazie alle nostre iniziative il senso del educazione e dell'impegno nelle nuove generazioni. Inoltre siamo conviti che grazie alla mobilità sostenibile e sicura sia possibile <span class="highlight-text">ridurre l'inquinamento</span> nelle nostre città, e allo stesso tempo rimanere in forma, rallentando l'invecchiamento.</p>
                 </div>
             </section>
 
@@ -304,12 +319,15 @@
             
             <section class="centered_container" id="description-section">
                 <div class="description-content">
-                    <h1>IL NOSTRO NEGOZIO</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                    <h1>COME RAGGIUNGERCI</h1>
+                    <p>
+                        Raggiungere il nostro punto vendita è molto semplice, siamo a Trani (Puglia) in Via Giovanni Falcone 31, quartiere Pozzo Piano raggiungibile facilmente grazie all'uscita SS16BIS - TRANI SUD dopo proseguire per "Via Martiri di Palermo" e al primo incrocio svoltare a sinistra per Via Giovanni Falcone, ed infine proseguire dritto fino al civico 31 difronte i binari ferroviari.
+                        <br class="breakline-text">Alternativamente una volta usciti dalla stazione proseguire a destra per "Corso Matteo Renato Imbriani" successivamente svoltare a destra dopo la curva, per "Via Istria" proseguire sempre dritto in direzione del "palazzetto dello sport" in Via Giovanni falcone, infine proseguire sempre dritto fino al civico 31 difronte i binari ferroviari.
+                    </p>
                 </div>
-                <div class="description-content">
-                    <h1>ASSISTENZA POST VENDITA GRATUITA</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea labore eaque nam rem, odio laboriosam, eum ipsa blanditiis earum, dicta ipsam a itaque accusantium sint nemo molestiae nihil praesentium autem.</p>
+                <div class="cta-text">
+                    <a class="cta-btn cta-map cta-text__left" href="https://www.google.com/maps/place/LA+BICICLETTA+TRANI+IL+FITNESS+30+anni+di+storia/@41.2718462,16.4249701,17z/data=!4m5!3m4!1s0x133804221f25569b:0xc82b9bdc8b4974db!8m2!3d41.2653!4d16.4314162"><svg class="cta-text__svg map-pointer" viewBox="0 0 12 16"><path d="M10.166 8.94a19.226 19.226 0 0 1-1.96 3.07A31.492 31.492 0 0 1 6 14.58a31.48 31.48 0 0 1-2.206-2.57 19.226 19.226 0 0 1-1.96-3.07A6.919 6.919 0 0 1 1 6a5 5 0 0 1 5-5 5 5 0 0 1 5 5 6.933 6.933 0 0 1-.834 2.94zM6 16s6-5.686 6-10a6 6 0 0 0-6-6 6 6 0 0 0-6 6c0 4.314 6 10 6 10z"/><path d="M6 8a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2zm0 1a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3z"/></svg>AGGIUNGI POSIZIONE</a>
+                    <a class="cta-btn cta-call cta-text__right" href="tel:390883489759"><svg class="cta-text__svg" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-.95-.119.678.678 0 0 0-.065.056L1.605 2.3a1.716 1.716 0 0 0-.45 1.77 17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168 1.716 1.716 0 0 0 1.77-.45l1.034-1.034a.678.678 0 0 0 .001-.959.678.678 0 0 0-.064-.056l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.468 0 1.742 1.742 0 0 1 .144.163L6.29 2.98a1.744 1.744 0 0 1 .315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.19-.547a1.745 1.745 0 0 1 1.493.315l2.306 1.794a1.745 1.745 0 0 1 .163 2.611l-1.034 1.034a2.777 2.777 0 0 1-2.877.702 18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009 2.78 2.78 0 0 1 .703-2.877L1.885.511z"/></svg>CHIAMA ORA</a>
                 </div>
             </section>
 
@@ -335,8 +353,8 @@
             <span class="footer_copyright">IL FITNESS LA BICICLETTA © TUTTI DIRITTI RISERVATI</span>
         </footer>
 
-        <script type="text/javascript" src="loading.js"></script>
-        <script type="text/javascript" src="popup.js"></script>
+        <script type="text/javascript" src="script/loading.js"></script>
+        <script type="text/javascript" src="script/popup.js"></script>
     </body>
 
 </html>
