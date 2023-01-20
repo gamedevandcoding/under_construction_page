@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *{
-    /*-moz-user-select: none;
+    -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     
     -ms-user-select: none;
     user-select: none;
 
-    -webkit-tap-highlight-color: transparent;*/
+    -webkit-tap-highlight-color: transparent;
     outline: none;
 
-    /*-webkit-touch-callout: none;*//* iOS Safari */
-    /*-webkit-user-select: none;*/ /* Safari */
-    /*-khtml-user-select: none;*/ /* Konqueror HTML */
-    /*-moz-user-select: none;*/ /* Old versions of Firefox */
-    /*-ms-user-select: none;*/ /* Internet Explorer/Edge */
-    /*user-select: none;*/ /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 
     font-size-adjust: none !important;
     -webkit-text-size-adjust:none !important;
     box-sizing: border-box;
 }
 
-html, body{ -ms-overflow-style: none; scrollbar-width: none; position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto; }
+html, body{/*-ms-overflow-style: none; scrollbar-width: none;*/ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto;}
 html, body{ font-family: 'Roboto', sans-serif; }
 
 
@@ -31,13 +31,12 @@ html, body{ font-family: 'Roboto', sans-serif; }
 ::selection{ color: #000000; background: #e6bb00; }
 
 
-
 .whatsapp_shortcut{ position: fixed; bottom: 0; right: 0; margin: 0; padding: 20px; z-index: 9999;}
 .whatsapp_shortcut svg{ width: 60px; }
 
 
 
-.main_container{ display: block; height: fit-content; width: 100%; margin: 0px; padding: 0px;}
+.main_container{ display: block; width: 100% !important; margin: 0px; padding: 0px; }
 .centered_contnet{ display: block; max-width: 1024px; padding: 0px 20px; margin: 0px auto; }
 
 
@@ -74,7 +73,6 @@ html, body{ font-family: 'Roboto', sans-serif; }
     font-size: 25px;
 
 }
-@media screen and (min-width: 1064px){ #brand__logo__container{ padding: 0px; } }
 .brand__logo{
     display: block;
     width: 100px;
@@ -455,7 +453,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 #meta-plugin-illustration{ background: url("img/palestra_sfondo.png") no-repeat center; background-size: cover; background-color: #000000; }
 
 
-.side-content-meta-plugin__h2{ font-size: 60px; font-weight: 700; width: 100%; text-align: center; color: #000000; margin: 0px; padding: 0px;}
+.side-content-meta-plugin__h2{ font-size: 60px; font-weight: 700; width: 100%; text-align: center; color: #e6bb00; margin: 0px; padding: 0px;}
 .side-content-meta-plugin__p{ font-size: 18px; width: 100%; font-weight: 400; width: 100%; text-align: center; color: #ffffff; margin: 0px; padding: 0px;}
 .side-content-meta-plugin__nav{ display: flex; flex-direction: row; align-items: center; width: fit-content; margin: 0px auto; height: 60px; margin-top: 30px;}
 .meta-plugin__hitbox{ display: block; display: flex; align-items: center; height: 100%; padding: 0px 15px; /*background-color: #2fb844;*/ }
