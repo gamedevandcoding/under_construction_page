@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameDev&Coding - IMAGE PROCESSING</title>
+        <link href='img_processing.css' rel='stylesheet' media="screen">
+        <script type="text/javascript" src="img_processing.js" defer></script>
+    </head>
+
+    <body>
+
+        <main class="main_content">
+
+            <label id="img_processing__open__label">
+                <input type="file" accept="image/png, image/jpg, image/jpeg" class="img_compressor__input" onchange="readImage(this)">
+                <svg class="img_processing__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M14.5 5.8v18.55h3V5.8l6 6 2.15-2.15L16 0 6.35 9.65 8.5 11.8l6-6z"/><path d="M29 21.85V29H3v-7.15H0V32h32V21.85h-3z"/></svg>
+                <span class="img_processing__span">UPLOAD <span class="span__extra_text">IMAGE</span></span>
+            </label>
+
+
+
+            <!--------------------------------------- PANEL --------------------------------------->
+            <section id="img_processing__section">
+
+                <div class="img_processing__opened__div">
+                    <svg class="img_processing__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29.94 0 11.09 19.2l-8.98-9.15L0 12.15l11.09 11.3L32 2.15zM0 29h32v3H0z"/></svg>
+                    <span class="img_processing__span">UPLOADED <span class="span__extra_text">IMAGE</span></span>
+                </div>
+                <span id="img_information__fileName">image_name.extension</span>
+
+
+                <!------------------- SLIDERS ------------------->
+                <div class="img_processing__settings">
+                    <h1 class="img_processing__h1">IMAGE RESOLUTION</h1>
+                    <label class="img_processing__slider_container">
+                        <div class="img_processing__slider_fill" id="slideResolution"></div>
+                        <input type="range" class="img_processing__range" id="rangeResolution" min="1" max="5" step="1" value="3" oninput="setResolution(this)">
+                    </label>
+                    <div class="img_processing__info_container">
+                        <span class="img_processing__info_text">&#247 1</span>
+                        <span class="img_processing__info_text">&#247 5</span>
+                    </div>
+                </div>
+
+
+                <div class="img_processing__settings">
+                    <h1 class="img_processing__h1">IMAGE COMPRESSION</h1>
+                    <label class="img_processing__slider_container">
+                        <div class="img_processing__slider_fill" id="slideCompression"></div>
+                        <input type="range" class="img_processing__range" id="rangeCompression" min="1" max="6" step="1" value="3" oninput="setCompression(this)">
+                    </label>
+                    <div class="img_processing__info_container">
+                        <span class="img_processing__info_text">40%</span>
+                        <span class="img_processing__info_text">90%</span>
+                    </div>
+                </div>
+                <!------------------- SLIDERS ------------------->
+
+
+                <div class="img_processing__settings">
+                    <h1 class="img_processing__h1">IMAGE INFORMATION</h1>
+                    
+                    <div class="img_information__div"><svg class="img_information__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M0 0v8.625h3V3h5.625V0H0zM29 29h-5.625v3H32v-8.625h-3V29zM23.375 0v3H29v5.625h3V0h-8.625zM3 23.375H0V32h8.625v-3H3v-5.625z"/></svg>Ratio:<span class="img_information__span" id="img_information__aspectRatio"></span></div>
+                    <div class="img_information__div"><svg class="img_information__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29 29H17.063v3H32V17.063h-3V29zM20.563 0v3h6.316L15.481 14.398 3 26.879v-6.316H0V32h11.438v-3H5.121l12.481-12.481L29 5.121v6.317h3V0H20.563zM3 3h11.938V0H0v14.938h3V3z"/></svg>Resolution:<span class="img_information__span" id="img_information__resolution"></span></div>
+                    <div class="img_information__div"><svg class="img_information__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M27.094 10.313h-5.368a6.75 6.75 0 1 0-11.452 0H4.906L0 32h32zM12.437 6.75A3.563 3.563 0 1 1 16 10.313a3.563 3.563 0 0 1-3.563-3.563z"/></svg>Size:<span class="img_information__span" id="img_information__fileWeight"></span></div>
+                    <div class="img_information__div"><svg class="img_information__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.27 31.947"><path d="m27.853 14.741 3.417-2.34-.886-2.727-4.14.115-1.449-1.994 1.388-3.902-2.319-1.685-3.281 2.526-2.345-.762L17.068 0h-2.866l-1.17 3.972-2.345.762-3.282-2.526c-1.205.876-1.113.81-2.319 1.685l1.388 3.902-1.449 1.994-4.14-.115c-.46 1.417-.424 1.31-.885 2.727l3.416 2.34v2.465L0 19.546l.886 2.727 4.14-.115 1.448 1.995-1.388 3.901 2.32 1.685 3.28-2.526 2.345.762 1.17 3.972h2.867l1.17-3.972 2.345-.762 3.281 2.526 2.32-1.685-1.389-3.901 1.45-1.995 4.139.115.886-2.726-3.417-2.34zm-12.218 9.46a8.227 8.227 0 1 1 8.227-8.227 8.227 8.227 0 0 1-8.227 8.227z"/></svg>Processed Size:<span class="img_information__span" id="img_information__estimatedFileWeight"></span></div>
+                    
+                    <label class="checkbox_container"><input type="checkbox" class="input_checkbox" id="webp_input_checkbox" onchange="webp_checkbox_output()" checked><span class="custom_checkbox"></span>Browser Optimization:<span id="webp_input_checkbox__data">Yes</span></label>
+                    <div class="canvas__container"><canvas class="canvas_render" id="canvas_render_output" width="500" height="500"></canvas></div>
+                </div>
+                
+
+                <a class="img_download__btn" id="downloadLink" onclick="downloadImage()">
+                    <svg class="img_processing__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29 21.85V29H3v-7.15H0V32h32V21.85h-3z"/><path d="m25.65 14.7-2.15-2.15-6 6V0h-3v18.55l-6-6-2.15 2.15L16 24.35l9.65-9.65z"/></svg>
+                    <span class="img_processing__span">DOWNLOAD</span>
+                </a>
+            </section>
+            <!--------------------------------------- PANEL --------------------------------------->
+        
+        </main>
+
+
+
+
+
+
+    </body>
+    
+</html>

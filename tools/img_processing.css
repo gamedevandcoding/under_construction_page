@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html, body{ font-family: 'Roboto', sans-serif; }
+html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto; }
+
+
+
+
+.main_content{ display: block; max-width: 1024px; margin: 0px auto; padding: 0px 10px; }
+.img_compressor__input{ position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+#img_processing__open__label, .img_download__btn{ display: flex; width: 100%; height: fit-content; flex-direction: row; align-items: center; justify-content: center; margin: 0px; padding: 20px 0px; border: 0px; background-color: #008cff; overflow: hidden; cursor: pointer; text-decoration: none; }
+.img_download__btn{ margin-top: 40px; }
+
+/*---------------------------------- HEADER ----------------------------------*/
+#img_processing__section{ display: none; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+
+.img_processing__opened__div{ display: flex; width: 100%; height: fit-content; flex-direction: row; align-items: center; justify-content: center; margin: 0px; padding: 20px 0px; border: 0px; background-color: #1ebc3c; overflow: hidden; }
+.img_processing__svg{ display: block; width: 30px; padding: 0px; margin: 0px; fill: #ffffff; }
+.img_processing__span{ display: block; padding: 0px; margin: 0px; margin-left: 20px; font-size: 24px; font-weight: 400; color: #ffffff; }
+
+#img_information__fileName{ display: block; width: 100%; height: fit-content; padding: 16px 0px; text-align: center; background-color: #eeeeee; color: #000000; overflow: hidden; }
+/*---------------------------------- HEADER ----------------------------------*/
+
+
+/*---------------------------------- SLIDERS ----------------------------------*/
+.img_processing__settings{ width: 100%; height: fit-content; display: block; margin: 0px; margin-top: 40px; padding: 0px; overflow: hidden; }
+.img_processing__h1{ margin: 0px; padding: 0px; font-size: 24px; font-weight: 700; color: #000000; }
+.img_processing__slider_container{ display: block; width: 100%; height: 16px; background-color: #eeeeee; position: relative; margin: 16px 0px; padding: 0px; }
+
+.img_processing__range{ display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; appearance: none; -webkit-appearance: none; opacity: 0; margin: 0px; padding: 0px; border: 0px; background-color: #000000; cursor: pointer;}
+.img_processing__range::-webkit-slider-thumb{ appearance: none; -webkit-appearance: none; width: 20px; height: 48px; background: #1ebc3c; }
+
+.img_processing__slider_fill{ display: block; height: 100%; background-color: #008cff; position: absolute; top: 0; left: 0; margin: 0px; padding: 0px; }
+#slideResolution{ width: 60%; }
+#slideCompression{ width: 50%; }
+
+.img_processing__info_container{ width: 100%; height: fit-content; display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
+.img_processing__info_text{ font-size: 16px; font-weight: 400; display: block; color: #727272; }
+/*---------------------------------- SLIDERS ----------------------------------*/
+
+
+/*---------------------------------- INFO ----------------------------------*/
+.img_information__div{ display: flex; flex-direction: row; align-items: center; width: fit-content; height: fit-content; margin: 18px 0px; padding: 0px; font-size: 16px; font-weight: 700; color: #000000; }
+.img_information__svg{ display: block; width: 20px; margin: 0px; margin-right: 16px; padding: 0px;}
+.img_information__span{ margin: 0px; margin-left: 8px; padding: 0px; font-size: 16px; font-weight: 400; }
+
+/*---------------- CUSTOM CHECKBOX ----------------*/
+.checkbox_container{ display: block; position: relative; width: fit-content; height: fit-content; margin: 18px 0px; padding: 0px; font-size: 16px; font-weight: 700; margin: 0px; padding: 0px; padding-left: 36px; }
+.input_checkbox{ position: absolute; cursor: pointer; height: 0; width: 0; }
+
+.custom_checkbox{ position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #999999; margin: 0px; padding: 0px;}
+.custom_checkbox:after { content: ""; position: absolute; display: none;}
+.custom_checkbox:after { left: 6px; top: 2px; width: 4px; height: 8px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.input_checkbox:checked ~ .custom_checkbox{ background-color: #000000;}
+.input_checkbox:checked ~ .custom_checkbox:after{ display: block; }
+
+#webp_input_checkbox__data{ display: inline-block; margin: 0px; padding: 0px; font-size: 16px; font-weight: 400; margin-left: 8px; }
+/*---------------- CUSTOM CHECKBOX ----------------*/
+
+
+.canvas__container{ display: block; width: 0px; height: 0px; position: relative; margin: 0px; padding: 0px; opacity: 0; overflow: hidden; }
+.canvas_render{ display: block; margin: 0px; padding: 0px; }
+/*---------------------------------- INFO ----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
