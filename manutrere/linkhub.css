@@ -105,7 +105,7 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 .list_description_element_name{ font-weight: 700; }
 
 .bold-text{ font-weight: 700; color: #000000; }
-.highlight-text{ font-weight: 700; color: #008CFF; }
+.highlight-text{ font-weight: 700; color: #008CFF; text-decoration: underline; }
 .hyperlink-text{ color: #000000; }
 
 .cta_btn{ display: block; text-align: center; font-size: 25px; font-weight: 700; margin: 40px 0px; padding: 10px 0px; color: #ffffff; background-color: #008CFF; text-decoration: none; cursor: pointer; }
