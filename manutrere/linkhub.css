@@ -12,6 +12,8 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 
 
 
+.whatsapp_shortcut{ position: fixed; bottom: 0; right: 0; margin: 0; padding: 20px; z-index: 9999;}
+.whatsapp_shortcut svg{ width: 60px; }
 
 
 /*-------------------------- LINK HUB --------------------------*/
