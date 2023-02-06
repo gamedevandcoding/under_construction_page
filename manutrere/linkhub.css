@@ -214,7 +214,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 
 .online-coaching_img{ display: block; width: 100%; height: auto; margin: 60px 0px; padding: 0px; }
 
-.carousel_container{ display: block; width: 100%; height: fit-content; margin: 60px 0px; padding: 0px; border: 1px solid #dfdfdf; }
+.carousel_container{ display: block; width: 100%; height: fit-content; margin: 40px 0px; padding: 0px; border: 1px solid #dfdfdf; }
 .carousel_img{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; }
-.carousel_btn{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 10px 0px; border: 0px; font-size: 25px; font-weight: 700; background-color: #dfdfdf; color: #000000; cursor: pointer; }
-
+.carousel_btn{ display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; height: fit-content; margin: 0px; padding: 10px 0px; border: 0px; font-size: 25px; font-weight: 700; background-color: #dfdfdf; color: #000000; cursor: pointer; }
+.carousel_svg{ display: block; width: 25px; height: auto; margin: 0px; margin-left: 12px; padding: 0px; }
