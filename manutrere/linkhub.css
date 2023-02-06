@@ -1,14 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* -------------- Font  -------------- */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+/* -------------- Font  -------------- */
+
+
 *{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
     font-size-adjust: none !important;
     -webkit-text-size-adjust:none !important;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-
     box-sizing: border-box;
 }
-html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; height: fit-content !important; overflow-x: hidden; }
+
+html, body{/*-ms-overflow-style: none; scrollbar-width: none;*/ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto;}
+html, body{ font-family: 'Roboto', sans-serif; }
 
 
 
@@ -18,7 +57,7 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 
 /*-------------------------- LINK HUB --------------------------*/
 /*.profile_cover{ display: block; max-width: 1080px; width: 100%; height: 350px; margin: 0 auto; padding: 0px; object-fit: cover; object-position: center; }*/
-.profile_cover{ display: flex; align-items: center; justify-content: center; max-width: 1080px; width: 100%; height: 350px; margin: 0 auto; padding: 0px; background: url("img/immagine-copertina-colori.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; overflow: hidden; }
+.profile_cover{ display: flex; align-items: center; justify-content: center; max-width: 1080px; width: 100%; height: 350px; margin: 0 auto; padding: 0px; background: url("immagini_coach/sfondo_palestra.webp"); background-repeat: no-repeat; background-position: center; background-size: cover; overflow: hidden; }
 .profile_cover__text{ width: 100%; height: fit-content; margin: 0px; padding: 0px 15px; /*background-color: #00d627;*/ color: #ffffff; transform: translateY(-40px); }
 .profile_cover__text__h3, .h3__extra{ text-align: center; margin: 0px 20px; padding: 0px; font-size: 50px; font-weight: 700; text-shadow: 0px 0px 15px #000000; color: #ffffff; }
 .profile_cover__text__ul{ display: flex; justify-content: space-around; align-items: center; width: 80%; height: fit-content; margin: 0px auto; margin-top: 20px; padding: 0px; }
@@ -51,7 +90,6 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 .profile_svg{ width: 25px; margin-left: 10px; }
 .verified_circle{ fill: #008CFF; }
 .verified_tick{ fill:#ffffff; }
-
 
 @media screen and (max-width: 965px){ .profile_cover__text__ul{ width: 100%; } }
 @media screen and (max-width: 785px){ .profile_cover__text__h3, .h3__extra{ margin: 0px;} .profile_h1{ font-size: 40px; } .profile_h2{ font-size: 30px; } .profile_svg{ width: 20px;} }
@@ -121,7 +159,7 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 .iframe_container {
     width: 100%;
     max-height: fit-content;
-    margin: 80px auto;
+    margin: 60px auto;
     /*padding: 0px 20px;*/
     /* background-color: #09ff00;*/
     padding: 0px;
@@ -167,4 +205,16 @@ html, body{ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 
 .review_text{ font-size: 16px; font-weight: 400; color: #000000; margin: 10px 0px; padding: 0px; }
 .review_star_container{ display: block; margin: 0px; padding: 0px; }
 .review_star{ display: inline-block; width: 20px; height: 20px; fill: #ffae00; margin: 0px; padding: 0px; }
+
+
+
+
+
+
+
+.online-coaching_img{ display: block; width: 100%; height: auto; margin: 60px 0px; padding: 0px; }
+
+.carousel_container{ display: block; width: 100%; height: fit-content; margin: 60px 0px; padding: 0px; border: 1px solid #dfdfdf; }
+.carousel_img{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; }
+.carousel_btn{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 10px 0px; border: 0px; font-size: 25px; font-weight: 700; background-color: #dfdfdf; color: #000000; cursor: pointer; }
 
