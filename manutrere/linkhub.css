@@ -83,8 +83,8 @@ html, body{ font-family: 'Roboto', sans-serif; }
     white-space: nowrap;
     color: #000000;
 }
-.profile_h1{ font-size: 45px; font-weight: 700; }
-.profile_h2{ font-size: 35px; }
+.profile_h1{ font-size: 45px; font-weight: 400; }
+.profile_h2{ font-size: 35px; font-weight: 700; }
 
 .profile_name{ display: flex; justify-content: left; align-items: center; margin: 0px; padding: 0px; }
 .profile_svg{ width: 25px; margin-left: 10px; }
@@ -140,7 +140,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 
 .list_description{ display: block; margin: 0px; padding: 0px; padding-left: 18px; }
 .list_description li{ line-height: 1.6; font-size: 16px; font-weight: 400; margin: 20px 0px; padding: 0px; display: list-item; width: 100%; height: fit-content; text-decoration: none; color: #000000; }
-.list_description_element_name{ font-weight: 700; }
+.list_description_element_name{ font-weight: 700; color: #000000;}
 
 .bold-text{ font-weight: 700; color: #000000; }
 .highlight-text{ font-weight: 700; color: #008CFF; text-decoration: underline; }
@@ -160,7 +160,7 @@ html, body{ font-family: 'Roboto', sans-serif; }
 .iframe_container {
     width: 100%;
     max-height: fit-content;
-    margin: 60px auto;
+    margin: 40px auto;
     /*padding: 0px 20px;*/
     /* background-color: #09ff00;*/
     padding: 0px;
@@ -210,12 +210,44 @@ html, body{ font-family: 'Roboto', sans-serif; }
 
 
 
-
-
-
-.online-coaching_img{ display: block; width: 100%; height: auto; margin: 60px 0px; padding: 0px; }
+.online-coaching_img{ display: block; width: 100%; height: auto; margin: 40px 0px; padding: 0px; }
 
 .carousel_container{ display: block; width: 100%; height: fit-content; margin: 40px 0px; padding: 0px; border: 1px solid #dfdfdf; }
 .carousel_img{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; }
 .carousel_btn{ display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; height: fit-content; margin: 0px; padding: 10px 0px; border: 0px; font-size: 25px; font-weight: 700; background-color: #dfdfdf; color: #000000; cursor: pointer; }
 .carousel_svg{ display: block; width: 25px; height: auto; margin: 0px; margin-left: 12px; padding: 0px; }
+
+
+
+/*--------------------------------------- DROPDOWN - FAQ ---------------------------------------*/
+.dropdown_faq_container{ display: block; margin: 0px; margin-top: 20px; padding: 0px; background-color: #ffffff; border: 1px solid #eeeeee; }
+.dropdown_faq_label{ display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin: 0px; padding: 10px 15px; background-color: #eeeeee; cursor: pointer; }
+.dropdown_faq_checkbox{ display: none; }
+.dropdown_faq_h2{ display: block; font-size: 20px; font-weight: 400; width: calc(100% - 50px); margin: 0px; padding: 0px; color: #000000; overflow: hidden; }
+.dropdown_faq_svg{ display: block; width: 20px; fill: #000000; margin: 0px; padding: 0px; }
+.dropdown_faq_paragraph{ display: none; font-size: 16px; font-weight: 400; color: #000000; background-color: transparent; width: calc(100% - 40px); height: fit-content; margin: 20px; padding: 0px; overflow-wrap: break-word; }
+/*--------------------------------------- DROPDOWN - FAQ ---------------------------------------*/
+
+
+
+
+/*--------------------------------------- FOOTER ---------------------------------------*/
+.footer{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+
+.footer_logo{ display: block; width: 225px; height: fit-content; margin: 0px; padding: 0px; text-decoration: none; }
+.logo_svg{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; }
+
+.footer_info{ display: block; width: fit-content; height: fit-content; margin: 0px; margin-top: 20px; padding: 0px; cursor: pointer; font-size: 16px; font-weight: 400; color: #000000; text-decoration: none; }
+.footer_info_span{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px;}
+
+.footer_social_nav{ display: flex; flex-direction: row; align-items: center; width: 100%; height: 50px; margin: 20px 0px; padding: 0px; }
+.footer_social{ display: flex; align-items: center; width: fit-content; height: 100%; margin: 0px; padding: 0px 10px; }
+.footer_svg{ display: block; width: 40px; height: fit-content; margin: 0px; padding: 0px; }
+
+#facebook_social_svg{ fill: #008CFF; }
+#instagram_social_svg{ fill: #ec00ff; }
+#youtube_social_svg{ fill: #ff0000; }
+
+.disclaimer_paragraph{ display: block; width: 100%; height: fit-content; font-size: 12px; font-weight: 400; color: #8d8d8d; margin: 40px 0px; padding: 0px;}
+.copyright_span{ display: block; font-size: 14px; font-weight: 400; color: #555555; width: 100%; height: fit-content; margin: 0px; padding: 20px 0px; border-top: 2px solid #e2e2e2; }
+/*--------------------------------------- FOOTER ---------------------------------------*/
