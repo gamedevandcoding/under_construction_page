@@ -291,6 +291,7 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
     -webkit-appearance: none;
     appearance: none;
     color: #757575;
+    background-color: #ffffff;
 }
 .select_box option{ color: #000000; }
 /* -------------------------------------------- CONTACT FORM -------------------------------------------- */
