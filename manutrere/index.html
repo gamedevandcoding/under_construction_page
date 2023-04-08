@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="color-scheme" content="light">
+        <meta name="robots" content="index, follow">
+        <meta name="distribution" content="Global">
+
+        <title>MANU TRERÈ - Online Coaching</title>
+        <link href='index.css' rel='stylesheet' media="screen">
+
+        <meta name="description" content="Brucia Grassi, BodyBuilding e Tonificazione grazie a programmi d'allenamento personalizzati del Coach Manu Trerè utilizzando l'online coaching">
+        <meta name="keywords" content="manu trerè, personal trainer, online coaching, fitness, bodybuilding, brucia grassi, palestra, allenamento">
+        <meta name="copyright" content="https://www.manutrere.it">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="MANU TRERÈ - Online Coaching">
+        <meta property="og:description" content="Brucia Grassi, BodyBuilding e Tonificazione grazie a programmi d'allenamento personalizzati del Coach Manu Trerè utilizzando l'online coaching">
+        <meta property="og:site_name" content="Manu Trerè">
+
+        <link rel="shourtcut icon" type="img/svg" href="img/manutrere_logo.svg">
+
+        <meta property="og:url" content="https://www.manutrere.it">
+        <meta property="og:image" content="https://www.manutrere.it/img/manutrerè_cover.png">
+        <link rel="canonical" href="https://www.manutrere.it">
+        <link rel="shortlink" href="manutrere.it">
+
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+    </head>
+    <body>
+
+
+
+        <!--------------------------- POPUP MESSAGE --------------------------->
+        <div class="popup_message_container" id="popup_container">
+            <div class="popup_message_wrapper">
+                <h1 class="popup_message_h1"><svg class="popup_message_svg" viewBox="0 0 86.603 75"><path d="M0 0v75h75V0zm40.884 57.246h-6.769V29.052h6.769zm0-32.468h-6.769v-7.024h6.769z"/></svg>SERVIZIO NON DISPONIBILE</h1>
+                <p class="popup_message_p">Il nostro sito è attualmente in costruzione, si prega la gentile clientela di contatarci tramite i nostri canali ufficiali, oppure compilando il nostro modulo.</p>
+                <button class="popup_message_btn" onclick="hide_popup_message()">Conferma</button>
+            </div>
+        </div>
+        <!--------------------------- POPUP MESSAGE --------------------------->
+
+
+
+        
+        <a class="whatsapp_shortcut" aria-label="WhatsApp" href="https://wa.me/393293354763?text=INFO%20COACHING%0aCiao%20mi%20chiamo%20(IL%20TUO%20NOME)%20e%20vorrei%20ricevere%20maggiori%20informazioni%20riguardo%20il%20vostro%20servizio%20di%20personal%20training%20perché%20voglio%20migliorare%20il%20mio%20aspetto%20fisico." target="_blank"><svg viewBox="0 0 15.928 16"><path style="fill:#ffffff" d="M.875 9.271v-3.25l1.333-2.708 2.355-1.875L7.646.563 10.479 1 13 2.479l1.875 2.834.479 2.691-.768 3.079-1.523 2.063-2.188 1.542-2.76.604-3.052-.646-1.094-.5-3.094 1.062.875-3.333-.875-2.604z"/><path style="fill: #2ba33d" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0a7.934 7.934 0 0 0-6.873 11.891L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004A7.926 7.926 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.25a6.587 6.587 0 1 1 5.58 3.093zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.1-.133.196-.513.645-.627.774-.114.133-.232.148-.43.05a5.41 5.41 0 0 1-1.592-.985 6.046 6.046 0 0 1-1.103-1.372c-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346a1.264 1.264 0 0 0 .198-.33.369.369 0 0 0-.015-.347c-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247 2.22 2.22 0 0 0-.691 1.654 3.838 3.838 0 0 0 .81 2.05 8.808 8.808 0 0 0 3.383 2.991 11.021 11.021 0 0 0 1.129.418 2.721 2.721 0 0 0 1.246.08 2.052 2.052 0 0 0 1.338-.943 1.659 1.659 0 0 0 .114-.943c-.049-.084-.182-.133-.38-.232z"/></svg></a>
+        <div class="main_container">
+
+
+
+            <header class="header_aboveFold">
+                <div class="aboveFold_container">
+                    <div class="aboveFold__navbar">
+                        <a class="aboveFold__logo aboveFold_business_name"><svg viewBox="0 0 81.511 19.345"><path d="M6.776 10.83h1.475V2.435H6.68L4.125 6.404 1.571 2.435H0v8.395h1.451V4.833l2.627 3.935h.047L6.776 4.81v6.02zM12.07 8.803h3.97l.852 2.027h1.56l-3.695-8.455H13.39L9.696 10.83h1.512zm1.98-4.665 1.451 3.358h-2.89zM25.76 8.239l-4.498-5.804h-1.367v8.395h1.451V4.857l4.63 5.973h1.235V2.435H25.76v5.804zM36.427 7.196V2.435h-1.475v4.833c0 1.547-.804 2.327-2.11 2.327-1.32 0-2.124-.827-2.124-2.387V2.435h-1.475v4.833c0 2.435 1.391 3.694 3.574 3.694 2.194 0 3.61-1.259 3.61-3.766zM48.271 2.435h-6.813v1.367h2.664v7.028h1.487V3.802h2.662V2.435zM56.695 5.11v-.025A2.539 2.539 0 0 0 56 3.275a3.38 3.38 0 0 0-2.423-.84h-3.743v8.395h1.476V7.903h1.847l2.063 2.927h1.751l-2.266-3.179a2.52 2.52 0 0 0 1.99-2.542zM51.31 6.596V3.778h2.147c1.091 0 1.739.492 1.739 1.39v.025c0 .852-.672 1.404-1.727 1.404zM59.986 7.256h4.21V5.937h-4.21V3.754h4.749V2.435H58.51v8.395h6.285V9.511h-4.809V7.256zM68.026 7.903h1.847l2.063 2.927h1.751l-2.268-3.179a2.52 2.52 0 0 0 1.992-2.542v-.024a2.539 2.539 0 0 0-.696-1.81 3.38 3.38 0 0 0-2.422-.84H66.55v8.395h1.476zm0-4.125h2.146c1.092 0 1.74.492 1.74 1.39v.025c0 .852-.672 1.404-1.727 1.404h-2.16zM78.957 1.739 77.601 0l-1.308.576 1.524 1.163h1.14zM76.702 9.511V7.256h4.21V5.937h-4.21V3.754h4.749V2.435h-6.225v8.395h6.285V9.511h-4.809zM1.968 13.83H0v5.422h.403V17.23h1.464c1.131 0 2.115-.588 2.115-1.728v-.015c0-1.046-.82-1.658-2.014-1.658zm1.611 1.696c0 .805-.681 1.332-1.688 1.332H.403v-2.657h1.534c.976 0 1.642.45 1.642 1.309zM5.581 16.703h3.107v-.372H5.581v-2.13h3.456v-.372H5.179v5.423h3.897v-.371H5.581v-2.178zM14.587 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.527-.535h-2.278v5.423h.403v-2.246h1.775l1.728 2.246h.51L13 16.936c.914-.124 1.588-.644 1.588-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.674 1.24-1.58 1.24zM17.828 16.34c-1.286-.264-1.58-.613-1.58-1.186v-.016c0-.565.527-1.022 1.325-1.022a2.335 2.335 0 0 1 1.619.611l.256-.317a2.704 2.704 0 0 0-1.86-.658 1.57 1.57 0 0 0-1.743 1.425v.016c0 .821.527 1.262 1.829 1.526 1.231.248 1.534.581 1.534 1.155v.015c0 .62-.558 1.077-1.372 1.077a2.635 2.635 0 0 1-1.945-.806l-.263.302a3.088 3.088 0 0 0 2.185.868c1.046 0 1.797-.605 1.797-1.48v-.015c0-.79-.526-1.24-1.782-1.495zM23.433 13.736a2.73 2.73 0 0 0-2.735 2.804v.016a2.728 2.728 0 1 0 5.455-.016v-.015a2.704 2.704 0 0 0-2.72-2.79zm2.301 2.82a2.321 2.321 0 0 1-2.3 2.425 2.346 2.346 0 0 1-2.317-2.44v-.016a2.321 2.321 0 0 1 2.3-2.425 2.348 2.348 0 0 1 2.317 2.44zM31.649 18.547l-3.742-4.718h-.379v5.423h.387v-4.819l3.819 4.819h.303v-5.423h-.388v4.718zM35.712 13.79l-2.526 5.462h.419l.69-1.518h3.199l.69 1.518h.442L36.1 13.79zm-1.247 3.58 1.434-3.139 1.425 3.138zM40.179 13.829h-.403v5.423h3.587v-.371h-3.184v-5.052zM46.513 14.201h1.89v5.051h.403v-5.051h1.89v-.372h-4.183v.372zM56.138 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.527-.535h-2.277v5.423h.402v-2.246H54.1l1.728 2.246h.511l-1.79-2.316c.915-.124 1.59-.644 1.59-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.675 1.24-1.58 1.24zM59.589 13.79l-2.526 5.462h.418l.69-1.518h3.2l.69 1.518h.441l-2.526-5.462zm-1.248 3.58 1.434-3.139L61.2 17.37zM63.707 13.829h.403v5.423h-.403zM69.898 18.547l-3.741-4.718h-.38v5.423h.387v-4.819l3.82 4.819h.302v-5.423h-.388v4.718zM72.304 16.703h3.106v-.372h-3.106v-2.13h3.456v-.372h-3.858v5.423h3.896v-.371h-3.494v-2.178zM81.31 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.526-.535h-2.279v5.423h.403v-2.246h1.774L81 19.252h.511l-1.79-2.316c.915-.124 1.589-.644 1.589-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.674 1.24-1.58 1.24z"/></svg></a>
+                        <a class="aboveFold__logo aboveFold_business_logo"><svg viewBox="0 0 77.875 67.048"><path d="M36.024 60.099h8.185v-2.564h-8.185V53.29h9.233v-2.564H33.154v16.322h12.22v-2.564h-9.35v-4.385zM0 53.384h5.179v13.664h2.892V53.384h5.175v-2.658H0v2.658zM29.626 55.925h-.001v-.047a4.936 4.936 0 0 0-1.351-3.519 6.572 6.572 0 0 0-4.711-1.633h-7.278v16.322h2.87v-5.69h3.591l4.011 5.69h3.405l-4.406-6.18a4.9 4.9 0 0 0 3.87-4.943zm-10.471 2.891v-5.479h4.175c2.12 0 3.38.957 3.38 2.703v.048c0 1.657-1.306 2.73-3.357 2.73zM70.273 45.992l-1.62 1.019 1.88 2.36 2.376.002-2.636-3.381zM68.525 60.099h8.185v-2.564h-8.185V53.29h9.233v-2.564H65.655v16.322h12.22v-2.564h-9.35v-4.385zM56.669 15.684 38.938 0 21.206 15.684 0 0v45.684h24.546v-5.178H5.178V11.417l16.125 11.425L38.938 7.254l17.634 15.588 16.125-11.425v29.089H53.329v5.178h24.546V0L56.669 15.684zM62.126 55.925v-.047a4.937 4.937 0 0 0-1.353-3.519 6.572 6.572 0 0 0-4.709-1.633h-7.278v16.322h2.87v-5.69h3.591l4.011 5.69h3.405l-4.41-6.18a4.9 4.9 0 0 0 3.873-4.943zm-10.472 2.893.002-5.48h4.173c2.123 0 3.383.956 3.383 2.702v.048c0 1.657-1.307 2.73-3.358 2.73z"/><path d="M49.338 45.621V28.237h-3.961l-6.441 10.006-6.438-10.006h-3.961v17.384h3.658V34.283l6.623 9.92h.118l6.683-9.978v11.396h3.719z"/></svg></a>                    
+                        <a class="aboveFold__login" href="platform/login.html" target="_blank">ACCEDI</a>
+                    </div>
+                    <div class="aboveFold_content">
+                        <div class="aboveFold__text">
+                            <p class="aboveFold__subtitle">ONLINE COACHING</p>
+                            <h1 class="aboveFold__title" id="aboveFold__titleText">OTTIENI IL FISICO<br class="aboveFold__breakline">DA SOGNO<span class="aboveTheFold_h1_space"> </span>!</h1>
+                            <button type="button" class="aboveFold__cta" onclick="scrollTo_onlineCoaching()">INIZIA ORA</button>
+
+                            <script type="text/javascript">
+                                const aboveTheFold_texts = ['OTTIENI IL FISICO<br class="aboveFold__breakline">DA SOGNO<span class="aboveTheFold_h1_space"> </span>!', 'ELIMINA IL <br id="aboveFold__breakline_second">GRASSO<span class="aboveTheFold_h1_span"><br class="aboveFold__breakline">DEFINITIVAMENTE</span><span class="aboveTheFold_h1_space"> </span>!', '<span class="aboveTheFold_h1_span_extra">OTTIENI</span>CORPO TONICO<span class="aboveTheFold_h1_span"><br class="aboveFold__breakline">& ATTRAENTE</span><span class="aboveTheFold_h1_space"> </span>!', 'AUMENTO MASSA<br class="aboveFold__breakline">MUSCOLARE<span class="aboveTheFold_h1_space"> </span>!', 'MIGLIORA <br class="aboveFold__breakline">LA FORZA<span class="aboveTheFold_h1_span"><br class="aboveFold__breakline">& PRESTAZIONI</span><span class="aboveTheFold_h1_space"> </span>!'];
+                                const aboveTheFold_field = document.getElementById("aboveFold__titleText");
+                                let index = 1;
+                                setInterval(() => {
+                                aboveTheFold_field.innerHTML = aboveTheFold_texts[index];
+                                index = (index + 1) % aboveTheFold_texts.length;
+                                }, 5000);
+                            </script>
+                        </div>
+                        <img class="aboveFold__img" src="img/coach_manu_trerè_rgba.webp">
+                    </div>
+                </div>
+                <div class="aboveFold__list_container">
+                    <div class="aboveFold__social_content">
+                        <span class="aboveFold__social_span">SEGUICI SUI SOCIAL</span>
+                        <nav class="aboveFold__nav">
+                            <a class="aboveFold__nav_element" href="https://www.youtube.com/@emanueletrere" target="_blank"><svg viewBox="0 0 546.137 384.002"><path d="M534.725 60.083a68.623 68.623 0 0 0-48.284-48.597C443.851 0 273.069 0 273.069 0S102.288 0 59.696 11.486a68.624 68.624 0 0 0-48.284 48.597C0 102.951 0 192.39 0 192.39s0 89.439 11.412 132.306c6.281 23.65 24.787 41.5 48.284 47.821 42.592 11.486 213.373 11.486 213.373 11.486s170.78 0 213.372-11.486c23.497-6.32 42.003-24.17 48.284-47.821 11.412-42.867 11.412-132.306 11.412-132.306s0-89.438-11.412-132.306zm-317.512 213.51V111.186l142.74 81.205-142.74 81.202z"/></svg></a>
+                            <a class="aboveFold__nav_element" href="https://www.instagram.com/manu_trere_" target="_blank"><svg viewBox="0 0 546.133 546.011"><path d="M273.127 133.015a139.99 139.99 0 1 0 139.99 139.99 139.769 139.769 0 0 0-139.99-139.99zm0 231.002a91.012 91.012 0 1 1 91.012-91.012 91.177 91.177 0 0 1-91.012 91.012zm178.37-236.728a32.652 32.652 0 1 1-32.653-32.652 32.576 32.576 0 0 1 32.652 32.652zm92.717 33.14c-2.071-43.74-12.062-82.484-44.105-114.405-31.921-31.921-70.665-41.912-114.405-44.105-45.08-2.559-180.196-2.559-225.276 0C116.811 3.99 78.067 13.98 46.024 45.902S4.112 116.567 1.919 160.307c-2.559 45.08-2.559 180.196 0 225.276 2.071 43.739 12.062 82.483 44.105 114.404s70.665 41.912 114.404 44.105c45.08 2.559 180.197 2.559 225.276 0 43.74-2.071 82.484-12.062 114.405-44.105 31.921-31.921 41.912-70.665 44.105-114.404 2.558-45.08 2.558-180.075 0-225.155zm-58.238 273.523a92.142 92.142 0 0 1-51.902 51.902c-35.942 14.255-121.228 10.965-160.947 10.965s-125.126 3.168-160.946-10.965a92.142 92.142 0 0 1-51.902-51.902C46.024 398.01 49.313 312.724 49.313 273.005S46.146 147.88 60.28 112.06a92.142 92.142 0 0 1 51.902-51.902c35.942-14.255 121.228-10.965 160.946-10.965s125.127-3.168 160.947 10.965a92.142 92.142 0 0 1 51.902 51.902c14.255 35.942 10.965 121.228 10.965 160.946s3.29 125.127-10.965 160.947z"/></svg></a>
+                            <a class="aboveFold__nav_element" href="https://www.facebook.com/manu.trere" target="_blank"><svg viewBox="0 0 545.985 545.985"><path d="M487.487 0H58.498A58.498 58.498 0 0 0 0 58.498v428.989a58.498 58.498 0 0 0 58.498 58.498h167.27V360.362h-76.78v-87.37h76.78v-66.59c0-75.743 45.092-117.582 114.157-117.582 33.076 0 67.663 5.899 67.663 5.899v74.341h-38.11c-37.548 0-49.26 23.302-49.26 47.201v56.732h83.823l-13.406 87.37h-70.417v185.622h167.269a58.498 58.498 0 0 0 58.498-58.498V58.498A58.498 58.498 0 0 0 487.487 0z"/></svg></a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            
+            
+
+            <section class="benefits_section">
+                <ul class="benefits_list">
+                    <li class="benefits_list_element">
+                        <div class="benefits_list_element_content">
+                            <svg class="benefits_svg" viewBox="0 0 495.278 510.114"><path d="M480.778 493.643a229.612 229.612 0 0 1-81.5-7 227.86 227.86 0 0 1-49.838-20.167 396.71 396.71 0 0 1-81.383 14.575c-22.404 1.62-44.45 3.064-73.03-2.158a245.658 245.658 0 0 1-67.75-23.25s-33.105-16.546-71.75-48.5a537.824 537.824 0 0 1-11.25-9.308l-23.39-10.407-2.61-1.16c0-.047-.085-3.952-.086-3.999l-.413-19.126L93.445 77.809l131.333-59.666 40.083 51.333a13.561 13.561 0 0 1 2.667 3.667 9 9 0 0 1 .917 2.5 8.396 8.396 0 0 1-1 5.541 8.516 8.516 0 0 1-1.011 1.459c-26.297 30.677-31.667 36.035-42.406 46.75a6.905 6.905 0 0 1-2.75 1.75c-2.92.957-5.783-.508-6.5-.875-1.364-.699-1.436-1.095-4.75-4.25-3.43-3.266-3.634-3.11-5.5-5.125-2.143-2.314-1.892-2.54-3.75-4.375-2.148-2.122-3.445-3.44-5.625-4a9.482 9.482 0 0 0-4.125-.063 10.065 10.065 0 0 0-3.625 1.563c-2.018 1.317-2.315 2.346-4.063 3.937a17.675 17.675 0 0 1-4.687 2.938c-4.3 2.083-8.255 2.306-12.125 2.5a45.607 45.607 0 0 1-10-.25 24.777 24.777 0 0 0-4.75-.25c-2.975.122-4.03.7-4.583 1.083a6.87 6.87 0 0 0-2.084 2.5 7.994 7.994 0 0 0-1.166 3.917 8.079 8.079 0 0 0 1 3.833c.731 1.5 1.226 1.703 3.25 4.167a52.176 52.176 0 0 1 3.916 5.5 14.844 14.844 0 0 1 1.334 2.583 13.646 13.646 0 0 1 .833 3.417l7.875 126.375c.085 1.168.164 2.802.125 4.75-.03 1.423-.193 6.413-3 16.375-2.854 10.13-4.864 12.702-5.75 13.75a22.755 22.755 0 0 1-4.417 4 8.635 8.635 0 0 0-2.666 11.583 8.66 8.66 0 0 0 12.458 2.042 46.359 46.359 0 0 0 6.5-6.25c7.779-9.1 10.052-18.98 11.187-24.188.304-1.394.542-2.736.74-4.043l1.281-.811a103.713 103.713 0 0 1 52-23 100.788 100.788 0 0 1 42.49 3.365c8.332 2.52 26.421 8.244 41.843 25.302a84.9 84.9 0 0 1 17.667 30.666c1.22 5.587 6.837 8.597 11.25 7.104 3.568-1.206 6.062-5.259 5.5-9.687a102.145 102.145 0 0 0-19.75-36.75 98.636 98.636 0 0 0-2.49-2.823c4.499-6.353 30.329-40.491 76.657-43.844 41.332-2.99 69.52 20.66 74.875 25.334a9.35 9.35 0 0 0 12.375-.375 9.406 9.406 0 0 0-.917-13.614c-5.777-5.026-40.003-33.815-90-29.011-51.721 4.97-80.371 42.048-85.87 49.683-14.398-11.036-28.61-15.7-35.963-18.017a117.583 117.583 0 0 0-64-2 111.882 111.882 0 0 0-35.667 16.667l-.396.37c-.025-.532-.048-.943-.062-1.203-3.53-64.773-5.294-97.16-7.333-127.167a9.94 9.94 0 0 0-1.12-4.092 9.199 9.199 0 0 0-.797-1.241 47.32 47.32 0 0 0 13-2.125 47.305 47.305 0 0 0 11.125-5.125l13.875 12.5a21.86 21.86 0 0 0 15.5 4 21.827 21.827 0 0 0 13.75-7.625l42.292-47.292a27.16 27.16 0 0 0 3.666-5.667 24.718 24.718 0 0 0 2.667-12.75 24.018 24.018 0 0 0-5.167-13.083l-46.52-60.27a5.293 5.293 0 0 0-1.313-1.063c-.29-.166-1.387-.751-4.25-.625a19.82 19.82 0 0 0-4.125.625L85.278 64.049a18.404 18.404 0 0 0-6.33 5.947 18.198 18.198 0 0 0-2.42 5.647L.11 360.976v17.5a30.272 30.272 0 0 0 .667 9.417 23.734 23.734 0 0 0 4.5 10.083c1.46 1.76 2.857 2.708 12 6.833a413.033 413.033 0 0 1 16.884 7.336s28.53 21.988 59.45 41.831c20.382 13.08 30.573 19.62 46.166 26.333 4.244 1.828 24.555 10.415 53.75 15.584 49.277 8.725 90.194 1.751 119.5-3.5a440.339 440.339 0 0 0 35-7.75 257.774 257.774 0 0 0 69.5 22 257.609 257.609 0 0 0 64.5 2.5 8 8 0 0 0 7.5-8.875 7.98 7.98 0 0 0-8.75-6.625z"/><path d="M278.778 433.143c-14.015 3.439-67.779 14.872-118.288-15.743a143.76 143.76 0 0 1-40.712-37.257c-2.934-4.286-8.664-5.168-12.25-2.5a8.676 8.676 0 0 0-2.425 10.375 163.605 163.605 0 0 0 73.736 57.095c48.374 18.571 90.72 8.012 104.272 4.03a8.473 8.473 0 0 0 5.792-10.625 8.454 8.454 0 0 0-10.125-5.375zM488.278 408.643a73.91 73.91 0 0 1-31.6-7.798 73.142 73.142 0 0 1-18.233-13.036 7.817 7.817 0 0 0-9.334-1.166 7.908 7.908 0 0 0-2.333 10.666 89.107 89.107 0 0 0 22.833 15.834 89.913 89.913 0 0 0 38.167 8.833 6.864 6.864 0 0 0 7.5-6.667 6.853 6.853 0 0 0-7-6.666z"/></svg>
+                            <h1 class="benefits_h1">CRESCITA<br class="benefits_h1_breakline">MUSCOLARE</h1>
+                        </div>
+                    </li>
+                    <li class="benefits_list_element">
+                        <div class="benefits_list_element_content">
+                            <svg class="benefits_svg" viewBox="0 0 201.975 147.866"><path d="M150.486 51.78c-2.982-7.657-3.132-7.831-3.612-9.46-2.483-8.42-3.524-20.83 2.862-38.29A3.09 3.09 0 0 0 148.507.3a3.135 3.135 0 0 0-4.173 1.499q-.054.113-.098.23a83.149 83.149 0 0 0-3 10.834c-1.342 6.553-3.584 18.162.333 31.5.387 1.316.72 2.26 1.417 4.167 5.194 14.194 8.55 21.392 11.09 27.245a240.36 240.36 0 0 1-105.882.039c2.542-5.86 5.9-13.058 11.106-27.284.698-1.908 1.03-2.851 1.417-4.167 3.918-13.338 1.675-24.947.333-31.5a83.147 83.147 0 0 0-3-10.833A3.135 3.135 0 0 0 54.01.203q-.117.044-.23.097a3.09 3.09 0 0 0-1.23 3.73c6.386 17.46 5.345 29.87 2.863 38.29-.48 1.629-.63 1.803-3.613 9.46-7.153 18.363-10.73 27.545-12.138 32.403-1.88 6.486-6.787 24.118-3.112 45.597 0 0 .526 2.862 4.25 16a3.86 3.86 0 0 0 .132.379 3.777 3.777 0 0 0 .342.623 2.9 2.9 0 0 0 3.167.888 2.437 2.437 0 0 0 1.444-2.088 1.924 1.924 0 0 0-.107-.638 103.37 103.37 0 0 1-3.6-15.105 101.475 101.475 0 0 1-.444-32.724 72.543 72.543 0 0 1 20.697 5.562c19.907 8.701 30.82 24.317 35.723 32.913v9.484a2.791 2.791 0 0 0 2.792 2.792h.208a2.791 2.791 0 0 0 2.792-2.792v-9.461c4.583-7.698 13.491-20.215 28.938-29.084a79.428 79.428 0 0 1 27.636-9.61 101.38 101.38 0 0 1-.412 32.92 103.37 103.37 0 0 1-3.6 15.105 1.924 1.924 0 0 0-.107.638 2.437 2.437 0 0 0 1.444 2.088 2.9 2.9 0 0 0 3.168-.888 3.777 3.777 0 0 0 .34-.623 3.857 3.857 0 0 0 .133-.38c3.725-13.137 4.25-16 4.25-16 3.675-21.478-1.232-39.11-3.112-45.596-1.408-4.858-4.985-14.04-12.138-32.403zm-25.436 53.333a80.412 80.412 0 0 0-21.969 21.917 2.837 2.837 0 0 1-2.156.937 2.807 2.807 0 0 1-1.958-.937 78.576 78.576 0 0 0-56.308-34.75c.51-2.29 1.128-4.62 1.88-6.976a78.91 78.91 0 0 1 1.662-4.689 221.839 221.839 0 0 0 109.768-.298 79.435 79.435 0 0 1 1.779 4.987 80.305 80.305 0 0 1 1.868 6.925 80.759 80.759 0 0 0-34.566 12.884z"/><ellipse cx="101.05" cy="61.154" rx="3.083" ry="3.625"/><path d="m159.695 9.967-1.908-.598a68.098 68.098 0 0 1 2.078-5.723l1.848.767a65.935 65.935 0 0 0-2.018 5.554zM178.044 128.234l-1.977-.308q.109-.696.21-1.408a95.347 95.347 0 0 0 .885-10.641l2 .055a97.511 97.511 0 0 1-.905 10.865q-.103.726-.213 1.437zm-1.307-24.45a96.726 96.726 0 0 0-.77-5.929 89.28 89.28 0 0 0-1.18-6.006l1.947-.453c.474 2.038.87 4.046 1.208 6.14.323 2 .587 4.036.785 6.053zm-5.391-23.55c-1.253-3.584-2.72-7.393-4.27-11.427l1.866-.718c1.557 4.049 3.028 7.872 4.292 11.484zm-8.667-22.83c-1.517-3.92-1.723-4.422-1.736-4.454-.338-.806-.651-1.545-.944-2.235-.759-1.787-1.358-3.199-1.899-4.644l1.873-.701c.526 1.405 1.118 2.799 1.867 4.563.294.694.609 1.436.948 2.247.007.016.185.446 1.756 4.502zm-7.403-23.456c-.246-2.235-.295-3.962-.321-4.89q-.022-.788-.022-1.564a57.503 57.503 0 0 1 .316-5.972l1.988.21a55.612 55.612 0 0 0-.304 5.762q0 .748.022 1.507c.025.9.072 2.574.31 4.728zM173.48 146.117l-1.882-.676a95.662 95.662 0 0 0 1.832-5.645l1.92.556a97.28 97.28 0 0 1-1.87 5.765zM201.975 41.654h-23.8l7.875-7.875-3.45-3.44-13.75 13.75 3.45 3.45 10.569 10.58 3.451-3.45-8.14-8.14h23.795v-4.875zM42.28 9.967a66.267 66.267 0 0 0-2.017-5.555l1.847-.765a68.365 68.365 0 0 1 2.077 5.723zM23.932 128.236q-.112-.712-.214-1.44a97.45 97.45 0 0 1-.906-10.865l2-.054a95.27 95.27 0 0 0 .886 10.64q.1.712.21 1.407zm1.305-24.452-1.99-.195a98.37 98.37 0 0 1 .785-6.052 91.23 91.23 0 0 1 1.208-6.14l1.947.452a89.196 89.196 0 0 0-1.18 6.007 96.62 96.62 0 0 0-.77 5.928zm5.39-23.55-1.886-.662c1.278-3.65 2.742-7.455 4.291-11.483l1.867.718c-1.544 4.013-3.002 7.804-4.271 11.427zm8.67-22.83-1.865-.723c1.591-4.11 1.753-4.5 1.753-4.5.34-.812.656-1.554.95-2.248.749-1.764 1.34-3.158 1.866-4.563l1.873.701c-.541 1.445-1.14 2.857-1.899 4.644a528.8 528.8 0 0 0-.945 2.238c-.01.025-.213.521-1.733 4.451zm7.401-23.456-1.988-.219c.237-2.154.284-3.828.31-4.728q.021-.763.02-1.514a55.51 55.51 0 0 0-.303-5.756l1.988-.209a57.368 57.368 0 0 1 .316 5.965q0 .779-.022 1.571c-.026.928-.075 2.655-.32 4.89zM28.495 146.117a96.933 96.933 0 0 1-1.87-5.765l1.92-.556a95.774 95.774 0 0 0 1.833 5.645zM0 41.654h23.8l-7.875-7.875 3.45-3.44 13.75 13.75-3.45 3.45-10.57 10.58-3.45-3.45 8.14-8.14H0v-4.875z"/></svg>
+                            <h1 class="benefits_h1">BRUCIA<br class="benefits_h1_breakline">GRASSI</h1>
+                        </div>
+                    </li>
+                    <li class="benefits_list_element">
+                        <div class="benefits_list_element_content">
+                            <svg class="benefits_svg" viewBox="0 0 632.293 593.061"><path d="m522.911 349.592-206.699 206.7-206.7-206.7H72.79l243.422 243.469 243.469-243.469h-36.77zM36.642 254.55c-21.52-59.575-9.563-128.85 35.29-176.156 61.403-64.763 167.191-69.597 235.82-10.777l8.465 7.256 8.461-7.262c66.161-56.784 166.904-54.887 229.352 4.32 49.616 47.044 64.05 120.14 41.64 182.62h27.667a199.973 199.973 0 0 0 8.716-69.09c-2.473-50.955-23.83-97.975-60.134-132.397-34.953-33.14-81.21-51.968-130.25-53.018a198.833 198.833 0 0 0-125.461 40.966A198.304 198.304 0 0 0 185.462.37C134.506 2.844 87.486 24.2 53.064 60.505 19.924 95.457 1.095 141.714.046 190.754a199.824 199.824 0 0 0 9.003 63.796z"/><path d="m296.68 443.826-93.645-130.353H0v-23h215.482l74.134 103.195 82.653-228.478 64.979 125.283h195.045v23H422.558l-46.376-89.415-79.502 219.768z"/></svg>
+                            <h1 class="benefits_h1">TORNA IN<br class="benefits_h1_breakline">SALUTE</h1>
+                        </div>
+                    </li>
+                    <li class="benefits_list_element">
+                        <div class="benefits_list_element_content">
+                            <svg class="benefits_svg" viewBox="0 0 710.466 710.466"><path d="M682.544 216.956a354.025 354.025 0 0 0-76.124-112.911A354.03 354.03 0 0 0 493.51 27.92 353.024 353.024 0 0 0 355.232 0a353.024 353.024 0 0 0-138.277 27.921 354.034 354.034 0 0 0-112.91 76.124 354.015 354.015 0 0 0-76.123 112.911A353.023 353.023 0 0 0 0 355.233 353.024 353.024 0 0 0 27.922 493.51a354.02 354.02 0 0 0 76.123 112.91 354.025 354.025 0 0 0 112.91 76.124 353.016 353.016 0 0 0 138.277 27.922 353.016 353.016 0 0 0 138.278-27.922 354.03 354.03 0 0 0 112.91-76.124 354.03 354.03 0 0 0 76.124-112.91 353.024 353.024 0 0 0 27.922-138.277 353.023 353.023 0 0 0-27.922-138.277zm-327.312 465.51C174.796 682.466 28 535.67 28 355.233S174.796 28 355.232 28c180.438 0 327.234 146.796 327.234 327.233S535.67 682.466 355.232 682.466z"/><path d="M322.797 438.13 212.502 327.835l-21.605 21.605 110.295 110.295 21.605 21.605 21.605-21.605 209.005-209.004-21.605-21.605L322.797 438.13z"/></svg>
+                            <h1 class="benefits_h1">RISULTATI<br class="benefits_h1_breakline">GARANTITI</h1>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="benefits__need__div">
+                    <h1>PERCHÉ <span>AVERE <br class="benefits__need__breakline">UN COACH?</span></h1>
+                    <p>Un personal trainer è un Professionista Certificato del fitness che grazie alla sua esperienza e svariati anni di studio è in grado di creare una scheda di allenamento adatta specificatamente per la tua corporatura, in modo da farti raggiungere tutti gli obiettivi in maniera rapida ed efficace, col minimo sforzo, senza perdite di tempo e senza diete da fame.</p>
+                </div>
+
+            </section>
+
+
+            
+            <section class="introduction_section">
+
+                <div class="description__container">
+                    <div class="description__img__cover"></div>
+                    <img class="description__img__auto" src="img/coach_manu_trerè_zoomed.webp">
+                    <div class="description__content">
+                        <div class="description__text">
+                            <h1 class="description__title"><span class="description__rule">Coach</span> Manu Trerè</h1>
+                            <p class="description__paragraph">Personal Trainer Certificato AICS altamente Qualificato con Oltre 10 Anni di Esperienza sul campo, Laureato in Scienze Motorie, specializzato in bodybuilding & dimagrimento, ed esperto in aumento per prestazioni agonistiche.<br class="description__paragraph_breakline">Il Coach Trerè ha aiutato svariate decine di clienti a rimettersi in forma definitivamente grazie a programmi d'allenamento specifici e personalizzati per ottenere un corpo attraente, prestante, forte, e muscoloso con addominali scolpiti.</p>
+                        </div>
+
+                        <ul class="description__info">
+                            <li class="description__info_element">
+                                <svg class="description__svg" viewBox="0 0 46.83 24.751"><path d="m22.807 0-8.629 12.092 8.981 12.66h-5.126l-6.541-9.441-6.507 9.44H0l8.945-12.587L.353 0H5.48l6.153 8.983L17.82 0zM27.665 0h9.759c5.798 0 9.406 3.288 9.406 8.274v.072c0 5.551-4.456 8.45-9.901 8.45h-4.915v7.955h-4.349zm9.405 12.872c3.289 0 5.339-1.84 5.339-4.422v-.069c0-2.9-2.086-4.42-5.34-4.42h-5.055v8.911z"/></svg>
+                                <span class="description__span">Oltre 10 Anni Esperienza</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg" viewBox="0 0 65 59.09091"><path d="M1047.67614,667.54545l-21.42046-13.04924v-19.697L1015.25,628.15152l32.42614-19.697,32.57386,19.697v26.01641h-4.43182V631.024l-6.72159,3.77525v19.697Zm0-25.27777,23.267-14.11616-23.267-13.87-23.11932,13.87Zm0,19.697,16.98863-10.423V637.75379l-16.98863,10.09469-16.98864-10.25883v13.952Z" transform="translate(-1015.25 -608.45455)"/></svg>
+                                <span class="description__span">Laurea in Scienze Motorie</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg" viewBox="0 0 65 61.75"><path d="M19.744 51.594 32.5 43.956l12.756 7.719-3.412-14.463 11.212-9.75-14.787-1.3-5.769-13.65-5.769 13.57-14.787 1.3 11.212 9.75zM12.43 61.75l5.282-22.831L0 23.563l23.4-2.032L32.5 0l9.1 21.531L65 23.563 47.288 38.919l5.28 22.831L32.5 49.644z"/></svg>
+                                <span class="description__span">BodyBuilding - Dimagrimento</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg" id="description___custom_svg" viewBox="0 0 11.412 16"><path d="m11.412 4.146-1.337-1.32-.842-1.68L7.375.864 5.706 0 4.037.864l-1.858.282-.842 1.68L0 4.146.306 6 0 7.854l1.337 1.32.842 1.68 1.858.282 1.67.864 1.668-.864 1.858-.282.842-1.68 1.337-1.32L11.106 6zm-1.07 3.36L9.256 8.578l-.684 1.365-1.51.229-1.355.702-1.355-.702-1.51-.229-.685-1.365-1.085-1.072L1.32 6l-.25-1.506 1.086-1.072.685-1.365 1.51-.229 1.355-.702 1.355.702 1.51.229.684 1.365 1.085 1.072L10.093 6z"/><path d="m2.179 11.794 1.858.282 1.669.864 1.669-.864 1.858-.282V16l-3.527-.609L2.179 16v-4.206z"/></svg>
+                                <span class="description__span">Certificato AICS</span>
+                            </li>
+                        </ul>
+
+                        <nav class="description__cta_container">
+                            <button type="button" class="description__cta_element" onclick="scrollTo_onlineCoaching()">COACHING</button>
+                            <button type="button" class="description__cta_element gray_cta" onclick="scrollTo_workoutPrograms()">PROGRAMMI</button>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="description__container reverse_container">
+                    <div class="description__content">
+                        <div class="description__text">
+                            <h1 class="description__title"><span class="description__rule">Online</span> Coaching</h1>
+                            <p class="description__paragraph">L'online coaching è nuovo approccio all'allenamento che ti consente di allenarti ovunque tu sia seguendo in base alle tue esigenze un programma personalizzato per farti raggiungere i tuoi obbiettivi in maniera rapida ed efficace con il minimo sforzo.<br class="description__paragraph_breakline">Grazie alla nostra piattaforma online dedicata potrai consultare direttamente dal tuo telefono/pc il tuo programma di allenamento, imparare come svolgere gli esercizi in maniera corretta, guardare video informativi inerenti all'allenamento, consultare la tua scheda alimentare, leggere ricette per la tua dieta, e potrai inoltre allenarti anche da casa senza pesi insieme ai nostri allenatori, ricevendo supporto 24/7 per aiutarti a ottenere il corpo che hai sempre desiderato.</p>
+                        </div>
+
+                        <ul class="description__info">
+                            <li class="description__info_element">
+                                <svg class="description__svg"  viewBox="0 0 32 32"><path d="m13.64 23.28 11.32-11.32-1.84-1.8-9.48 9.48-4.8-4.8-1.8 1.8zM16 32a15.482 15.482 0 0 1-6.2-1.26 16.12 16.12 0 0 1-8.54-8.54 15.982 15.982 0 0 1 0-12.44A15.99 15.99 0 0 1 4.7 4.68a16.401 16.401 0 0 1 5.1-3.42 15.982 15.982 0 0 1 12.44 0 15.975 15.975 0 0 1 8.5 8.5 15.982 15.982 0 0 1 0 12.44 16.402 16.402 0 0 1-3.42 5.1 15.99 15.99 0 0 1-5.08 3.44A15.58 15.58 0 0 1 16 32zm0-2.4a13.589 13.589 0 1 0-9.62-3.98A13.087 13.087 0 0 0 16 29.6z"/></svg>
+                                <span class="description__span">Percorso Personalizzato</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg"  viewBox="0 0 32 32"><path d="m13.64 23.28 11.32-11.32-1.84-1.8-9.48 9.48-4.8-4.8-1.8 1.8zM16 32a15.482 15.482 0 0 1-6.2-1.26 16.12 16.12 0 0 1-8.54-8.54 15.982 15.982 0 0 1 0-12.44A15.99 15.99 0 0 1 4.7 4.68a16.401 16.401 0 0 1 5.1-3.42 15.982 15.982 0 0 1 12.44 0 15.975 15.975 0 0 1 8.5 8.5 15.982 15.982 0 0 1 0 12.44 16.402 16.402 0 0 1-3.42 5.1 15.99 15.99 0 0 1-5.08 3.44A15.58 15.58 0 0 1 16 32zm0-2.4a13.589 13.589 0 1 0-9.62-3.98A13.087 13.087 0 0 0 16 29.6z"/></svg>
+                                <span class="description__span">Oltre 80 Clienti Soddisfatti</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg"  viewBox="0 0 32 32"><path d="m13.64 23.28 11.32-11.32-1.84-1.8-9.48 9.48-4.8-4.8-1.8 1.8zM16 32a15.482 15.482 0 0 1-6.2-1.26 16.12 16.12 0 0 1-8.54-8.54 15.982 15.982 0 0 1 0-12.44A15.99 15.99 0 0 1 4.7 4.68a16.401 16.401 0 0 1 5.1-3.42 15.982 15.982 0 0 1 12.44 0 15.975 15.975 0 0 1 8.5 8.5 15.982 15.982 0 0 1 0 12.44 16.402 16.402 0 0 1-3.42 5.1 15.99 15.99 0 0 1-5.08 3.44A15.58 15.58 0 0 1 16 32zm0-2.4a13.589 13.589 0 1 0-9.62-3.98A13.087 13.087 0 0 0 16 29.6z"/></svg>
+                                <span class="description__span">Risultati Garantiti</span>
+                            </li>
+                            <li class="description__info_element">
+                                <svg class="description__svg"  viewBox="0 0 32 32"><path d="m13.64 23.28 11.32-11.32-1.84-1.8-9.48 9.48-4.8-4.8-1.8 1.8zM16 32a15.482 15.482 0 0 1-6.2-1.26 16.12 16.12 0 0 1-8.54-8.54 15.982 15.982 0 0 1 0-12.44A15.99 15.99 0 0 1 4.7 4.68a16.401 16.401 0 0 1 5.1-3.42 15.982 15.982 0 0 1 12.44 0 15.975 15.975 0 0 1 8.5 8.5 15.982 15.982 0 0 1 0 12.44 16.402 16.402 0 0 1-3.42 5.1 15.99 15.99 0 0 1-5.08 3.44A15.58 15.58 0 0 1 16 32zm0-2.4a13.589 13.589 0 1 0-9.62-3.98A13.087 13.087 0 0 0 16 29.6z"/></svg>
+                                <span class="description__span">Totale Comodità</span>
+                            </li>
+                        </ul>
+
+                        <nav class="description__cta_container">
+                            <button type="button" class="description__cta_element" onclick="scrollTo_onlineCoaching()">COACHING</button>
+                            <button type="button" class="description__cta_element gray_cta" onclick="scrollTo_workoutPrograms()">PROGRAMMI</button>
+                        </nav>
+                    </div>
+                    <div class="description__img_container">
+                        <img class="description__img_content" src="img/mockup_webapp_rgba.webp">
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            
+            <section class="review_section">
+
+                <div class="review__container">
+                    <span class="review__name">Silvia</span>
+                    <p class="review__text">Grazie al Coach Trerè ho eliminato il grasso in eccesso sul girovita grazie al programma personalizzato per la tonificazione di 5 settimane, ora ho un fisico attraente con pancia piatta e glutei sodi.</p>
+                    <div class="review__star_container"><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                </div>
+
+                <div class="review__container">
+                    <span class="review__name">Matteo</span>
+                    <p class="review__text">Il Coach Trerè mi ha aiutato a raggiungere un fisico muscoloso e attraente, ed inoltre grazie ai suoi insegnamenti ho imparato a condurre uno stile di vita sano e disciplinato.</p>
+                    <div class="review__star_container"><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                </div>
+
+                <div class="review__container">
+                    <span class="review__name">Antonio</span>
+                    <p class="review__text">Grazie alla competenza del Coach Trerè ho eliminato il grasso in eccesso, aumentato la massa muscolare, ed ottenuto finalmente gli addominali che ho sempre desiderato in poche settimane!</p>
+                    <div class="review__star_container"><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                </div>
+
+            </section>
+
+
+
+            <section class="comparison_section">
+
+                <div class="comparison_card red_card">
+                    <h1 class="comparison_card__h1"><span class="comparison_card__h1__span">COACHING</span><br class="comparison_card__h1__brealine">TRADIZIONALE</h1>
+                    <ul class="comparison_card__list">
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Costo Elevato</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Allenamento Preimpostato</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Scarso Supporto</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Orari Limitati</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Limitazioni Geografiche</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Tempi di Attesa</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Nessuna Documentazione</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Nessuna Scheda Alimentare</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_red_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
+                            <span class="comparison_card__list_element__span">Zero Contenuti Aggiuntivi</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comparison_card">
+                    <h1 class="comparison_card__h1"><span class="comparison_card__h1__span">COACHING</span><br class="comparison_card__h1__brealine">ONLINE</h1>
+                    <ul class="comparison_card__list">
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Conveniente</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span"></span>Allenamento Personalizzato
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Totale Supporto 24/7</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Orari illimitati</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Zero Limitazioni</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Zero Attese</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Video illustrativi</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Scheda Alimentare</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Ricette Salutari</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Video informativi</span>
+                        </li>
+                        <li class="comparison_card__list_element">
+                            <svg class="comparison_card__list_element__svg comparison_green_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
+                            <span class="comparison_card__list_element__span">Video Allenamenti</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            
+            <section class="review_section">
+
+                <div class="review__container">
+                    <span class="review__name">Rosella</span>
+                    <p class="review__text">Grazie alla flessibilità e alla convenienza dell'online coaching sono stata in grado di gestire meglio il mio tempo bruciando il grasso in eccesso e ottenendo un corpo tonico e snello. Consiglio vivamente questo servizio a chiunque abbia difficoltà a trovare il tempo e la motivazione per allenarsi regolarmente a causa degli impegni lavorativi.</p>
+                    <div class="review__star_container"><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                </div>
+
+                <div class="review__container">
+                    <span class="review__name">Luca</span>
+                    <p class="review__text">Sono passato dal coaching tradizionale all'online coaching e ne sono rimasto molto soddisfatto. Grazie al programma personalizzato, ai video informativi, video allenamenti, tutorial, ricette e al supporto 24/7, ho ottenuto risultati sorprendenti.<br class="review__breakline">Molto comodo poter accedere a tutti i contenuti dal proprio telefono/pc in maniera istantanea senza recarsi ogni volta in palestra, dunque è perfetto per chi come me è molto impegnato durante la giornata.</p>
+                    <div class="review__star_container"><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review__star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                </div>
+
+            </section>
+
+
+            <section class="section_subscription_plans" id="online_coaching_section">
+                <h1 class="subscription_plans__h1">SCEGLI IL TUO <br class="subscription_plans__h1_breakline">ONLINE COACHING</h1>
+                <div class="subscription_plans__wrapper horizontal_media_scroll" id="subscription_plans__scroll">
+
+                    <div class="subscription_plans__container">
+                        <h2 class="subscription_plans__name basic_plan">BASIC</h2>
+                        <div class="subscription_plans__cost"><span class="subscription_plans__price">40</span><span class="subscription_plans__monthly">€/mese</span></div>
+                        <ul class="subscription_plans__list">
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Allenamento Personalizzato</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video illustrativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Video informativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Scheda Alimentare</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Ricette Salutari</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Consigli per l'Integrazione</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video Allenamenti</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Supporto 24/7</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Lezioni Private</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Consulenze</span></li>
+                        </ul>
+                        <a class="subscription_plans__addToCart">Aggiungi al carrello</a>
+                    </div>
+                    <div class="subscription_plans__container" id="subscription_middle_plan">
+                        <h2 class="subscription_plans__name pro_plan">PRO</h2>
+                        <div class="subscription_plans__cost"><span class="subscription_plans__price">52</span><span class="subscription_plans__monthly">€/mese</span></div>
+                        <ul class="subscription_plans__list">
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Allenamento Personalizzato</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video illustrativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video informativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Scheda Alimentare</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Ricette Salutari</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Consigli per l'Integrazione</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video Allenamenti</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Supporto 24/7</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Lezioni Private</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg grey_icon" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg><span class="subscription_plans__feature_span">Consulenze</span></li>
+                        </ul>
+                        <a class="subscription_plans__addToCart">Aggiungi al carrello</a>
+                    </div>
+                    <div class="subscription_plans__container">
+                        <h2 class="subscription_plans__name elite_plan">ÉLITE</h2>
+                        <div class="subscription_plans__cost"><span class="subscription_plans__price">76</span><span class="subscription_plans__monthly">€/mese</span></div>
+                        <ul class="subscription_plans__list">
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Allenamento Personalizzato</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video illustrativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video informativi</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Scheda Alimentare</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Ricette Salutari</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Consigli per l'Integrazione</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Video Allenamenti</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Supporto 24/7</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Lezioni Private</span></li>
+                            <li class="subscription_plans__list_element"><svg class="subscription_plans__feature_svg green_icon" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg><span class="subscription_plans__feature_span">Consulenze</span></li>
+                        </ul>
+                        <a class="subscription_plans__addToCart">Aggiungi al carrello</a>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="section_workout_plans" id="workout_programs_section">
+                <h1 class="workout_plans__h1">SCEGLI IL TUO ALLENAMENTO<span class="workout_plans__span">Principianti / Intermedi</span></h1>
+                <div class="workout_card__scroll horizontal_media_scroll">
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>BODYBUILDING</h1>
+                            <p>Include 4 programmi di bodybuilding per Massa & Definizione.</p>
+                            <a>COMPRA<span class="workout_price">49€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>BRUCIA GRASSI</h1>
+                            <p>Include 2 programmi ad alta intensità con pesi & esercizi aerobici.</p>
+                            <a>COMPRA<span class="workout_price">37€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>CORPO TONICO</h1>
+                            <p>Include 2 programmi tonificanti con i pesi & corpo libero.</p>
+                            <a>COMPRA<span class="workout_price">28€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>ADDOMINALI SCOLPITI</h1>
+                            <p>Include 3 routine di allenamento per addominali d'acciao senza pesi.</p>
+                            <a>COMPRA<span class="workout_price">20€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>CALISTHENICS</h1>
+                            <p>Include 2 programmi efficaci total body da effettuare al parco.</p>
+                            <a>COMPRA<span class="workout_price">34€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>POWERLIFTING</h1>
+                            <p>Include 2 programmi in multifrequenza con esercizi complementari.</p>
+                            <a>COMPRA<span class="workout_price">47€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>CASALINGO</h1>
+                            <p>Include 3 programmi efficaci con kettlebell, manubri ed elastici.</p>
+                            <a>COMPRA<span class="workout_price">38€</span></a>
+                        </div>
+                    </div>
+
+                    <div class="workout_card">
+                        <img class="workout_card__cover" src="img/workout_cover.webp">
+                        <div class="workout_card__description">
+                            <h1>SENZA PESI</h1>
+                            <p>Include 2 programmi tonificanti e brucia grassi senza attrezzatura.</p>
+                            <a>COMPRA<span class="workout_price">20€</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="section_contact" id="contact_form_section">
+                <div class="contact_form_div">
+                    <h1 class="contact_form_h1">CONTATTACI</h1>
+                    <p class="contact_form_paragraph">Verrai ricontattato da un nostro operatore per ricevere maggiori informazioni.<br class="contact_form_paragraph_breakline">*Sei già nostro cliente? Contattaci tramite l'<a class="contact_form_link">area personale</a>.</p>
+                </div>
+                <form class="contact_form_container">
+                    <input class="contact_form_input" placeholder="Nome">
+                    <input class="contact_form_input" placeholder="Cognome">
+                    <input class="contact_form_input" placeholder="Età">
+                    <div class="select_box_wrapper">
+                        <select class="contact_form_input select_box">
+                            <option value="" disabled selected hidden>Esperienza</option>
+                            <option value="STO">Nessuna</option>
+                            <option value="STO">1 Anno</option>
+                            <option value="STO">2 Anni</option>
+                            <option value="STO">3 Anni</option>
+                            <option value="STO">Oltre 4 Anni</option>
+                        </select>
+                        <svg class="select_box_svg" viewBox="0 0 86.603 46.25"><path d="M43.301 46.25 86.603 0H0l43.301 46.25z"/></svg>
+                    </div>
+                    <input class="contact_form_input" placeholder="E-Mail">
+                    <input class="contact_form_input" placeholder="Telefono">
+                    <div class="select_box_wrapper">
+                        <select class="contact_form_input select_box">
+                            <option value="" disabled selected hidden>Obiettivo</option>
+                            <option value="STO">Crescita Muscolare</option>
+                            <option value="STO">Definizione</option>
+                            <option value="STO">Tonificazione</option>
+                            <option value="STO">Brucia Grassi</option>
+                            <option value="STO">Aumento Prestazioni</option>
+                        </select>
+                        <svg class="select_box_svg" viewBox="0 0 86.603 46.25"><path d="M43.301 46.25 86.603 0H0l43.301 46.25z"/></svg>
+                    </div>
+                    <button type="submit" class="contact_form_submit">CONFERMA</button>
+                </form>
+            </section>
+
+
+            <footer class="section_footer">
+                <a class="footer__logo footer_business_name"><svg viewBox="0 0 81.511 19.345"><path d="M6.776 10.83h1.475V2.435H6.68L4.125 6.404 1.571 2.435H0v8.395h1.451V4.833l2.627 3.935h.047L6.776 4.81v6.02zM12.07 8.803h3.97l.852 2.027h1.56l-3.695-8.455H13.39L9.696 10.83h1.512zm1.98-4.665 1.451 3.358h-2.89zM25.76 8.239l-4.498-5.804h-1.367v8.395h1.451V4.857l4.63 5.973h1.235V2.435H25.76v5.804zM36.427 7.196V2.435h-1.475v4.833c0 1.547-.804 2.327-2.11 2.327-1.32 0-2.124-.827-2.124-2.387V2.435h-1.475v4.833c0 2.435 1.391 3.694 3.574 3.694 2.194 0 3.61-1.259 3.61-3.766zM48.271 2.435h-6.813v1.367h2.664v7.028h1.487V3.802h2.662V2.435zM56.695 5.11v-.025A2.539 2.539 0 0 0 56 3.275a3.38 3.38 0 0 0-2.423-.84h-3.743v8.395h1.476V7.903h1.847l2.063 2.927h1.751l-2.266-3.179a2.52 2.52 0 0 0 1.99-2.542zM51.31 6.596V3.778h2.147c1.091 0 1.739.492 1.739 1.39v.025c0 .852-.672 1.404-1.727 1.404zM59.986 7.256h4.21V5.937h-4.21V3.754h4.749V2.435H58.51v8.395h6.285V9.511h-4.809V7.256zM68.026 7.903h1.847l2.063 2.927h1.751l-2.268-3.179a2.52 2.52 0 0 0 1.992-2.542v-.024a2.539 2.539 0 0 0-.696-1.81 3.38 3.38 0 0 0-2.422-.84H66.55v8.395h1.476zm0-4.125h2.146c1.092 0 1.74.492 1.74 1.39v.025c0 .852-.672 1.404-1.727 1.404h-2.16zM78.957 1.739 77.601 0l-1.308.576 1.524 1.163h1.14zM76.702 9.511V7.256h4.21V5.937h-4.21V3.754h4.749V2.435h-6.225v8.395h6.285V9.511h-4.809zM1.968 13.83H0v5.422h.403V17.23h1.464c1.131 0 2.115-.588 2.115-1.728v-.015c0-1.046-.82-1.658-2.014-1.658zm1.611 1.696c0 .805-.681 1.332-1.688 1.332H.403v-2.657h1.534c.976 0 1.642.45 1.642 1.309zM5.581 16.703h3.107v-.372H5.581v-2.13h3.456v-.372H5.179v5.423h3.897v-.371H5.581v-2.178zM14.587 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.527-.535h-2.278v5.423h.403v-2.246h1.775l1.728 2.246h.51L13 16.936c.914-.124 1.588-.644 1.588-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.674 1.24-1.58 1.24zM17.828 16.34c-1.286-.264-1.58-.613-1.58-1.186v-.016c0-.565.527-1.022 1.325-1.022a2.335 2.335 0 0 1 1.619.611l.256-.317a2.704 2.704 0 0 0-1.86-.658 1.57 1.57 0 0 0-1.743 1.425v.016c0 .821.527 1.262 1.829 1.526 1.231.248 1.534.581 1.534 1.155v.015c0 .62-.558 1.077-1.372 1.077a2.635 2.635 0 0 1-1.945-.806l-.263.302a3.088 3.088 0 0 0 2.185.868c1.046 0 1.797-.605 1.797-1.48v-.015c0-.79-.526-1.24-1.782-1.495zM23.433 13.736a2.73 2.73 0 0 0-2.735 2.804v.016a2.728 2.728 0 1 0 5.455-.016v-.015a2.704 2.704 0 0 0-2.72-2.79zm2.301 2.82a2.321 2.321 0 0 1-2.3 2.425 2.346 2.346 0 0 1-2.317-2.44v-.016a2.321 2.321 0 0 1 2.3-2.425 2.348 2.348 0 0 1 2.317 2.44zM31.649 18.547l-3.742-4.718h-.379v5.423h.387v-4.819l3.819 4.819h.303v-5.423h-.388v4.718zM35.712 13.79l-2.526 5.462h.419l.69-1.518h3.199l.69 1.518h.442L36.1 13.79zm-1.247 3.58 1.434-3.139 1.425 3.138zM40.179 13.829h-.403v5.423h3.587v-.371h-3.184v-5.052zM46.513 14.201h1.89v5.051h.403v-5.051h1.89v-.372h-4.183v.372zM56.138 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.527-.535h-2.277v5.423h.402v-2.246H54.1l1.728 2.246h.511l-1.79-2.316c.915-.124 1.59-.644 1.59-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.675 1.24-1.58 1.24zM59.589 13.79l-2.526 5.462h.418l.69-1.518h3.2l.69 1.518h.441l-2.526-5.462zm-1.248 3.58 1.434-3.139L61.2 17.37zM63.707 13.829h.403v5.423h-.403zM69.898 18.547l-3.741-4.718h-.38v5.423h.387v-4.819l3.82 4.819h.302v-5.423h-.388v4.718zM72.304 16.703h3.106v-.372h-3.106v-2.13h3.456v-.372h-3.858v5.423h3.896v-.371h-3.494v-2.178zM81.31 15.386v-.015a1.43 1.43 0 0 0-.41-1.007 2.136 2.136 0 0 0-1.526-.535h-2.279v5.423h.403v-2.246h1.774L81 19.252h.511l-1.79-2.316c.915-.124 1.589-.644 1.589-1.55zm-3.812 1.256v-2.44h1.852c.984 0 1.557.456 1.557 1.184v.016c0 .783-.674 1.24-1.58 1.24z"/></svg></a>
+                <a class="footer__logo footer_business_logo"><svg viewBox="0 0 77.875 67.048"><path d="M36.024 60.099h8.185v-2.564h-8.185V53.29h9.233v-2.564H33.154v16.322h12.22v-2.564h-9.35v-4.385zM0 53.384h5.179v13.664h2.892V53.384h5.175v-2.658H0v2.658zM29.626 55.925h-.001v-.047a4.936 4.936 0 0 0-1.351-3.519 6.572 6.572 0 0 0-4.711-1.633h-7.278v16.322h2.87v-5.69h3.591l4.011 5.69h3.405l-4.406-6.18a4.9 4.9 0 0 0 3.87-4.943zm-10.471 2.891v-5.479h4.175c2.12 0 3.38.957 3.38 2.703v.048c0 1.657-1.306 2.73-3.357 2.73zM70.273 45.992l-1.62 1.019 1.88 2.36 2.376.002-2.636-3.381zM68.525 60.099h8.185v-2.564h-8.185V53.29h9.233v-2.564H65.655v16.322h12.22v-2.564h-9.35v-4.385zM56.669 15.684 38.938 0 21.206 15.684 0 0v45.684h24.546v-5.178H5.178V11.417l16.125 11.425L38.938 7.254l17.634 15.588 16.125-11.425v29.089H53.329v5.178h24.546V0L56.669 15.684zM62.126 55.925v-.047a4.937 4.937 0 0 0-1.353-3.519 6.572 6.572 0 0 0-4.709-1.633h-7.278v16.322h2.87v-5.69h3.591l4.011 5.69h3.405l-4.41-6.18a4.9 4.9 0 0 0 3.873-4.943zm-10.472 2.893.002-5.48h4.173c2.123 0 3.383.956 3.383 2.702v.048c0 1.657-1.307 2.73-3.358 2.73z"/><path d="M49.338 45.621V28.237h-3.961l-6.441 10.006-6.438-10.006h-3.961v17.384h3.658V34.283l6.623 9.92h.118l6.683-9.978v11.396h3.719z"/></svg></a>
+                <nav class="footer__nav_info">
+                    <a class="footer__nav_info_element" style="margin-bottom: 20px;" href="mailto: manutrere@yahoo.it?subject=INFO COACHING&body=Ciao mi chiamo (IL TUO NOME)%0D%0AVorrei ricevere maggiori informazioni riguardo il vostro servizio di personal training perché voglio migliorare il mio aspetto fisico.%0D%0A"><span class="span_bold">Email</span><span>manutrere@yahoo.it</span></a>
+                    <a class="footer__nav_info_element" href="tel:393293354763"><span class="span_bold">Telefono</span><span>+39 3293354763</span></a>
+                </nav>
+                <nav class="footer__nav_social">
+                    <a class="footer__nav_social_element" href="https://www.facebook.com/manu.trere" target="_blank"><svg class="facebook_svg" viewBox="0 0 545.985 545.985"><path d="M487.487 0H58.498A58.498 58.498 0 0 0 0 58.498v428.989a58.498 58.498 0 0 0 58.498 58.498h167.27V360.362h-76.78v-87.37h76.78v-66.59c0-75.743 45.092-117.582 114.157-117.582 33.076 0 67.663 5.899 67.663 5.899v74.341h-38.11c-37.548 0-49.26 23.302-49.26 47.201v56.732h83.823l-13.406 87.37h-70.417v185.622h167.269a58.498 58.498 0 0 0 58.498-58.498V58.498A58.498 58.498 0 0 0 487.487 0z"/></svg></a>
+                    <a class="footer__nav_social_element" href="https://www.instagram.com/manu_trere_" target="_blank"><svg class="instagram_svg" viewBox="0 0 546.133 546.011"><path d="M273.127 133.015a139.99 139.99 0 1 0 139.99 139.99 139.769 139.769 0 0 0-139.99-139.99zm0 231.002a91.012 91.012 0 1 1 91.012-91.012 91.177 91.177 0 0 1-91.012 91.012zm178.37-236.728a32.652 32.652 0 1 1-32.653-32.652 32.576 32.576 0 0 1 32.652 32.652zm92.717 33.14c-2.071-43.74-12.062-82.484-44.105-114.405-31.921-31.921-70.665-41.912-114.405-44.105-45.08-2.559-180.196-2.559-225.276 0C116.811 3.99 78.067 13.98 46.024 45.902S4.112 116.567 1.919 160.307c-2.559 45.08-2.559 180.196 0 225.276 2.071 43.739 12.062 82.483 44.105 114.404s70.665 41.912 114.404 44.105c45.08 2.559 180.197 2.559 225.276 0 43.74-2.071 82.484-12.062 114.405-44.105 31.921-31.921 41.912-70.665 44.105-114.404 2.558-45.08 2.558-180.075 0-225.155zm-58.238 273.523a92.142 92.142 0 0 1-51.902 51.902c-35.942 14.255-121.228 10.965-160.947 10.965s-125.126 3.168-160.946-10.965a92.142 92.142 0 0 1-51.902-51.902C46.024 398.01 49.313 312.724 49.313 273.005S46.146 147.88 60.28 112.06a92.142 92.142 0 0 1 51.902-51.902c35.942-14.255 121.228-10.965 160.946-10.965s125.127-3.168 160.947 10.965a92.142 92.142 0 0 1 51.902 51.902c14.255 35.942 10.965 121.228 10.965 160.946s3.29 125.127-10.965 160.947z"/></svg></a>
+                    <a class="footer__nav_social_element" href="https://www.youtube.com/@emanueletrere" target="_blank"><svg class="youtube_svg" viewBox="0 0 546.137 384.002"><path d="M534.725 60.083a68.623 68.623 0 0 0-48.284-48.597C443.851 0 273.069 0 273.069 0S102.288 0 59.696 11.486a68.624 68.624 0 0 0-48.284 48.597C0 102.951 0 192.39 0 192.39s0 89.439 11.412 132.306c6.281 23.65 24.787 41.5 48.284 47.821 42.592 11.486 213.373 11.486 213.373 11.486s170.78 0 213.372-11.486c23.497-6.32 42.003-24.17 48.284-47.821 11.412-42.867 11.412-132.306 11.412-132.306s0-89.438-11.412-132.306zm-317.512 213.51V111.186l142.74 81.205-142.74 81.202z"/></svg></a>
+                </nav>
+                <p class="footer__paragraph">AVVERTENZE: le informazioni contenute in questo sito non intendono sostituirsi in nessun modo a parere medico o di altri specialisti. L'autore declina ogni responsabilità di effetti o di conseguenze risultanti dall'uso di tali informazioni e dalla loro messa in pratica. L'allenamento con sovraccarichi può causare infortuni, si consiglia pertanto di prestare la massima attenzione e di eseguire esercizi e metodologie adatte al proprio livello di forma. Consultare il proprio medico di fiducia prima di intraprendere qualsiasi forma di attività fisica o regime alimentare.</p>
+                <p class="footer__copyright">COPYRIGHT MANU TRERÈ ONLINE COACHING - MANUTRERE.IT ©<span id="copyright_year"></span> TUTTI DIRITTI RISERVATI</p>
+                <script type="text/javascript">document.getElementById("copyright_year").innerText = new Date().getFullYear();</script>
+
+                <a class="developer_container" href="https://www.gamedevandcoding.com" target="_blank">
+                    <div class="developer_content">
+                        <h2 class="developer_madeby">DEVELOPED BY</h2>
+                        <svg class="developer_logo" viewBox="0 0 2499.8999 791.59998"><defs><style>.cls-1{fill:#fff;}</style></defs><title>GameDev&CodingLogo</title><g id="Livello_2" data-name="Livello 2"><rect x="1707.90002" y="0.6" width="791.99988" height="790.99998"/></g><g id="Livello_1-2" data-name="Livello 1-2"><path class="cls-1" d="M2239.3999,230.1h-271.1c-64.3,0-116.5,69.3-116.5,154.8s52.2,154.8,116.5,154.8c35.9,0,68.1-21.6,89.4-55.6,3.1001-5,5.8999-10.1,8.5-15.3h75.19995c2.6001,5.2,5.3999,10.4,8.5,15.3,21.3999,34,53.5,55.6,89.3999,55.6,64.30005,0,116.5-69.3,116.5-154.8C2355.8999,299.4,2303.7,230.1,2239.3999,230.1ZM2026.4,359.6a4.99447,4.99447,0,0,1-4.9,5H1988v33.8a4.99447,4.99447,0,0,1-4.9,5h-29a4.99454,4.99454,0,0,1-5-4.9V364.6h-34.5a4.99455,4.99455,0,0,1-5-4.9V330.8a4.99447,4.99447,0,0,1,4.9-5h34.6V292a4.99447,4.99447,0,0,1,4.9-5h29a4.99455,4.99455,0,0,1,5,4.9v33.9h33.4a4.99454,4.99454,0,0,1,5,4.9v28.9Zm176.79993,5a18.85006,18.85006,0,1,1,18.8999-18.9A18.8638,18.8638,0,0,1,2203.2,364.6Zm37.8,38.8a18.85006,18.85006,0,1,1,18.8999-18.8h0A18.86366,18.86366,0,0,1,2241,403.4Zm.3999-76.4A18.8,18.8,0,1,1,2260.2,308.2h0a18.73625,18.73625,0,0,1-18.6001,18.8Zm38.5,37.6a18.85006,18.85006,0,1,1,18.8999-18.9,18.8638,18.8638,0,0,1-18.8999,18.9Z"/><polygon class="cls-1" points="1824.9 197.6 1905.9 197.6 1905.9 161.6 1824.9 161.6 1788.9 161.6 1788.9 197.6 1788.9 557.6 1788.9 593.6 1824.9 593.6 1905.9 593.6 1905.9 557.6 1824.9 557.6 1824.9 197.6"/><polygon class="cls-1" points="2382.9 161.6 2301.9 161.6 2301.9 197.6 2382.9 197.6 2382.9 557.6 2301.9 557.6 2301.9 593.6 2382.9 593.6 2418.9 593.6 2418.9 557.6 2418.9 197.6 2418.9 161.6 2382.9 161.6"/><path d="M0,143v-7.3C0,54.7,57.3,0,132.6,0c38.6,0,68.8,11.8,96.3,34L185.3,94.8c-13.8-12.2-29.4-21-49.3-21-30.2,0-52.7,24.5-52.7,64.2v4.6c0,42.8,22.6,65.7,52,65.7,11.1,0,17.2-1.9,22.2-4.6V171.6H120.8V113.5H233.9V244.6a166.85464,166.85464,0,0,1-101.3,33.6C58.5,278.3,0,227,0,143Z"/><path d="M421.6,85.2C405.2,68.8,380.7,60.7,344,60.7c-31.3,0-59.6,6.5-81,15.3l16.4,57.3c13-5.7,29.8-11.5,50.1-11.5,22.9,0,33.6,9.9,33.6,28.3v3.4c-9.2-4.2-26.8-7.6-42.8-7.6-42,0-69.9,21.8-69.9,65.4V214c0,41.3,25.2,63.4,60.4,63.4,22.5,0,39.4-9.6,52-24.5v19.9H443V149.1C443,120.4,436.5,100.2,421.6,85.2ZM363.5,200.7c0,18.4-9.2,28.3-21.4,28.3-9.6,0-16.8-8-16.8-20.3v-2.3c0-12.6,7.6-22.9,21.8-22.9a42.249,42.249,0,0,1,16.4,3.4Z"/><path d="M463.6,64.2h79.9V90.6c11.5-16.1,29.8-31.3,55.8-31.3,26.4,0,44.3,12.2,53.9,32.1,14.5-18,33.3-32.1,61.9-32.1,39.4,0,62.7,26.4,62.7,67.7V273h-80.3V151.7c0-13.8-7.6-21.8-18-21.8s-19.1,8-19.1,21.8V272.9h-79.9V151.7c0-13.8-8-21.8-18-21.8-10.3,0-19.1,8-19.1,21.8V272.9h-79.9L463.6,64.2Z"/><path d="M986.9,170.9c0-65.4-32.5-111.6-96.7-111.6-57,0-97.5,43.6-97.5,107.4v5C792.7,237.8,834.4,278,897,278c38.2,0,64.6-14.9,85.2-35.9l-36.7-43.6c-12.2,11.5-25.6,18.7-41.3,18.7-17.2,0-30.2-8.4-35.5-26H986.8V170.9ZM867.7,151.8c2.3-23.3,10.7-34,22.5-34,13,0,22.2,10.7,23.7,34Z"/><path d="M1095.1,5.3h-89.8V272.9h87.9c95.9,0,144.1-52.7,144.1-132.3v-5.7C1237.30005,55.4,1189.9,5.3,1095.1,5.3Zm58.5,136.5c0,42-22.2,58.1-56.2,58.1h-9.6V78.4h9.6c34,0,56.2,15.7,56.2,58.1Z"/><path d="M1444.80005,170.9c0-65.4-32.5-111.6-96.69995-111.6-56.9,0-97.5,43.6-97.5,107.4v5c0,66.1,41.69995,106.3,104.3,106.3,38.2,0,64.6-14.9,85.2-35.9l-36.7-43.6c-12.19995,11.5-25.6,18.7-41.3,18.7-17.2,0-30.2-8.4-35.6-26h118.1V170.9ZM1325.6,151.8c2.3-23.3,10.69995-34,22.5-34,13,0,22.19995,10.7,23.69995,34Z"/><path d="M1441,64.2h83.30005l27.5,106.3,27.5-106.3H1661.5l-72.19995,210.2H1513.6001Z"/><path d="M294.3,608.9l-52.4-21c-6.1,12.6-11.9,25.6-18.4,35.9l-22.6-26c27.9-16.8,45.5-40.5,45.5-70.3v-.8c0-39.4-29.8-68-78-68-48.9,0-80.7,32.1-80.7,71.1v.8c0,18.7,5,33.6,18,53.1C70.5,602,55.2,627.3,55.2,658.6v1.2c0,49.3,39.8,76.8,92.9,76.8,26.8,0,49.7-7.3,70.3-21l19.5,21.8,53.5-36.7-27.5-31C275.6,652.5,285.1,632.6,294.3,608.9ZM160.2,677.7c-14.9,0-24.9-9.2-24.9-23.3v-1.2c0-8,3.4-16.1,10.7-22.9l34.8,41.3C174.3,675.4,166.7,677.7,160.2,677.7Zm23.7-147.2c0,11.1-5.4,21.8-18.4,30.6-7.3-10.3-11.1-18.7-11.1-29v-.4c0-11.5,5.7-19.1,14.9-19.1,8.8,0,14.5,6.9,14.5,17.6v.3h.1Z"/><path d="M377.3,601.6v-6.5c0-83.3,57.3-136.5,127.3-136.5,45.5,0,77.2,19.9,98.6,50.5l-55.8,51.2c-8.4-13.4-20.6-25.2-41.3-25.2-26,0-44.7,22.2-44.7,61.5v1.5c0,42.4,20.3,62.3,45.1,62.3,21.4,0,33.6-12.2,42.4-26l55.8,49.3c-19.5,28.7-51.2,53.1-103.2,53.1C434.6,736.9,377.3,686.5,377.3,601.6Z"/><path d="M711.3,517.9c-61.5,0-104.7,45.1-104.7,106.3v6.9c0,61.2,42.8,105.5,104,105.5,61.5,0,104.7-45.1,104.7-106.3v-6.9C815.3,562.3,772.5,517.9,711.3,517.9Zm26.4,111.6c0,24.1-10.3,39.4-26.4,39.4-16,0-26.8-15.3-26.8-39.8v-4.6c0-23.7,9.9-39,26-39s27.1,15.3,27.1,39.4v4.6h.1Z"/><path d="M958.6,454.5v92.1c-12.6-16.1-27.9-28.7-55.4-28.7-41.3,0-75.7,35.9-75.7,106.3v7.6c0,68.8,34,104.7,76.4,104.7,27.5,0,41.7-13.8,54.7-29.8v24.8h80.3v-277H958.6Zm1.6,175.8c0,22.6-10.7,39-27.1,39-16.8,0-27.1-16.4-27.1-39v-6.1c0-22.5,10.3-39,27.1-39,16.4,0,27.1,16.4,27.1,39Z"/><path d="M1061.4,522.9V731.6h79.9V522.9Zm-1.1-68.4v54.7h82.6V454.5Z"/><path d="M1164.30005,522.9h79.9V550c11.8-16.1,29.8-32.1,57-32.1,38.6,0,61.5,26.4,61.5,67.7v146H1282.4V611.2c0-14.1-8-22.6-18.3-22.6-10.7,0-19.9,8.4-19.9,22.6V731.6h-79.9l.00012-208.7Z"/><path d="M1510.2,522.9v22.2c-13.80005-15.7-29.4-27.1-56.19995-27.1-40.5,0-74.9,32.9-74.9,95.9v5c0,62.3,33.6,94,78.4,94,25.6,0,42.4-13.4,54.30005-27.9v8c0,25.2-14.5,39.8-42.4,39.8a145.78454,145.78454,0,0,1-66.9-16.8l-21,53.9c29.4,13,60,20.3,98.19995,20.3,40.9,0,68-9.9,85.6-27.5,17.2-17.2,25.2-42,25.2-77.6V522.9Zm1.5,94c0,20.3-9.9,34.8-27.1,34.8s-27.1-14.1-27.1-34.4v-1.9c0-20.6,9.6-35.2,27.1-35.2,16.8,0,27.1,14.5,27.1,34.8Z"/></g></svg>
+                        <p class="developer_copyright">© All rights reserved</p>
+                    </div>
+                </a>
+
+            </footer>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
