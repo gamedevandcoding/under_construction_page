@@ -1,0 +1,413 @@
+/* -------------- Font  -------------- */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+/* -------------- Font  -------------- */
+
+
+*{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+    font-size-adjust: none !important;
+    -webkit-text-size-adjust:none !important;
+    box-sizing: border-box;
+}
+
+html, body{ position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto; }
+html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
+
+
+
+/* ---------------------------------------- WHATSAPP ---------------------------------------- */
+.whatsapp_shortcut{ display: block; position: fixed; bottom: 0px; right: 0px; margin: 0px; padding: 20px; z-index: 999;}
+.whatsapp_shortcut svg{ display: block; width: 60px; height: auto; margin: 0px; padding: 0px; }
+/* ---------------------------------------- WHATSAPP ---------------------------------------- */
+
+
+
+/* ---------------------------------------- HEADER ---------------------------------------- */
+.header_container{ display: block; width: 100%; height: fit-content; padding: 0px; margin: 0px; background-color: black; }
+.header_content{ display: flex; align-items: center; justify-content: space-between; max-width: 1240px; height: fit-content; padding: 0px; margin: 0px auto; background-color: transparent; color: #ffffff; }
+
+.header_logo_container{ display: block; width: fit-content; height: fit-content; padding: 20px; margin: 0px; }
+.header_logo_svg{ display: block; width: auto; height: 60px; fill: #ffffff; padding: 0px; margin: 0px; }
+
+.header_nav{ display: flex; align-items: center; width: fit-content; height: fit-content; font-size: 18px; font-weight: 400; padding: 0px; margin: 0px; }
+.header_nav_element{ display: block; font-size: 18px; font-weight: 400; padding: 20px; margin: 0px; cursor: pointer; color: #ffffff; text-decoration: none; background-color: transparent; border: 0px; border-radius: 0px; }
+
+.header_login_container{ padding: 10px 20px; margin: 0px; background-color: transparent; }
+.header_login_content{ display: block; font-size: 18px; font-weight: 400; padding: 10px 20px; margin: 0px; background-color: #ffffff; color: black; }
+/* ---------------------------------------- HEADER ---------------------------------------- */
+
+
+
+/* ---------------------------------------- SIDE NAV TOGGLE ---------------------------------------- */
+.sideNav_label{ display: none; width: fit-content; height: fit-content; margin: 0px; padding: 20px; cursor: pointer;}
+.sideNav_label__checkbox{ display: none; }
+.sideNav_label__svg{ display: block; width: 40px; height: auto; fill: #ffffff; }
+
+#sideNav_label_close{ display: block; }
+#sideNav_label_close{ display: none; }
+/* ---------------------------------------- SIDE NAV TOGGLE ---------------------------------------- */
+
+
+
+.main_container{ display: block; max-width: 1240px; height: fit-content; padding: 0px 20px; margin: 0px auto; background-color: #ffffff; }
+
+
+
+/* ---------------------------------------- ABOVE THEE FOLD ---------------------------------------- */
+.aboveFold_container{ display: block; width: 100%; height: fit-content; padding: 0px; margin: 0px; }
+
+.aboveFold_cover_wrapper{ display: block; width: 100%; height: fit-content; margin: 0px; margin: 0px; background-image: url(img/UrbanBackgroundExtendedCar_Min.webp); background-size: cover; background-position: bottom center; }
+.aboveFold_cover_container{ display: block; position: relative; width: 100%; height: fit-content; margin: 0px; padding: 0px; /*background-color: #d1d1d1;*/ background-color: rgba(209, 209, 209, 0.90); overflow: hidden; }
+.aboveFold_cover_content{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; max-width: 1240px; height: 375px; margin: 0px auto; padding: 0px 20px; }
+
+.aboveFold_text_container{ display: block; width: fit-content; height: fit-content; margin: 0px; margin-right: 40px; padding: 0px; }
+.aboveFold_text_h1{ display: block; font-size: 40px; font-weight: 700; color: #000000; width: fit-content; height: fit-content; margin: 0px; margin-bottom: 40px; padding: 0px; white-space: nowrap; }
+.aboveFold_text_h1_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+.aboveFold_text_btn{ display: block; font-size: 18px; font-weight: 400; margin: 0px; padding: 15px 0px; width: 100%; height: fit-content; border: 0px; border-radius: 0px; background-color: #008CFF; color: #ffffff; cursor: pointer; overflow: hidden; }
+.aboveFold_text_btn_green{ display: block; font-size: 18px; font-weight: 400; margin: 0px; margin-top: 20px; padding: 15px 0px; width: 100%; height: fit-content; border: 0px; border-radius: 0px; background-color: #01b321; color: #ffffff; cursor: pointer; overflow: hidden; }
+
+#aboveFold_text_h1_full{ display: block; }
+#aboveFold_text_h1_short{ display: none; }
+
+.aboveFold_illustration_container{ display: flex; align-items: center; position: relative; width: fit-content; height: 100%; margin: 0px; padding: 0px; background-color: transparent; }
+.aboveFold_illustration_paragraph{ display: block; position: absolute; bottom: 0px; left: 0px; width: 100%; height: fit-content; font-size: 18px; font-weight: 400; text-align: center; margin: 0px; padding: 0px; transform: translateY(-40px); }
+.aboveFold_illustration_paragraph_span{ font-weight: 700; }
+.aboveFold_illustration_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+.aboveFold_illustration{ display: block; width: fit-content; max-height: calc(100% - 80px); margin: 0px; padding: 0px; }
+
+.aboveFold_info_container{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; background-color: #e7e7e7; }
+.aboveFold_info_content{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; max-width: 1240px; height: fit-content; margin: 0px auto; padding: 0px 20px; }
+.aboveFold_info_address{ display: flex; flex-direction: row; align-items: center; width: fit-content; height: fit-content; font-size: 18px; font-weight: 400; color: #000000; margin: 0px; padding: 0px; cursor: pointer; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.aboveFold_info_address svg{ display: block; width: auto; height: 22px; fill: #555555; margin: 0px; margin-right: 10px; padding: 0px; }
+.aboveFold_info_social_nav{ display: flex; flex-direction: row; width: fit-content; height: 60px; margin: 0px; padding: 0px; }
+.aboveFold_info_social_nav_element{ display: flex; align-items: center; width: fit-content; height: 100%; margin: 0px; padding: 0px; cursor: pointer; text-decoration: none;  }
+.aboveFold_info_social_nav_element:nth-of-type(2){ margin: 0px 20px; }
+.aboveFold_info_social_nav_element_svg{ display: block; width: 30px; height: fit-content; margin: 0px; padding: 0px; fill: #000000; }
+
+.address_span_long{ display: inline-block; }
+.address_span_short{ display: none; }
+/* ---------------------------------------- ABOVE THEE FOLD ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- OUR SERVICES ---------------------------------------- */
+.ourServices_section{ display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
+.ourServices_element{ display: block; width: calc((100% / 3) - 15px); height: 350px; margin: 0px; padding: 0px; }
+.ourServices_content{ display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 100%; height: 100%; margin: 0px; padding: 20px; background-color: rgba(0, 0, 0, 0.7);}
+
+.ourServices_name{ display: block; width: 100%; height: fit-content; font-size: 24px; font-weight: 400; text-align: left; color: #ffffff; margin: 0px; padding: 0px; }
+.ourServices_title{ display: block; width: 100%; height: fit-content; font-size: 42px; font-weight: 700; color: #ffffff; text-align: center; margin: 0px; padding: 0px; }
+.ourServices_title_breakline{ content: "" !important; display: block; margin-bottom: 10px !important; }
+.ourServices_cta{ display: block; width: 100%; height: fit-content; font-size: 18px; font-weight: 400; text-align: center; margin: 0px; padding: 10px 0px; border: 0px; border-radius: 0px; background-color: #01b321; color: #ffffff; cursor: pointer; }
+
+.normal_background{ background-image: url(img/CarRentNormal.png); background-size: cover; background-position: center; }
+.extra_background{ background-image: url(img/CarRentExtra.png); background-size: cover; background-position: center; }
+.holiday_background{ background-image: url(img/CarRentHoliday.png); background-size: cover; background-position: center; }
+.special_background{ background-image: url(img/CarRentSpecialEvent.png); background-size: cover; background-position: center; }
+
+#ourServices_placeholder{ display: none; }
+/* ---------------------------------------- OUR SERVICES ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- COMPARISON ---------------------------------------- */
+.comparison_section{ display: block; width: 100%; height: fit-content; padding: 0px; margin: 80px 0px; }
+
+.comparison_title_h1{ display: block; font-size: 35px; font-weight: 700; margin: 0px; margin-bottom: 20px; padding: 0px; }
+.comparison_title_span{ display: inline-block; font-weight: 400; }
+
+.comparison_card_container{ display: flex; justify-content: space-between; width: 100%; height: fit-content; padding: 0px; margin: 0px; }
+.comparison_card{ display: flex; flex-direction: column; justify-content: space-between; width: calc(50% - 10px); height: auto; padding: 20px; margin: 0px; background-color: #525252; color: #ffffff; overflow: hidden; }
+.green_card{ background-color: #01b321; }
+
+.comparison_card_description{ display: block; width: 100%; height: fit-content; padding: 0px; }
+.comparison_card_h1{ display: block; width: 100%; height: fit-content; font-size: 35px; font-weight: 700; text-align: center; color: #ffffff; padding: 0px; margin: 0px; }
+
+.comparison_card_list{ display: block; width: 100%; height: fit-content; margin: 40px 0px; padding: 0px; }
+.comparison_card_list_element{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 22px; padding: 0px; }
+.comparison_card_list_element_last{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+
+.comparison_card_list_element_title{ display: flex; align-items: center; width: fit-content; height: fit-content; margin: 0px; padding: 0px; }
+.comparison_card_list_element_paragraph{ display: block; font-size: 16px; font-weight: 400; margin: 0px; margin-top: 12px; margin-left: 32px; padding: 0px; color: #c5c5c5; }
+.comparison_card_list_element_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 16px !important; }
+.green_paragraph{ color: #00490d; }
+
+.comparison_card_list_element_paragraphs_list{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.comparison_card_list_element_paragraphs_list_element{ display: flex; flex-direction: row; align-items: center; position: relative; width: 100%; height: fit-content; margin: 0px; margin-top: 22px; padding: 0px; }
+.paragraphs_list_svg_container{ display: flex; justify-content: center; min-width: 22px; max-width: 22px; height: fit-content; margin: 0px; padding: 0px; }
+.paragraphs_list_svg{ display: block; min-width: 11px; max-width: 11px; min-height: 8px; max-height: 8px; fill: #c5c5c5; margin: 0px; padding: 0px; }
+.paragraphs_list_span{ display: block; font-size: 16px; font-weight: 400; margin: 0px; margin-left: 10px; padding: 0px; color: #c5c5c5;  }
+
+.comparison_card_svg{ display: block; width: 22px; margin: 0px; padding: 0px; fill: #ffffff; }
+.comparison_card_span{ display: block; font-size: 18px; font-weight: 400; margin: 0px; margin-left: 10px; padding: 0px; }
+
+.comparison_card_h2{ display: block; width: 100%; height: fit-content; font-size: 25px; font-weight: 400; text-align: left; margin: 0px; padding: 0px;}
+/* ---------------------------------------- COMPARISON ---------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------- VEHICLES LIST ---------------------------------------- */
+.vehicles_section{ display: block; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
+.vehicles_cards_container{ display: block; width: 100%; height: fit-content; margin: 40px 0px; padding: 0px; }
+
+.vehicles_title_container{ display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; overflow: hidden; }
+.vehicles_title{ display: block; width: 50%; height: fit-content; font-size: 35px; margin: 0px; padding: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.select_box_container{ display: block; position: relative; width: fit-content; height: fit-content; margin: 0px; padding: 0px; }
+.vehicles_prices_select_box{ display: block; position: relative; font-size: 18px; color: #000000; margin: 0px; padding: 10px; padding-right: 40px; border: 1px solid black; border-radius: 0px; appearance: none; background-color: transparent; z-index: 2; }
+.select_box_svg{ display: block; position: absolute; top: 50%; right: 0px; width: auto; height: 10px; margin: 0px; padding: 0px; transform: translate(-50%, -5px); fill: #000000; z-index: 1; }
+
+.vehicles_list_scroll{ display: flex; flex-direction: row; width: 100%; margin: 0px; padding: 0px; overflow-y: hidden; overflow-x: scroll;  }
+
+.vehicles_card{ display: block; min-width: 300px; max-width: 300px; height: fit-content; margin: 0px; margin-right: 20px; margin-bottom: 20px; padding: 0px; }
+.vehicles_card_last{ margin-right: 0px; }
+
+.vehicles_card_img_container{ display: flex; justify-content: center; align-items: center; width: 100%; height: 200px; margin: 0px; padding: 0px; background-color: #e7e7e7; }
+.vehicles_card_img{ display: block; width: calc(100% - 40px); height: fit-content; max-height: 160px; margin: 0px auto; padding: 0px; }
+.vehicles_card_description{ display: block; width: 100%; margin: 0px; padding: 20px; border: 1px solid #d5d5d5; }
+
+.vehicles_card_name{ display: block; width: 100%; height: fit-content; text-align: left; font-size: 22px; font-weight: 700; color: #000000; margin: 0px; padding: 0px; }
+.vehicles_card_brand{ width: 100%; height: fit-content; font-size: 18px; font-weight: 400; margin: 0px; padding: 0px; color: #000000; }
+.vehicles_card_brand, .vehicles_card_model{ display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.vehicles_card_details_list{ display: block; width: 100%; height: fit-content; font-size: 18px; font-weight: 400; color: #000000; margin: 0px; padding: 0px; }
+.vehicles_card_details_list_element{ display: flex; flex-direction: row; align-items: center; margin: 0px; margin-top: 10px; padding: 0px; }
+.vehicles_description_svg{ display: block; width: 18px; height: auto; margin: 0px; padding: 0px; fill: #bebebe; }
+.vehicles_description_span{ display: block; width: fit-content; height: fit-content; margin: 0px; margin-left: 10px; padding: 0px; }
+
+.vehicles_card_state{ display: block; width: 100%; height: fit-content; font-size: 18px; font-weight: 400; text-align: center; margin: 0px; margin-top: 20px; padding: 10px 0px; background-color: #01b321; color: #ffffff; border: 0px; cursor: pointer; }
+.vehicles_red_state{ background-color: #ff0000; }
+
+.vehicles_list_scroll::-webkit-scrollbar{ height: 10px; }
+.vehicles_list_scroll::-webkit-scrollbar-track { background: #dddddd; }
+.vehicles_list_scroll::-webkit-scrollbar-thumb { background: #888; }
+.vehicles_list_scroll::-webkit-scrollbar-thumb:hover { background: #555; }
+
+.monthly_price_span{ display: block; }
+.daily_price_span{ display: none; }
+/* ---------------------------------------- VEHICLES LIST ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- REVIEWS ---------------------------------------- */
+.reviews_section{ display: block; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
+.review_container{ display: block; width: 100%; height: fit-content; margin: 25px 0px; padding: 20px; background-color: #ffffff; box-shadow: rgb(0 0 0 / 20%) 0px 1px 4px; overflow: hidden; }
+.review_name{ display: block; font-size: 22px; font-weight: 700; color: #000000; margin: 0px; padding: 0px; }
+.review_paragraph{ display: block; font-size: 16px; font-weight: 400; color: #000000; margin: 10px 0px; padding: 0px; line-height: 1.6; }
+.review_star_container{ display: flex; flex-direction: row; align-items: center; margin: 0px; padding: 0px; white-space: nowrap; }
+.review_star{ display: block; width: 20px; fill: #ffae00; margin: 0px; padding: 0px; }
+.review_container:first-of-type{ margin: 0px; }
+.review_container:last-of-type{ margin: 0px; }
+.review_breakline{ content: "" !important; display: block; margin-bottom: 16px; }
+/* ---------------------------------------- REVIEWS ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- DROPDOWN ---------------------------------------- */
+.dropdown_section{ display: block; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
+.dropdown_section_title{ display: block; width: 100%; height: fit-content; font-size: 30px; margin: 0px; padding: 0px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.dropdown_faq_container{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.dropdown_faq_element{ display: block; width: 100%; height: fit-content; margin: 25px 0px; padding: 0px; background-color: #ffffff; border: 1px solid #dddddd; }
+.dropdown_faq_label{ display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin: 0px; padding: 15px 15px; background-color: #eeeeee; cursor: pointer; }
+.dropdown_faq_checkbox{ display: none; }
+.dropdown_faq_h1{ display: block; width: calc(100% - 50px); height: fit-content; font-size: 20px; font-weight: 400; margin: 0px; padding: 0px; }
+.dropdown_faq_svg{ display: block; width: 20px; fill: #000000; margin: 0px; padding: 0px; }
+.dropdown_faq_paragraph{ display: none; width: 100%; height: fit-content; margin: 0px; padding: 20px; line-height: 1.4; }
+.dropdown_faq_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 20px; }
+/* ---------------------------------------- DROPDOWN ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- CONTACT FORM ---------------------------------------- */
+.contact_form_section{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+
+.contact_form_title_container{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; }
+.contact_form_h1{ display: block; font-size: 30px; margin: 0px; padding: 0px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.contact_form_paragraph{ display: block; font-size: 18px; margin: 0px; padding: 0px; color: #878787; }
+.contact_form_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 0px; }
+.contact_form_link{ display: inline-block; color: #000000; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+
+.contact_form_input_container{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; border: 0px; }
+
+.contact_form_input{ display: block; width: 100%; margin: 0px; margin-bottom: 20px; padding: 15px; font-size: 18px; border-radius: 0px; border: 1px solid #dddddd; }
+.contact_form_submit{ display: block; width: 100%; margin: 0px; margin-top: 20px; padding: 15px 0px; font-size: 18px; text-align: center; background-color: #008CFF; color: #ffffff; border: 0px; border-radius: 0px; }
+
+.privacy_checkbox_wrapper{ display: flex; flex-direction: row; align-items: flex-start; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.custom_checkbox_container{ display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; margin: 0px; padding: 0px; background-color: #e7e7e7; border: 1px solid #858585; }
+.custom_checkbox_svg{ display: block; width: 50%; height: 50%; margin: 0px; padding: 0px; fill: #000000; }
+.privacy_checkbox_description{ display: block; width: calc(100% - 34px); font-size: 18px; font-weight: 400; color: #000000; margin: 0px; margin-left: 10px; padding: 0px; }
+#privacy_checkbox_form{ display: none; }
+/* ---------------------------------------- CONTACT FORM ---------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+.footer_container{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; margin-top: 80px; }
+.footer_content{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; border-bottom: 1px solid #cfcfcf; }
+
+.footer_logo_container{ display: block; width: fit-content; height: fit-content; margin: 0px; margin-bottom: 40px; padding: 0px; }
+.footer_logo_svg{ display: block; width: auto; height: 80px; margin: 0px; padding: 0px; fill: #000000; }
+
+.footer_nav_info{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.footer_nav_info_element{ display: block; width: fit-content; height: fit-content; font-size: 16px; font-weight: 400; margin: 0px; margin-top: 20px; padding: 0px; }
+.footer_nav_info_element span{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; }
+.footer_nav_info_element_span_bold{ font-weight: 700; }
+.footer_nav_info_element_breakline{ content: "" !important; display: block; margin-bottom: 5px; }
+
+.footer_nav_social{ display: flex; align-items: center; width: 100%; height: 80px; margin: 0px; padding: 0px; }
+.footer_nav_social_element:nth-of-type(2){ margin: 0px 20px; }
+.footer_nav_social svg{ display: block; width: 40px; height: auto; margin: 0px; padding: 0px; cursor: pointer; }
+
+.facebook_svg{ fill: #008CFF; }
+.instagram_svg{ fill: #ec00ff; }
+.youtube_svg{ fill: #ff0000; }
+
+.footer_copyright{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; font-size: 16px; color: #000000; }
+.footer_privacy{ display: block; width: 100%; height: fit-content; margin: 0px; margin-top: 10px; padding: 0px; font-size: 16px; color: #000000; }
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+
+
+
+
+/*------------------------------------- Developer Credits -------------------------------------*/
+.developer_container{ display: block; width: 100%; height: fit-content; margin: 60px 0px 120px 0px; display: flex; justify-content: center; background-color: #f5f5f5; padding: 20px 0px; text-decoration: none; }
+
+.developer_content{ width: fit-content; }
+.developer_madeby{ font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 20px; margin: 0px; margin-bottom: 10px; width: 100%; color: #707070; text-align: center; text-decoration: none; }
+.developer_logo{ width: 200px; }
+.developer_copyright{ font-family: 'Roboto', sans-serif; font-size: 16px; margin: 0px; margin-top: 10px; width: 100%; color: #707070; text-align: center; text-decoration: none;}
+/*------------------------------------- Developer Credits -------------------------------------*/
+
+
+
+@media screen and (max-width: 1145px){ .ourServices_title{ font-size: 36px; } }
+@media screen and (max-width: 978px){
+
+    .ourServices_section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .ourServices_element{ width: 100%; }
+    .ourServices_title_span{ display: none; }
+    #ourServices_placeholder{ display: block; }
+
+}
+@media screen and (max-width: 925px){
+
+    .aboveFold_cover_wrapper{ background-position: bottom left; }
+    .aboveFold_illustration{ max-height: calc(100% - 160px); }
+    .aboveFold_illustration_paragraph{ transform: translateY(-60px); }
+}
+@media screen and (max-width: 865px){
+
+    .comparison_card_container{ display: block; }
+    .comparison_card{ width: 100%; margin-bottom: 40px; }
+    .green_card{ margin: 0px; }
+}
+@media screen and (max-width: 820px){ .aboveFold_cover_wrapper{ background-position: bottom center; } }
+@media screen and (max-width: 785px){ .header_nav{ display: none; } .sideNav_label{ display: block; } }
+@media screen and (max-width: 768px){
+
+    .ourServices_section{ margin: 40px 0px; }
+    .aboveFold_text_h1{ font-size: 36px; }
+}
+@media screen and (max-width: 720px){
+
+    .aboveFold_illustration{ max-height: calc(100% - 180px); }
+    .aboveFold_illustration_paragraph{ font-size: 16px; transform: translateY(-75px); }
+
+}
+@media screen and (max-width: 685px){
+
+    .aboveFold_cover_wrapper{ background-position: bottom left; }
+    .aboveFold_illustration_container{ display: none; }
+}
+@media screen and (max-width: 658px){
+
+    .ourServices_element{ margin-bottom: 20px; }
+    .ourServices_element:last-of-type{ margin: 0px; }
+    .ourServices_section{ display: block; }
+    .ourServices_title{ font-size: 42px; }
+    .ourServices_title_span{ display: inline-block; }
+    #ourServices_placeholder{ display: none; }
+
+}
+@media screen and (max-width: 545px){ 
+
+    .aboveFold_cover_wrapper{ background-image: url("img/drivingBackground_Min.webp"); }
+    .aboveFold_cover_content{ justify-content: center; }
+    .aboveFold_text_container{ margin: 0px; }
+    .address_span_long{ display: none; }
+    .address_span_short{ display: inline-block; }
+
+}
+@media screen and (max-width: 465px){ 
+    
+    .aboveFold_info_content{ flex-direction: column; }
+    .aboveFold_info_address{ width: 100%; padding-top: 20px; padding-bottom: 10px; justify-content: center; }
+
+}
+@media screen and (max-width: 425px){ .ourServices_title{ font-size: 36px; } }
+@media screen and (max-width: 385px){
+
+    .aboveFold_text_container{ width: 100%; }
+    .aboveFold_text_h1{ width: 100%; font-size: 34px; text-align: center; }
+    .aboveFold_text_btn{ width: 100%; }
+}
+@media screen and (max-width: 345px){ .aboveFold_text_h1{ font-size: 30px; } }
+@media screen and (max-width: 325px){
+
+    #aboveFold_text_h1_full{ display: none; }
+    #aboveFold_text_h1_short{ display: block; }
+    .ourServices_title{ font-size: 36px; }
+    .aboveFold_info_address svg{ display: none; }
+}
+@media screen and (max-width: 245px){ .aboveFold_info_address{ display: block; width: 100%; text-align: center; white-space: normal; } }
