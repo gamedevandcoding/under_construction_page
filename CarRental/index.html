@@ -29,15 +29,29 @@
                     <button class="header_nav_element" onclick="scrollTo_FormSection()">CONTATTI</button>
                     <a class="header_nav_element header_login_container"><span class="header_login_content">ACCEDI</span></a>
                 </div>
-                <label class="sideNav_label" for="side_navigation_checkbox">
-                    <input type="checkbox" class="sideNav_label__checkbox" id="side_navigation_checkbox">
-                    <svg class="sideNav_label__svg" id="sideNav_label_open" viewBox="0 0 32.75 26.75"><path d="M0 0h32.75v3H0zM0 23.75h32.75v3H0zM0 11.875h32.75v3H0z"/></svg>
-                    <svg class="sideNav_label__svg" id="sideNav_label_close" viewBox="0 0 25.279 25.279"><path d="M25.279 2.121 23.158 0 12.64 10.518 2.121 0 0 2.121 10.518 12.64 0 23.158l2.121 2.121L12.64 14.761l10.518 10.518 2.121-2.121L14.761 12.64 25.279 2.121z"/></svg>
-                </label>
+
+                <div class="sideNav_container" id="sideNav_wrapper">
+                    <label class="sideNav_label" for="side_navigation_checkbox">
+                        <input type="checkbox" class="sideNav_label__checkbox" id="side_navigation_checkbox">
+                        <svg class="sideNav_label__svg" id="sideNav_label_open" viewBox="0 0 32.75 26.75"><path d="M0 0h32.75v3H0zM0 23.75h32.75v3H0zM0 11.875h32.75v3H0z"/></svg>
+                        <svg class="sideNav_label__svg" id="sideNav_label_close" viewBox="0 0 25.279 25.279"><path d="M25.279 2.121 23.158 0 12.64 10.518 2.121 0 0 2.121 10.518 12.64 0 23.158l2.121 2.121L12.64 14.761l10.518 10.518 2.121-2.121L14.761 12.64 25.279 2.121z"/></svg>
+                    </label>
+                    <div class="sideNav_content_wrapper">
+                        <div class="sideNav_btns_wrapper">
+                            <a class="sideNav_btn" id="login_text">ACCEDI</a>
+                            <button class="sideNav_btn" onclick="sideNavVehicles()">VEICOLI</button>
+                            <button class="sideNav_btn" onclick="sideNavComparison()">NOLEGGIO</button>
+                            <button class="sideNav_btn" onclick="sideNavForm()">CONTATTI</button>
+                        </div>
+                        <button class="sideNav_btn_close" onclick="sideNavClose()">CHIUDI</button>
+                    </div>
+                </div>
+
+
             </div>
         </header>
 
-
+        
         <div class="aboveFold_container">
             <div class="aboveFold_cover_wrapper">
                 <div class="aboveFold_cover_container">
@@ -127,49 +141,50 @@
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">INTERESSI FINANZIAMENTO</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Dovrai indebitarti e pagare interessi elevati per un veicolo che si svaluterà nel tempo.</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Dovrai indebitarti e pagare interessi elevati per un veicolo che si svaluterà nel tempo.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">SVALUTAZIONE ALL'ACQUISTO</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Il tuo veicolo viene svalutato del 20% appena uscito dal concessionario, dopo 4 anni viene svalutato del 50%</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Il tuo veicolo viene svalutato del 20% appena uscito dal concessionario, dopo 4 anni viene svalutato del 50%</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
-                                        <span class="comparison_card_span">ASSICURAZIONE RCA & KASKO</span>
+                                        <span class="comparison_card_span desktop_card_span">ASSICURAZIONE RCA & KASKO</span>
+                                        <span class="comparison_card_span mobile_card_span">COSTI ASSICURATIVI</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Dovrai pagare tutti i costi assicurativi anche se non utilizzi il veicolo.</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Dovrai pagare tutti i costi assicurativi <span class="mobile_card_span">Rca & Kasko</span> anche se non utilizzi il veicolo.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">TASSA BOLLO AUTO</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Dovrai pagare ogni mese la tassa di possesso del veicolo !</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Dovrai pagare ogni mese la tassa di possesso del veicolo !</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">COSTI DI MANUTENZIONE</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Dovrai pagare costi elevati per manutenzione & revisione.</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Dovrai pagare costi elevati per manutenzione & revisione.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">DIVIETI DI CIRCOLAZIONE</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph">Sarai costretto ad indebitarti ulteriormente per comprare un'auto nuova ogni 2/3 anni a causa di norme anti inquimaneto che bloccano determinate tipologie di veicoli.<br class="comparison_card_list_element_paragraph_breakline">La circolazione di mezzi vietati comproterà secondo la legge multe molto salate ed altre conseguenze.</p>
+                                    <p class="comparison_card_list_element_paragraph extraDescriptionText__Buying">Sarai costretto ad indebitarti ulteriormente per comprare un'auto nuova ogni 2/3 anni a causa di norme anti inquimaneto che bloccano determinate tipologie di veicoli.<br class="comparison_card_list_element_paragraph_breakline">La circolazione di mezzi vietati comproterà secondo la legge multe molto salate ed altre conseguenze.</p>
                                 </li>
                                 <li class="comparison_card_list_element_last">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.586 42.586"><path d="M21.293 0a21.293 21.293 0 1 0 21.293 21.293A21.293 21.293 0 0 0 21.293 0zm9.706 27.681-3.3 3.3-6.406-6.406-6.406 6.406-3.3-3.3 6.406-6.406-6.406-6.406 3.3-3.3 6.406 6.406 6.406-6.406 3.3 3.3-6.406 6.406z"/></svg>
                                         <span class="comparison_card_span">STRESS & TEMPO SPRECATO</span>
                                     </div>
-                                    <ul class="comparison_card_list_element_paragraphs_list">
+                                    <ul class="comparison_card_list_element_paragraphs_list extraDescriptionText__Buying">
                                         <li class="comparison_card_list_element_paragraphs_list_element">
                                             <div class="paragraphs_list_svg_container"><svg class="paragraphs_list_svg" viewBox="0 0 29.969 29.969"><circle cx="14.984" cy="14.984" r="14.984"/></svg></div>
                                             <span class="paragraphs_list_span">Dovrai cercare meccanici, gommisti, ed degli elettrauto esperti di cui fidarti con prezzi giusti.</span>
@@ -191,6 +206,10 @@
                             </ul>
                         </div>
                         <span class="comparison_card_h2">SCELTA DISPENDIOSA</span>
+                        <label class="expand_comparison_card_btn" for="expand_comparison_card__buying">
+                            <span class="expand_comparison_card_span" id="expand_comparison_card_span__buying">Leggi Tutto</span>
+                            <input type="checkbox" class="expand_comparison_card_input_checkbox" id="expand_comparison_card__buying">
+                        </label>
                     </div>
 
                     <div class="comparison_card green_card" id="renting_advantages_card">
@@ -202,53 +221,57 @@
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">NIENTE DEBITI</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Vivi una vita felice e tranquilla senza debiti, senza interessi, e senza preoccupazioni alla fine del mese.<br class="comparison_card_list_element_paragraph_breakline">Basta lavorare come uno schiavo per pagare i debiti, anche tu meriti di goderti la tua vita !</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Vivi una vita felice e tranquilla senza debiti, senza interessi, e senza preoccupazioni alla fine del mese.<br class="comparison_card_list_element_paragraph_breakline">Basta lavorare come uno schiavo per pagare i debiti, anche tu meriti di goderti la tua vita !</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">ZERO SVALUTAZIONE</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Non dovrai preoccuparti di nessuna svalutazione, quando vuoi un nuovo veicolo sarà subito pronto per te.</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Non dovrai preoccuparti di nessuna svalutazione, quando vuoi un nuovo veicolo sarà subito pronto per te.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">ASSICURAZIONE INCLUSA</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Sei totalmente Assicurato con RCA + Kasko, soccorso stradale, e infortunio al conducente. Tutto Incluso nel prezzo.<br class="comparison_card_list_element_paragraph_breakline">Veicolo sostitutivo sempre a tua disposizione.</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Sei totalmente Assicurato con RCA + Kasko, soccorso stradale, e infortunio al conducente. Tutto Incluso nel prezzo.<br class="comparison_card_list_element_paragraph_breakline">Veicolo sostitutivo sempre a tua disposizione.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">ZERO TASSE</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Non dovrai pagare tasse di possesso inutili come il bollo auto !</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Non dovrai pagare tasse di possesso inutili come il bollo auto !</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">MANUTENZIONE GRATUITA</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Grazie al partenariato con centri di riparazione specializzati il veicolo sarà nuovamente disponibile in meno di 3 giorni lavorativi, gratuitamente e senza costi aggiuntivi.<br class="comparison_card_list_element_paragraph_breakline">Alternativamente sarà subito disponibile per te un veicolo sostitutivo.</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Grazie al partenariato con centri di riparazione specializzati il veicolo sarà nuovamente disponibile in meno di 3 giorni lavorativi, gratuitamente e senza costi aggiuntivi.<br class="comparison_card_list_element_paragraph_breakline">Alternativamente sarà subito disponibile per te un veicolo sostitutivo.</p>
                                 </li>
                                 <li class="comparison_card_list_element">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">LIBERA CIRCOLAZIONE</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Ricevereai sempre un nuovo veicolo adatto per la libera circolazione e conforme alle nuove leggi anti inquinamento.<br class="comparison_card_list_element_paragraph_breakline">Potrai cambiare veicolo in qualsiasi momento.</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Ricevereai sempre un nuovo veicolo adatto per la libera circolazione e conforme alle nuove leggi anti inquinamento.<br class="comparison_card_list_element_paragraph_breakline">Potrai cambiare veicolo in qualsiasi momento.</p>
                                 </li>
                                 <li class="comparison_card_list_element_last">
                                     <div class="comparison_card_list_element_title">
                                         <svg class="comparison_card_svg" viewBox="0 0 42.55 42.55"><path d="m18.2 31.15 14.7-14.7-3.3-3.3-11.4 11.4L12.65 19 9.4 22.3zm3.05 11.4a20.9 20.9 0 0 1-8.275-1.65A21.167 21.167 0 0 1 1.65 29.575 21.28 21.28 0 0 1 6.2 6.225a21.818 21.818 0 0 1 6.775-4.55 21.402 21.402 0 0 1 16.6 0 21.298 21.298 0 0 1 11.3 11.3 21.402 21.402 0 0 1 0 16.6 21.818 21.818 0 0 1-4.55 6.775 21.056 21.056 0 0 1-15.075 6.2z"/></svg>
                                         <span class="comparison_card_span">TOTALE EFFICIENZA</span>
                                     </div>
-                                    <p class="comparison_card_list_element_paragraph green_paragraph">Grazie ad accordi commerciali, la nostra azienda è grado di offriti un servizio veloce e di alta qualità, mirato a rendere la tua vita più facile.<br class="comparison_card_list_element_paragraph_breakline">Risparmia tempo e denaro con il noleggio, vivi felice e senza problemi, pensiamo a tutto noi !</p>
+                                    <p class="comparison_card_list_element_paragraph green_paragraph extraDescriptionText__Renting">Grazie ad accordi commerciali, la nostra azienda è grado di offriti un servizio veloce e di alta qualità, mirato a rendere la tua vita più facile.<br class="comparison_card_list_element_paragraph_breakline">Risparmia tempo e denaro con il noleggio, vivi felice e senza problemi, pensiamo a tutto noi !</p>
                                 </li>
                             </ul>
                         </div>
                         <h2 class="comparison_card_h2">SCELTA VANTAGGIOSA</h2>
+                        <label class="expand_comparison_card_btn green_btn" for="expand_comparison_card__renting">
+                            <span class="expand_comparison_card_span" id="expand_comparison_card_span__renting">Leggi Tutto</span>
+                            <input type="checkbox" class="expand_comparison_card_input_checkbox" id="expand_comparison_card__renting">
+                        </label>
                     </div>
                     
                 </div>
@@ -350,20 +373,40 @@
 
                 <div class="review_container">
                     <span class="review_name">Antonio</span>
-                    <p class="review_paragraph">Ho scelto di noleggiare un'autovettura perché mi sono reso conto che effettuare un'acquisto era molto più costoso e problematico. La vettura che ho noleggiato era totalmete assicurata ed in perfette condizioni, dotata di tutti i comfort necessari per un viaggio confortevole e sicuro.</p>
-                    <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    <div class="review_content">
+                        <p class="review_paragraph">Ho scelto di noleggiare un'autovettura perché mi sono reso conto che effettuare un'acquisto era molto più costoso e problematico. La vettura che ho noleggiato era totalmete assicurata ed in perfette condizioni, dotata di tutti i comfort necessari per un viaggio confortevole e sicuro.</p>
+                        <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    </div>
+                    <label class="expand_review_btn" for="expand_review_checkbox_01">
+                        <span class="expand_review_span">Leggi di più</span>
+                        <input type="checkbox" class="expand_review_input_checkbox" id="expand_review_checkbox_01">
+                    </label>
+
                 </div>
 
                 <div class="review_container">
                     <span class="review_name">Teresa</span>
-                    <p class="review_paragraph">Grazie all'auto noleggio possono finalmente andare a lavoro senza preoccuparmi inutilmente di dover pagare un lista infinta di costi come: Assicurazione Rca, Assicurazione Kasko, Tassa di Possesso, Manutenzione, Cambio Gomme, Bollo Auto, Rata del Finanziamento, Interesssi e molto altro ancora.<br class="review_breakline">Con l'autonoleggio risparmio e non perdo tempo, così posso dedicarmi maggiormente al mio lavoro.</p>
-                    <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    <div class="review_content">
+                        <p class="review_paragraph">Grazie all'auto noleggio possono finalmente andare a lavoro senza preoccuparmi inutilmente di dover pagare un lista infinta di costi come: Assicurazione Rca, Assicurazione Kasko, Tassa di Possesso, Manutenzione, Cambio Gomme, Bollo Auto, Rata del Finanziamento, Interesssi e molto altro ancora.<br class="review_breakline">Con l'autonoleggio risparmio e non perdo tempo, così posso dedicarmi maggiormente al mio lavoro.</p>
+                        <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    </div>
+                    <label class="expand_review_btn" for="expand_review_checkbox_02">
+                        <span class="expand_review_span">Leggi di più</span>
+                        <input type="checkbox" class="expand_review_input_checkbox" id="expand_review_checkbox_02">
+                    </label>
+
                 </div>
 
                 <div class="review_container">
                     <span class="review_name">Francesco</span>
-                    <p class="review_paragraph">Sono molto soddifratto dell'auto che ho noleggiato. Penso sia inutile acquistare una vettura che dopo 4 anni si svaluta del 50% o che magari troppo inquinante e perciò deve essere rottamata secondo le leggi attuali. Con il Noleggio risparmio e cambio auto quando voglio.</p>
-                    <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    <div class="review_content">
+                        <p class="review_paragraph">Sono molto soddifratto dell'auto che ho noleggiato. Penso sia inutile acquistare una vettura che dopo 4 anni si svaluta del 50% o che magari troppo inquinante e perciò deve essere rottamata secondo le leggi attuali. Con il Noleggio risparmio e cambio auto quando voglio.</p>
+                        <div class="review_star_container"><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg><svg class="review_star" viewBox="0 0 40 38"><path d="m7.65 38 3.25-14.05L0 14.5l14.4-1.25L20 0l5.6 13.25L40 14.5l-10.9 9.45L32.35 38 20 30.55z"/></svg></div>
+                    </div>
+                    <label class="expand_review_btn" for="expand_review_checkbox_03">
+                        <span class="expand_review_span">Leggi di più</span>
+                        <input type="checkbox" class="expand_review_input_checkbox" id="expand_review_checkbox_03">
+                    </label>
                 </div>
 
             </section>

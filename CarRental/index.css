@@ -48,7 +48,8 @@
 
 html, body{ position: absolute; top: 0; left: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto; }
 html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
-
+body{ overflow-y: scroll; }
+.noscroll{ overflow: hidden; }
 
 
 /* ---------------------------------------- WHATSAPP ---------------------------------------- */
@@ -59,7 +60,7 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
 
 
 /* ---------------------------------------- HEADER ---------------------------------------- */
-.header_container{ display: block; width: 100%; height: fit-content; padding: 0px; margin: 0px; background-color: black; }
+.header_container{ display: block; position: relative; top: 0px; left: 0px; width: 100%; height: fit-content; padding: 0px; margin: 0px; background-color: black; z-index: 99999; }
 .header_content{ display: flex; align-items: center; justify-content: space-between; max-width: 1240px; height: fit-content; padding: 0px; margin: 0px auto; background-color: transparent; color: #ffffff; }
 
 .header_logo_container{ display: block; width: fit-content; height: fit-content; padding: 20px; margin: 0px; }
@@ -75,12 +76,21 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
 
 
 /* ---------------------------------------- SIDE NAV TOGGLE ---------------------------------------- */
-.sideNav_label{ display: none; width: fit-content; height: fit-content; margin: 0px; padding: 20px; cursor: pointer;}
+.sideNav_container{ display: none; position: relative; top: 0px; right: 0px; width: 100%; height: 0px; margin: 0px; padding: 0px; background-color: #1b1b1b; }
+.sideNav_container.sideNav_open{ height: calc(100% - 100px); }
+
+.sideNav_label{ display: flex; align-items: center; position: absolute; top: 0px; right: 0px; width: fit-content; height: 100px; margin: 0px; padding: 20px; cursor: pointer; transform: translateY(-100px); }
 .sideNav_label__checkbox{ display: none; }
 .sideNav_label__svg{ display: block; width: 40px; height: auto; fill: #ffffff; }
-
 #sideNav_label_close{ display: block; }
 #sideNav_label_close{ display: none; }
+
+.sideNav_content_wrapper{ display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; margin: 0px; padding: 0px; overflow-x: hidden; overflow-x: scroll; }
+.sideNav_btns_wrapper{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.sideNav_btn{ display: block; width: calc(100% - 40px); height: fit-content; font-size: 20px; font-weight: 400; text-align: center; color: #ffffff; margin: 0px auto; padding: 20px 0px; border: 0px; border-bottom: 1px solid #3f3f3f; border-radius: 0px; background-color: transparent; }
+.sideNav_btn_close{ display: block; width: calc(100% - 40px); height: fit-content; font-size: 20px; font-weight: 400; text-align: center; color: #000000; margin: 0px auto; margin-bottom: 20px; padding: 10px 0px; border: 0px; border-radius: 0px; background-color: #ffffff; }
+
+#login_text{ font-size: 22px; }
 /* ---------------------------------------- SIDE NAV TOGGLE ---------------------------------------- */
 
 
@@ -180,6 +190,16 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
 .comparison_card_span{ display: block; font-size: 18px; font-weight: 400; margin: 0px; margin-left: 10px; padding: 0px; }
 
 .comparison_card_h2{ display: block; width: 100%; height: fit-content; font-size: 25px; font-weight: 400; text-align: left; margin: 0px; padding: 0px;}
+
+.desktop_card_span{ display: block; }
+.mobile_card_span{ display: none; }
+
+
+
+.expand_comparison_card_btn{ display: none; width: fit-content; height: fit-content; margin: 0px; margin-top: 30px; padding: 10px; border-radius: 0px; background-color: #343434; border: 1px solid #000000; }
+.expand_comparison_card_span{ display: block; font-size: 16px; font-family: 400; color: #ffffff; margin: 0px; padding: 0px; }
+.expand_comparison_card_input_checkbox{ display: none; }
+.green_btn{ background-color: #008b19; border: 1px solid #006c13; }
 /* ---------------------------------------- COMPARISON ---------------------------------------- */
 
 
@@ -234,12 +254,17 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
 .reviews_section{ display: block; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
 .review_container{ display: block; width: 100%; height: fit-content; margin: 25px 0px; padding: 20px; background-color: #ffffff; box-shadow: rgb(0 0 0 / 20%) 0px 1px 4px; overflow: hidden; }
 .review_name{ display: block; font-size: 22px; font-weight: 700; color: #000000; margin: 0px; padding: 0px; }
+.review_content{ display: flex; flex-direction: column; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
 .review_paragraph{ display: block; font-size: 16px; font-weight: 400; color: #000000; margin: 10px 0px; padding: 0px; line-height: 1.6; }
 .review_star_container{ display: flex; flex-direction: row; align-items: center; margin: 0px; padding: 0px; white-space: nowrap; }
 .review_star{ display: block; width: 20px; fill: #ffae00; margin: 0px; padding: 0px; }
 .review_container:first-of-type{ margin: 0px; }
 .review_container:last-of-type{ margin: 0px; }
 .review_breakline{ content: "" !important; display: block; margin-bottom: 16px; }
+
+.expand_review_btn{ display: none; width: fit-content; height: fit-content; margin: 0px; padding: 10px; background-color: transparent; border: 1px solid #cccccc; border-radius: 0px; }
+.expand_review_span{ display: block; font-size: 16px; font-family: 400; color: #000000; margin: 0px; padding: 0px; }
+.expand_review_input_checkbox{ display: none; }
 /* ---------------------------------------- REVIEWS ---------------------------------------- */
 
 
@@ -352,12 +377,32 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
     .comparison_card{ width: 100%; margin-bottom: 40px; }
     .green_card{ margin: 0px; }
 }
-@media screen and (max-width: 820px){ .aboveFold_cover_wrapper{ background-position: bottom center; } }
-@media screen and (max-width: 785px){ .header_nav{ display: none; } .sideNav_label{ display: block; } }
+@media screen and (max-width: 820px){
+
+    .aboveFold_cover_wrapper{ background-position: bottom center; }
+    .desktop_card_span{ display: none; }
+    .mobile_card_span{ display: inline-block; }
+    .expand_comparison_card_btn{ display: block; }
+    .extraDescriptionText__Buying, .extraDescriptionText__Renting{ display: none; }
+}
+@media screen and (max-width: 785px){ 
+    
+    .header_nav{ display: none; }
+    .sideNav_container{ display: block; }
+    .header_container{ position: fixed; }
+    .sideNav_container{ position: fixed; top: 100px; right: 0px; z-index: 9999; }
+    .aboveFold_container{ margin-top: 100px; }
+
+}
 @media screen and (max-width: 768px){
 
     .ourServices_section{ margin: 40px 0px; }
     .aboveFold_text_h1{ font-size: 36px; }
+    .review_content{ flex-direction: column-reverse; }
+    .review_star_container{ margin-top: 10px; transform: translateX(-2px); }
+    .review_paragraph{ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; text-overflow: ellipsis; }
+    .expand_review_btn{ display: block; }
+    
 }
 @media screen and (max-width: 720px){
 
@@ -389,13 +434,24 @@ html, body{ font-family: 'Roboto', sans-serif; font-weight: 400; }
     .address_span_short{ display: inline-block; }
 
 }
+@media screen and (max-width: 485px){
+
+    .vehicles_title_container{ flex-direction: column; }
+    .vehicles_title{ width: 100%; text-align: left; margin-bottom: 10px; }
+    .select_box_container, .vehicles_prices_select_box{ width: 100%; }
+}
+
 @media screen and (max-width: 465px){ 
     
     .aboveFold_info_content{ flex-direction: column; }
     .aboveFold_info_address{ width: 100%; padding-top: 20px; padding-bottom: 10px; justify-content: center; }
 
 }
-@media screen and (max-width: 425px){ .ourServices_title{ font-size: 36px; } }
+@media screen and (max-width: 430px){
+
+    .ourServices_title{ font-size: 36px; }
+    .vehicles_card{ min-width: 250px; max-width: 250px; }
+}
 @media screen and (max-width: 385px){
 
     .aboveFold_text_container{ width: 100%; }
