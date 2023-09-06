@@ -1,0 +1,78 @@
+/*-------------- NAVBAR -------------- */
+.navbar_list_element:hover .navbar_list_element_span{ color: #ffd000; }
+.navbar_list_element:hover .navbar_list_element_svg{ fill: #ffd000; }
+.navbar_hamburger:hover .navbar_hamburger_svg{ fill: #ffd000; }
+/*-------------- NAVBAR -------------- */
+
+
+/*-------------- ABOVEFOLD -------------- */
+.aboveFold_visualContent_sideText_cta:hover{ color: #ffffff; }
+.aboveFold_socialNav_element:hover .aboveFold_socialNav_element_svg{ fill: #e4ba00; }
+/*-------------- ABOVEFOLD -------------- */
+
+
+/*-------------- BENEFITS -------------- */
+.benefits_list_element:hover .benefits_list_element_svg{ fill: #ffffff; }
+.benefits_list_element:hover .benefits_list_element_h1{ color: #ffffff; }
+/*-------------- BENEFITS -------------- */
+
+
+/*-------------- INTRODUCTION -------------- */
+.introduction_button:hover{ color: #ffffff; }
+.introduction_buttons_wrapper .introduction_button:last-of-type:hover{ color: #ffd000; }
+/*-------------- INTRODUCTION -------------- */
+
+
+/*-------------- REVIEWS -------------- */
+.review_content:hover{ border: 1px solid #f5c800; }
+/*-------------- REVIEWS -------------- */
+
+
+/*-------------- COMPARISON -------------- */
+.comparison_content{ background-color: #f5c800; }
+.comparison_content:first-of-type{ background-color: #d5d5d5; }
+
+.comparison_list_element_svg{ fill: #bd9a00; }
+.comparison_choice_span{ background-color: #bd9a00; }
+
+.comparison_content:first-of-type .comparison_list_element_svg{ fill: #afafaf; }
+.comparison_content:first-of-type .comparison_choice_span{ background-color: #afafaf; }
+
+.comparison_content:hover{ background-color: #ffd000; }
+.comparison_content:hover .comparison_list_element_svg{ fill: #d8b000; }
+.comparison_content:hover .comparison_choice_span{ background-color: #d8b000; }
+
+.comparison_content:first-of-type:hover{ background-color: #e3e3e3; }
+.comparison_content:first-of-type:hover .comparison_list_element_svg{ fill: #bdbdbd; }
+.comparison_content:first-of-type:hover .comparison_choice_span{ background-color: #bdbdbd; }
+/*-------------- COMPARISON -------------- */
+
+
+/*-------------- COACHING PLAN -------------- */
+.coaching_plan_navigation::-webkit-scrollbar-thumb:hover { background: #555; }
+.coaching_plan_container:hover{ border: 1px solid #000000; }
+.coaching_plan_container:hover .coaching_plan_btn{ color: #000000; }
+/*-------------- COACHING PLAN -------------- */
+
+
+/*-------------- WORKOUT -------------- */
+.workouts_navigation_list::-webkit-scrollbar-thumb:hover { background: #555; }
+
+.workouts_navigation_element:hover .workouts_navigation_element_btn{ background-color: #f5c800; color: #000000; }
+.workouts_navigation_element:hover .workouts_navigation_element_btn:hover{ color: #ffffff; }
+
+.workouts_navigation_list:active{ cursor: grab; }
+.workouts_navigation_list:active .workouts_navigation_element{ cursor: grab; }
+.workouts_navigation_list:active .workouts_navigation_element:hover .workouts_navigation_element_btn{ background-color: #000000; color: #ffffff; }
+.workouts_navigation_list:active .workouts_navigation_element:hover .workouts_navigation_element_btn:hover{ background-color: #000000; color: #ffffff; }
+/*-------------- WORKOUT -------------- */
+
+
+/*-------------- CONTACT -------------- */
+.contact_form_link:hover{ color: #e3b900; }
+.contact_form_input:hover{ border: 1px solid #f5c800; }
+.contact_form_select_wrap:hover .contact_form_select{ border: 1px solid #f5c800; }
+.contact_form_textarea:hover{ border: 1px solid #f5c800; }
+.privacyPolicyLabel:hover .privacyPolicyTickDiv{ border: 1px solid #f5c800; }
+.contact_form_submit:hover{ color: #ffffff; }
+/*-------------- CONTACT -------------- */

@@ -1,0 +1,397 @@
+/* -------------- Font  -------------- */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local('Roboto'),
+        url('fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+/* -------------- Font  -------------- */
+*{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+
+    /*-webkit-touch-callout: none;*//* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+    font-size-adjust: none !important;
+    -webkit-text-size-adjust:none !important;
+    box-sizing: border-box;
+}
+html, body{/*-ms-overflow-style: none; scrollbar-width: none;*/ position: absolute; top: 0; right: 0; margin: 0; padding: 0; width: 100% !important; min-height: 100% !important; height: fit-content; overflow-x: hidden; overflow-y: auto; font-family: 'Roboto', sans-serif; font-weight: 400; background-color: #ffffff; } body{ overflow-x: hidden; overflow-y: hidden; height: fit-content; }
+
+
+.whatsapp_shortcut{ display: block; position: fixed; bottom: 0px; right: 0px; margin: 0px; padding: 20px; z-index: 9999; }
+.whatsapp_shortcut_svg{ display: block; width: 60px; height: auto; margin: 0px; padding: 0px; }
+
+
+/*-------------- NAVBAR -------------- */
+.navbar_container{ display: block; position: fixed; top: 0px; left: 0px; width: 100%; height: 85px; padding: 0px; margin: 0px; background-color: #000000; z-index: 9999; }
+.navbar_content{ display: flex; align-items: stretch; justify-content: space-between; position: relative; max-width: 1080px; height: 100%; padding: 0px; margin: 0px auto; }
+
+.navbar_logo{ display: flex; align-items: center; width: fit-content; height: 100%; margin: 0px; padding: 0px 20px; cursor: pointer; color: #ffffff; text-decoration: none; }
+.navbar_logo_svg{ display: block; width: auto; height: 40px; fill: #ffffff; margin: 0px; padding: 0px; }
+.navbar_logo_svg:first-of-type{ display: none; }
+
+.navbar_list{ display: flex; flex-direction: row; width: fit-content; height: 100%; padding: 0px; margin: 0px; border: 0px; }
+.navbar_list_element{ display: flex; align-items: center; font-size: 18px; padding: 0px 20px; cursor: pointer; color: #ffffff; text-decoration: none; }
+
+.navbar_list_element_span{ display: block; font-size: 18px; color: #ffffff; padding: 0px; margin: 0px; text-decoration: none; }
+.navbar_list_element_svg{ display: none; width: auto; max-width: 28px; height: 28px; fill: #ffffff; padding: 0px; margin: 0px; margin-right: 10px; }
+
+.navbar_hamburger{ display: none; flex-direction: row; align-items: center; justify-content: center; width: auto; height: 100%; margin: 0px; padding: 0px 20px; cursor: pointer; }
+.navbar_hamburger_input{ display: none; }
+.navbar_hamburger_svg{ display: block; width: 30px; height: auto; fill: #ffffff; }
+#sidebar_hamburger_open{ display: block; } #sidebar_hamburger_close{ display: none; }
+/*-------------- NAVBAR -------------- */
+
+.main_container{ display: block; position: relative; width: 100%; height: fit-content; margin: 0px; padding: 0px; overflow-x: hidden; background-color: #ffffff; }
+.main_content{ display: block; max-width: 1080px; height: fit-content; margin: 0px auto; padding: 40px 20px; background-color: #ffffff; }
+
+/*-------------- ABOVEFOLD -------------- */
+.aboveFold_section{ display: block; position: relative; width: 100%; height: fit-content; margin: 0px; margin-top: 85px; padding: 0px; overflow-x: hidden; overflow-y: hidden; background-color: #ffffff; }
+
+.aboveFold_visualContainer{ display: block; position: relative; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.aboveFold_visualContainer_backgroundWrapper{ display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; z-index: 1; background-image: linear-gradient(to top, #c9c9c9 25%, #ededed 100%); opacity: 0.30; }
+.aboveFold_visualContainer_background{ display: block; position: relative; top: 0px; left: 0px; width: calc(1080px + 40px); height: 100%; margin: 0px auto; padding: 0px; object-fit: cover; opacity: 0.30; }
+
+.aboveFold_visualContent{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: relative; max-width: 1080px; height: fit-content; margin: 0px auto; padding: 0px 20px; padding-top: 60px; background-color: transparent; z-index: 2; } 
+.aboveFold_visualContent_sideText{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; color: #000000; font-size: 50px; font-weight: 700; white-space: nowrap; }
+.aboveFold_visualContent_sideText_title{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; color: #000000; font-size: 50px; font-weight: 700; white-space: nowrap; }
+.aboveFold_visualContent_sideText_cta{ display: block; width: fit-content; height: fit-content; padding: 15px 20px; margin: 0px; margin-top: 20px; font-size: 20px; background-color: #ffd000; color: #000000; border: 0px; white-space: nowrap; cursor: pointer; }
+.aboveFold_visualContent_sideImage{ display: block; width: 280px; height: auto; margin: 0px; padding: 0px; }
+
+.aboveFold_socialContainer{ display: block; width: 100%; height: 60px; margin: 0px; padding: 0px; background-color: #f5f5f5; border: 0px; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; }
+.aboveFold_socialContent{ display: flex; flex-direction: row; align-items: center; justify-content: space-between; max-width: 1080px; height: 100%; margin: 0px auto; padding: 0px; }
+.aboveFold_socialSpan{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px 20px; font-size: 18px; }
+.aboveFold_socialNav{ display: flex; flex-direction: row; align-items: stretch; width: fit-content; height: 100%; margin: 0px; padding: 0px; }
+.aboveFold_socialNav_element{ display: flex; align-items: center; width: fit-content; height: 100%; margin: 0px; padding: 0px 10px; text-decoration: none; color: #000000; cursor: pointer; }
+.aboveFold_socialNav_element_svg{ display: block; width: 26px; height: fit-content; margin: 0px; padding: 0px; fill: #000000; }
+/*-------------- ABOVEFOLD -------------- */
+
+
+/*-------------- BENEFITS -------------- */
+.benefits_section{ display: block; width: 100%; height: fit-content; margin: 0px; margin-top: 20px; padding: 0px; }
+.benefits_list{ display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.benefits_list_element{ display: block; width: calc(25% - 20px); height: fit-content; margin: 0px; margin-bottom: 28px; padding: 20px; background-color: #ffd000; overflow: hidden; cursor: pointer; }
+.benefits_list_element_svg{ display: block; width: auto; height: 80px; margin: 0px auto; padding: 0px; fill: #000000; }
+.benefits_list_element_h1{ display: block; font-size: 20px; font-weight: 400; width: fit-content; margin: 0px auto; margin-top: 20px; padding: 0px; text-align: center; word-break: break-word; color: #000000; white-space: nowrap; }
+.benefits_list_element_h1_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+
+.benefits_coach{ display: block; margin: 0px; padding: 20px; background-color: #eeeeee; }
+.benefits_coach_h1{ display: block; font-size: 35px; font-weight: 700; margin: 0px; padding: 0px; color: #000000; }
+.benefits_coach_span{ font-size: 35px; font-weight: 400; margin: 0px; padding: 0px; color: #000000; }
+.benefits_coach_p{ display: block; margin: 0px; margin-top: 12px; padding: 0px; line-height: 1.6; font-size: 16px; color: #000000; }
+/*-------------- BENEFITS -------------- */
+
+
+/*-------------- INTRODUCTION -------------- */
+.introduction_section{ display: block; width: 100%; height: fit-content; margin: 60px 0px; padding: 0px; }
+.introduction_content{ display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; gap: 20px; width: 100%; min-height: 500px; margin: 0px; padding: 0px; overflow: hidden; }
+.introduction_section .introduction_content:last-of-type{ margin-top: 80px; }
+
+.introduction_image{ display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; object-fit: cover; }
+.introduction_description{ display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; margin: 0px; padding: 0px; }
+
+.introduction_text{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.introduction_title{ display: block; font-size: 35px; font-weight: 700; width: 100%; margin: 0px; margin-bottom: 16px; padding: 0px; color: #000000; }
+.introduction_title_span{ font-size: 35px; font-weight: 400; color: #000000; margin: 0px; padding: 0px; }
+.introduction_paragraph{ display: block; width: 100%; height: fit-content; line-height: 1.6; font-size: 16px; color: #000000; margin: 0px; padding: 0px; }
+.introduction_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 18px !important; }
+
+.introduction_list{ display: block; width: 100%; height: fit-content; margin: 25px 0px; padding: 0px; list-style-type: none; }
+.introduction_list_element{ display: flex; flex-direction: row; align-items: center; justify-content: left; width: 100%; height: fit-content; font-size: 16px; margin: 0px; margin-bottom: 10px; padding: 0px; color: #000000; }
+.introduction_list_element_svg{ display: block; width: 22px; height: auto; margin: 0px; margin-right: 10px; padding: 0px; fill: #000000; }
+.introduction_list_element_span{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; white-space: nowrap; font-size: 16px; color: #000000; }
+
+.introduction_buttons_wrapper{ display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; gap: 20px; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.introduction_button{ display: block; width: 100%; height: fit-content; font-size: 18px; margin: 0px; padding: 16px 0px; background-color: #ffd000; color: #000000; border: 0px; cursor: pointer; }
+.introduction_buttons_wrapper .introduction_button:last-of-type{ background-color: #000000; color: #ffffff; }
+/*-------------- INTRODUCTION -------------- */
+
+
+/*-------------- REVIEWS -------------- */
+.reviews_section{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.review_content{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 40px; padding: 20px; background-color: #ffffff; color: #000000; overflow: hidden; border: 1px solid #e5e5e5; /*box-shadow: rgb(0 0 0 / 20%) 0px 1px 4px;*/ }
+.review_username{ display: block; height: fit-content; font-size: 20px; font-weight: 700; color: #000000; margin: 0px; padding: 0px; }
+.review_stars_wrapper{ display: flex; flex-direction: row; align-items: center; width: fit-content; height: fit-content; margin: 10px 0px; padding: 0px; }
+.review_star{ display: block; width: 20px; height: auto; margin: 0px; padding: 0px; fill: #f5c800; }
+.review_paragraph{ display: block; width: 100%; height: fit-content; font-size: 16px; line-height: 1.6; color: #000000; margin: 0px; padding: 0px; }
+.reviews_section .review_content:last-of-type{ margin: 0px; }
+/*-------------- REVIEWS -------------- */
+
+
+/*-------------- COMPARISON -------------- */
+.comparison_section{ display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; gap: 20px; width: 100%; height: fit-content; margin: 60px 0px; padding: 0px; }
+.comparison_content{ display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; padding: 0px; margin: 0px; overflow: hidden; background-color: #ffd000; }
+.comparison_content:first-of-type{ background-color: #e3e3e3; }
+.comparison_description{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 20px; }
+.comparison_title{ display: block; width: 100%; height: fit-content; font-size: 30px; font-weight: 700; margin: 0px; padding: 0px; color: #000000; }
+.comparison_title_span{ display: block; font-size: 30px; font-weight: 400; }
+.comparison_title_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+.comparison_list{ display: block; width: 100%; height: fit-content; font-size: 18px; margin: 0px; margin-top: 20px; padding: 0px; list-style-type: none; color: #000000; }
+.comparison_list_element{ display: flex; flex-direction: row; align-items: center; justify-content: left; width: 100%; height: fit-content; font-size: 18px; margin: 0px; padding: 0px; margin-bottom: 10px; color: #000000; }
+.comparison_list_element_svg{ display: block; min-width: 22px; width: 22px; height: auto; margin: 0px; margin-right: 6px; padding: 0px; fill: #d8b000; }
+.comparison_list_element_span{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; font-size: 18px; color: #000000; }
+.comparison_list .comparison_list_element:last-of-type{ margin: 0px; }
+.comparison_content:first-of-type .comparison_list_element_svg{ fill: #bdbdbd; }
+.comparison_choice_span{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 16px 0px; text-align: center; font-size: 18px; color: #ffffff; background-color: #d8b000; }
+.comparison_content:first-of-type .comparison_choice_span{ background-color: #bdbdbd; }
+/*-------------- COMPARISON -------------- */
+
+
+/*-------------- COACHING PLAN -------------- */
+.coaching_plans_section{ display: block; width: 100%; height: fit-content; margin: 80px 0px; padding: 0px; }
+.coaching_plans_h1{ display: block; font-size: 30px; white-space: nowrap; margin: 0px; margin-bottom: 20px; padding: 0px; color: #000000; }
+.coaching_plans_h1_span{ display: inline; margin-right: 8px; }
+.coaching_plans_h1_breakline01{ content: "" !important; display: none; margin-bottom: 0px !important; }
+.coaching_plans_h1_breakline02{ content: "" !important; display: none; margin-bottom: 0px !important; }
+
+.coaching_plan_navigation{ display: grid; grid-template-columns: 330px 330px 330px; grid-template-rows: 1fr; justify-content: space-between; gap: 20px; width: 100%; height: fit-content; padding: 0px; margin: 0px; white-space: nowrap; overflow-y: hidden; overflow-x: scroll; }
+.coaching_plan_navigation::-webkit-scrollbar{ height: 10px; }
+.coaching_plan_navigation::-webkit-scrollbar-track { background: #dddddd; }
+.coaching_plan_navigation::-webkit-scrollbar-thumb { background: #888; }
+
+.coaching_plan_container{ display: block; margin: 0px; margin-bottom: 20px; padding: 20px; border: 1px solid #e3e3e3; text-decoration: none; cursor: pointer; overflow: hidden; }
+
+.coaching_plan_h1{ display: block; width: 100%; height: fit-content; font-size: 24px; font-weight: 400; text-align: center; margin: 0px; padding: 10px 0px; background-color: #bdbdbd; }
+#coaching_plan_title_basic{ background-color: #858585; color: #ffffff; } #coaching_plan_title_pro{ background-color: #f5c800; color: #000000; } #coaching_plan_title_elite{ background-color: #000000; color: #f5c800; }
+
+.coaching_plan_content{ display: block; width: 100%; height: fit-content; margin: 20px 0px; padding: 0px; }
+.coaching_plan_price_div{ display: flex; justify-content: center; align-items: baseline; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; }
+.coaching_plan_price_amount{ display: block; font-size: 34px; font-weight: 700; margin: 0px; padding: 0px; }
+.coaching_plan_price_month{ display: block; font-size: 22px; margin: 0px; padding: 0px; }
+
+.coaching_plan_list{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.coaching_plan_list_element{ display: flex; flex-direction: row; align-items: center; justify-content: left; width: 100%; height: fit-content; margin: 0px; margin-bottom: 10px; padding: 0px; }
+.coaching_plan_list .coaching_plan_list_element:last-of-type{ margin: 0px; }
+.coaching_plan_list_element_feature_yes, .coaching_plan_list_element_feature_no{ display: block; min-width: 22px; width: 22px; height: auto; margin: 0px; margin-right: 6px; padding: 0px; fill: transparent }
+.coaching_plan_list_element_feature_yes{ fill: #f5c800;  } .coaching_plan_list_element_feature_no{ fill: #afafaf;  }
+.coaching_plan_list_element_span{ display: block; width: fit-content; height: fit-content; margin: 0px; padding: 0px; font-size: 18px; color: #000000; }
+
+.coaching_plan_btn{ display: block; width: 100%; height: fit-content; font-size: 18px; font-weight: 400; text-align: center; padding: 15px 0px; margin: 0px; background-color: #e5e5e5; color: #888888; }
+/*-------------- COACHING PLAN -------------- */
+
+
+/*-------------- WORKOUT -------------- */
+.workouts_title_container{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.workouts_title_h1{ display: block; font-size: 30px; white-space: nowrap; margin: 0px; margin-bottom: 5px; padding: 0px; color: #000000; }
+.workouts_title_h1_span{ display: inline-block; margin-right: 8px; }
+.workouts_title_span{ display: block; font-size: 18px; margin: 0px; padding: 0px; color: #878787; }
+
+.workouts_navigation_list{ display: grid; grid-auto-flow: column; grid-gap: 20px; width: 100%; margin: 0; padding: 0; overflow-y: hidden; overflow-x: scroll; }
+.workouts_navigation_element{ display: block; width: 280px; height: fit-content; margin: 20px 0px; padding: 0px; border: 1px solid #000000; overflow: hidden; cursor: pointer; }
+.workouts_navigation_element_img{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; }
+.workouts_navigation_element_btn{ display: block; width: 100%; height: fit-content; font-size: 18px; text-align: center; text-decoration: none; margin: 0px; padding: 15px 0px; background-color: #000000; color: #ffffff; }
+
+.workouts_navigation_list::-webkit-scrollbar{ height: 10px; }
+.workouts_navigation_list::-webkit-scrollbar-track { background: #dddddd; }
+.workouts_navigation_list::-webkit-scrollbar-thumb { background: #888; }
+/*-------------- WORKOUT -------------- */
+
+
+/*-------------- FAQ -------------- */
+.faq_section{ display: block; width: 100%; height: fit-content; margin: 0px; margin-top: 60px; margin-bottom: 20px; padding: 0px; }
+.faq_title{ display: block; font-size: 30px; white-space: nowrap; margin: 0px; margin-bottom: 5px; padding: 0px; }
+.faq_list{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.faq_list_element{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; background-color: #ffffff; border: 1px solid #e5e5e5; }
+.faq_list_element_div{ display: flex; justify-content: space-between; align-items: center; width: 100%; height: fit-content; padding: 18px; margin: 0px; cursor: pointer; }
+.faq_list_element_div_span{ display: block; width: calc(100% - 38px); height: fit-content; font-size: 18px; color: #000000; margin: 0px; padding: 0px; }
+.faq_list_element_div_svg{ display: block; width: 20px; height: auto; margin: 0px; padding: 0px; fill: #979797; }
+.faq_list_element_paragraph{ display: none; width: 100%; height: fit-content; margin: 0px; padding: 18px; font-size: 18px; color: #000000; }
+/*-------------- FAQ -------------- */
+
+
+/*-------------- CONTACT -------------- */
+.contact_section{ display: block; width: 100%; height: fit-content; margin: 0px; margin-top: 60px; margin-bottom: 20px; padding: 0px; }
+.contact_form_header{ display: block; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; }
+.contact_form_title{ display: block; font-size: 30px; white-space: nowrap; margin: 0px; margin-bottom: 5px; padding: 0px; }
+.contact_form_paragraph{ display: block; font-size: 18px; margin: 0px; padding: 0px; color: #878787; }
+.contact_form_paragraph_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+.contact_form_link{ display: inline-block; text-decoration: underline; color: #000000; cursor: pointer; }
+
+.contact_form_input{ display: block; width: 100%; height: fit-content; font-size: 18px; margin: 0px; margin-bottom: 20px; padding: 16px; background-color: #ffffff; color: #000000; border: 1px solid #e5e5e5; }
+
+.contact_form_select_wrap{ display: block; position: relative; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; background-color: #ffffff; }
+.contact_form_select{ -webkit-appearance: none; appearance: none; width: 100%; height: fit-content; font-size: 18px; margin: 0px; padding: 18px; background: transparent; color: #757575; border: 1px solid #e5e5e5; z-index: 2; }
+.contact_form_select_svg{ display: block; position: absolute; top: 50%; right: 10px; width: 20px; margin: 0px; padding: 0px; transform: translateY(-50%); fill: #979797; z-index: 1; }
+.contact_form_select option{ color: #000000; }
+
+.contact_form_textarea{ display: block; width: 100%; height: 175px; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 1.6; margin: 0px; margin-bottom: 20px; padding: 16px; background-color: #ffffff; color: #000000; border: 1px solid #e5e5e5; }
+
+.contact_form_submit{ display: block; width: 100%; height: fit-content; font-size: 18px; margin: 0px; padding: 18px; background-color: #ffd000; color: #000000; border: 0px; cursor: pointer; }
+
+.contact_output{ display: none; flex-direction: row; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 20px; background-color: #000000; }
+.contact_output_svg{ display: block; width: auto; height: 25px; fill: #ffffff; margin: 0px; margin-right: 10px; padding: 0px; }
+.contact_output_span{ display: block; width: fit-content; height: fit-content; font-size: 20px; font-weight: 400; color: #ffffff; margin: 0px; padding: 0px; }
+
+.privacyPolicyLabel{ display: flex; flex-direction: row; justify-content: left; align-items: flex-start; width: 100%; height: fit-content; margin: 0px; margin-bottom: 20px; padding: 0px; cursor: pointer; }
+.privacyPolicyInput{ display: none; }
+.privacyPolicyTickDiv{ display: flex; align-items: center; justify-content: center; padding: 0px; margin: 0px; width: 20px; height: 20px; border: 1px solid #e5e5e5; }
+.privacyPolicyTickSvg{ display: block; width: 90%; height: auto; margin: 0px; padding: 0px; fill: #000000; opacity: 0; }
+.privacyPolicyParagraph{ display: block; width: calc(100% - 30px); height: fit-content; margin: 0px; margin-left: 10px; padding: 0px; font-size: 16px; color: #000000; }
+/*-------------- CONTACT -------------- */
+
+
+/*-------------- FOOTER -------------- */
+.footer_section{ display: block; max-width: 1080px; height: fit-content; margin: 0px auto; padding: 0px 20px; background-color: #ffffff; }
+.footer_logo{ display: flex; align-items: center; width: fit-content; height: 100%; margin: 0px; padding: 0px; cursor: pointer; color: #ffffff; text-decoration: none; }
+.footer_logo_svg{ display: block; width: auto; height: 40px; fill: #000000; margin: 0px; padding: 0px; border: 0px; }
+.footer_logo_svg:first-of-type{ padding-right: 10px; margin-right: 10px; border-right: 1px solid #000000; }
+
+.footer_owner_contact_nav{ display: block; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.footer_owner_contact_nav_item{ display: block; width: 100%; height: fit-content; margin: 20px 0px; padding: 0px; }
+.footer_owner_contact_nav_item_span{ display: block; width: 100%; height: fit-content; font-size: 16px; font-weight: 400; color: #000000; margin: 0px; padding: 0px; }
+.footer_owner_contact_nav_item .footer_owner_contact_nav_item_span:first-of-type{ font-weight: 700; }
+
+.footer_owner_social_nav{ display: flex; align-items: center; justify-content: left; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.footer_owner_social_nav_item{ display: flex; align-items: center; width: 45px; height: 45px; margin: 0px; padding: 5px; } .footer_owner_social_nav_item:first-of-type{ padding-left: 0px; }
+.footer_owner_social_nav_item_svg{ display: block; width: 100%; height: auto; margin: 0px; padding: 0px; fill: #000000; cursor: pointer; }
+#footer_svg_youtube{ fill: #ff0000; } #footer_svg_facebook{ fill: #008CFF; } #footer_svg_instagram{ fill: #ec00ff; }
+
+.footer_owner_disclaimer_paragraph{ display: block; width: 100%; height: fit-content; font-size: 14px; font-weight: 400; color: #8d8d8d; line-height: 1.4; margin: 20px 0px; padding: 0px; }
+.footer_owner_copyright_span{ display: block; width: 100%; height: fit-content; font-size: 14px; font-weight: 400; color: #8d8d8d; line-height: 1.4; margin: 0px; padding: 20px 0px; border: 0px; border-top: 1px solid #c5c5c5; }
+/*-------------- FOOTER -------------- */
+
+
+
+@media screen and (max-width: 895px){
+
+    .navbar_list{ display: none; flex-direction: column; position: fixed; width: 100%; height: calc(100% - 85px); top: 85px; left: 0px; background-color: #000000; border-top: 1px solid #585858; }
+    .navbar_list_element{ padding: 20px; border-bottom: 1px solid #252525; }
+    .navbar_list_element_svg{ display: block; }
+    .navbar_hamburger{ display: flex; }
+
+}
+@media screen and (max-width: 865px){
+    
+    .aboveFold_visualContent_sideImage{ width: 200px; }
+
+    .benefits_section{ margin-top: 0px; }
+    .benefits_list_element{ width: calc(50% - 10px); margin-bottom: 20px; }
+    .benefits_list_element_h1{ margin-top: 10px; }
+
+    .introduction_section{ margin: 40px 0px; }
+    .introduction_content{ display: flex; flex-direction: column; gap: 0px; }
+    .introduction_content:last-of-type{ flex-direction: column-reverse; }
+    .introduction_description{ margin-top: 20px; }
+
+    .review_content{ margin-bottom: 20px; }
+    .comparison_section{ margin: 40px 0px; }
+
+    .coaching_plans_section{ margin: 60px 0px; }
+    .coaching_plan_navigation{ grid-template-columns: 300px 300px 300px; }
+    .workouts_navigation_element{ width: 260px; }    
+}
+@media screen and (max-width: 725px){
+
+    .workouts_navigation_element{ width: 240px; }
+
+}
+@media screen and (max-width: 675px){
+
+    .comparison_section{ display: flex; flex-direction: column; gap: 0px; }
+    .comparison_content:last-of-type{ margin-top: 20px; }
+    .contact_form_paragraph_breakline{ display: none; }
+
+    .coaching_plans_h1_breakline01{ display: block; }
+
+}
+@media screen and (max-width: 645px){
+
+    .aboveFold_visualContent_sideImage{ display: none; }
+    .aboveFold_visualContent{ padding: 40px 20px; }
+
+}@media screen and (max-width: 465px){
+
+    .benefits_list_element{ width: calc(50% - 5px); margin-bottom: 10px; }
+    .benefits_list_element_svg{ height: 60px; }
+    .benefits_list_element_h1{ font-size: 18px; }
+
+    .coaching_plans_h1_span{ display: none; }
+    .coaching_plan_navigation{ display: block; overflow: hidden; }
+    .coaching_plan_container:last-of-type{ margin: 0px; }
+    .coaching_plan_btn{ background-color: #f5f5f5; }
+
+    .workouts_title_h1_span{ display: none; }
+
+}
+@media screen and (max-width: 425px){
+
+    .aboveFold_socialContainer{ height: 90px; }
+    .aboveFold_socialContent{ flex-direction: column; justify-content: center; }
+    .aboveFold_socialSpan{ margin-bottom: 10px; padding: 0px; }
+    .aboveFold_socialNav{ height: fit-content; }
+    .introduction_buttons_wrapper{ grid-template-columns: 1fr; grid-template-rows: 2fr; }
+
+}
+@media screen and (max-width: 385px){
+
+    .coaching_plans_h1_breakline02{ display: block; }
+    .footer_logo_svg:first-of-type{ display: none; }
+
+}
+@media screen and (max-width: 365px){
+
+    .benefits_list_element{ padding: 20px 0px; }
+
+}
+
+@media screen and (max-width: 325px){
+
+    .workouts_navigation_list{ grid-gap: 10px; }
+    .workouts_navigation_element{ width: 220px; }
+    .workouts_navigation_element_btn{ font-size: 16px; }
+
+    .navbar_logo_svg:first-of-type{ display: block; }
+    .navbar_logo_svg:last-of-type{ display: none; }
+
+}
+
+
+/* -------------------------------------------- BENEFITS -------------------------------------------- */
+/*
+.benefits_section{ display: block; max-width: 1025px; margin: 40px auto; padding: 0px 20px; }
+.benefits_list{ display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; height: fit-content; margin: 0px; padding: 0px; }
+.benefits_list_element{ display: block; width: calc(25% - 20px); height: fit-content; margin: 0px; margin-bottom: 28px; padding: 20px; background-color: #01b321; overflow: hidden; }
+.benefits_list_element_content{ display: block; width: fit-content; height: fit-content; margin: 0px auto; padding: 0px; }
+.benefits_svg{ display: block; width: auto; height: 80px; margin: 0px auto; padding: 0px; fill: #ffffff; }
+.benefits_h1{ display: block; font-size: 20px; font-weight: 400; width: fit-content; margin: 0px auto; margin-top: 20px; padding: 0px; text-align: center; word-break: break-word; color: #ffffff; white-space: nowrap; }
+.benefits_h1_breakline{ content: "" !important; display: block; margin-bottom: 0px !important; }
+
+
+.benefits__need__div{ display: block; margin: 0px; padding: 20px; background-color: #eeeeee; }
+.benefits__need__div h1{ display: block; font-size: 35px; font-weight: 700; margin: 0px; padding: 0px; color: #000000; }
+.benefits__need__div h1 span{ font-weight: 400; margin: 0px; padding: 0px;  }
+.benefits__need__div p{ display: block; margin: 0px; margin-top: 12px; padding: 0px; line-height: 1.6; font-size: 16px; color: #000000; }
+
+
+@media screen and (max-width: 860px){ .benefits_list_element{ width: calc(50% - 10px); margin-bottom: 20px; } .benefits_h1{ margin-top: 10px; } }
+@media screen and (max-width: 425px){ .benefits_svg{ height: 60px; } .benefits_h1{ font-size: 18px; } .benefits_list_element{ width: calc(50% - 5px); margin-bottom: 10px; padding: 15px 0px;} }
+@media screen and (max-width: 375px){ .benefits_svg{ height: 50px; } }*/
+/* -------------------------------------------- BENEFITS -------------------------------------------- */
